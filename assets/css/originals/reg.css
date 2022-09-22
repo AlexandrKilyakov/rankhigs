@@ -1,0 +1,178 @@
+.no-webp .reg {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../img/reg.png);
+  background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/reg.png);
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/reg.png); }
+
+.reg {
+  padding: 4rem 0;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.reg-tabs .reg-tab {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  font-size: 1rem;
+  line-height: 150%;
+  text-align: center;
+  border-color: var(--grey-25);
+}
+
+.reg-tabs .reg-tab:hover,
+.reg-tabs .reg-tab:hover .subtitle {
+  color: var(--light);
+}
+
+.reg-tabs .reg-tab:hover {
+  border-color: var(--main);
+}
+
+.reg-tabs .reg-tab.reg-tab-active {
+  border-color: var(--main);
+}
+
+.reg-tabs .reg-tab .subtitle {
+  font-size: 0.75rem;
+  line-height: 120%;
+  text-align: center;
+  color: var(--grey-50);
+  -webkit-transition: 0.1s color linear;
+  -o-transition: 0.1s color linear;
+  transition: 0.1s color linear;
+}
+
+.reg-tabs .reg-tabs-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+.reg-tabs .btn-submit {
+  margin: 16px auto;
+}
+
+.reg-tabs .btn-submit + .checkbox {
+  margin: 0 auto;
+}
+
+.reg-tabs .reg-form-child > * {
+  margin-top: 0.5rem;
+}
+
+.reg-form-title {
+  margin-bottom: 0.5rem;
+}
+
+.reg-help {
+  margin-bottom: 1.5rem;
+}
+
+.reg-help .reg-name {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.reg-help .reg-options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1rem;
+}
+
+.reg-help .reg-link {
+  height: 2rem;
+  width: 2rem;
+}
+
+.reg-sub .reg-title {
+  font-size: 3rem;
+  margin-bottom: 0.667em;
+}
+
+.reg-sub .rs-logo {
+  height: 3.0625rem;
+  margin-bottom: 4rem;
+}
+
+.reg-sub .rs-logo svg {
+  width: auto;
+}
+
+.reg-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.reg-cart {
+  min-width: 36.875rem;
+  max-width: 49.625rem;
+  width: 100%;
+  padding: 4rem;
+  margin-right: 4rem;
+}
+
+.password-eye {
+  position: absolute;
+  min-height: 2.625rem;
+  bottom: 0;
+  right: 0;
+  border: none;
+}
+
+.password-eye .icon-eye {
+  height: 0.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.password-eye .icon-eye svg {
+  width: auto;
+}
+
+.reg-role {
+  padding: 4rem 0;
+}
+
+.reg-role .container {
+  max-width: 89.375rem;
+}
+
+.checktext .addinfo {
+  top: 0px;
+}
+
+.webp .reg { background: -webkit-gradient(linear, left bottom, left top, from(rgba(255, 255, 255, 0.8)), to(rgba(255, 255, 255, 0.8))), url(../img/reg.webp); background: -o-linear-gradient(bottom, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/reg.webp); background: linear-gradient(0deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)), url(../img/reg.webp); }
