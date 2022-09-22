@@ -5,10 +5,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация нового пользователя</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20220922102049" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20220922102049" />
-    <link rel="stylesheet" href="./assets/libs/wow/animate.css?ver=20220922102049" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20220922102049" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20220922120411" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20220922120411" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20220922120411" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20220922120411" />
+
+    <script
+      src="https://code.jquery.com/jquery-3.6.1.min.js"
+      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header class="main-header">
@@ -830,18 +836,12 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/slider-swipe/script.js?ver=20220922102049"></script>
-	<script src="./assets/libs/wow/wow.min.js?ver=20220922102049"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20220922120411"></script>
 	<script>
-		wow = new WOW(
-			{
-				animateClass: 'animated',
-				offset: 100
-			}
-		);
-		wow.init();
-	</script>
-
-	<script src="./assets/js/app.min.js?ver=20220922102049"></script>
+		$(document).ready(function() {
+			$('select.select2-std').select2();
+		});
+	  </script>
+	<script src="./assets/js/app.min.js?ver=20220922120411"></script>
 </body>
 </html>

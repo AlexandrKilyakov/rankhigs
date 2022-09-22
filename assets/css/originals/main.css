@@ -479,9 +479,21 @@ a svg:not(:only-child):last-child {
   margin-left: 1rem;
 }
 
+.select2-container--default .select2-selection--single {
+  border: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
 input,
 textarea,
-select {
+select,
+.select2 {
   max-width: 100%;
   width: 100%;
   display: block;
@@ -494,7 +506,8 @@ select {
 
 input[disabled],
 textarea[disabled],
-select[disabled] {
+select[disabled],
+.select2[disabled] {
   background-color: var(--grey-10) !important;
   border-color: var(--grey-10) !important;
   color: var(--grey-50) !important;
@@ -647,7 +660,10 @@ label:not(for):not(.checkbox) input:not([type=checkbox]):not(:placeholder-shown)
 label:not(for):not(.checkbox) textarea:not([type=checkbox]):focus + .placeholder,
 label:not(for):not(.checkbox) textarea:not([type=checkbox]):not(:placeholder-shown) + .placeholder,
 label:not(for):not(.checkbox) select:focus-within + .placeholder,
-label:not(for):not(.checkbox) select.selected + .placeholder {
+label:not(for):not(.checkbox) .selected + .placeholder,
+label:not(for):not(.checkbox) .select2-container--open + .placeholder,
+label:not(for):not(.checkbox) .select2-container--below + .placeholder,
+label:not(for):not(.checkbox) .select2-container--above + .placeholder {
   top: 0;
   left: 0;
   -webkit-transform: inherit;
