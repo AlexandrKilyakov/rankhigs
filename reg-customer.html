@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация нового пользователя</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20220922150316" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20220922150316" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20220922150316" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20220922150316" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20220923154736" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20220923154736" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20220923154736" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20220923154736" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -208,6 +208,42 @@
                 >Краткое представление компании (не более 200 символов)</span
               >
             </label>
+            <div class="file-box">
+              <span class="label-title">Логотип компании</span>
+              <label>
+                <input type="file" />
+                <button type="button" title="Добавить логотип" class="btn-file">
+                  <svg
+  width="17"
+  height="15"
+  viewBox="0 0 17 15"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M16.2423 6.31253L16.2423 1.2561L1.28546 1.2561L1.28546 6.31253"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M8.08535 14.8041C8.28061 14.9994 8.59719 14.9994 8.79246 14.8041L11.9744 11.6221C12.1697 11.4269 12.1697 11.1103 11.9744 10.915C11.7792 10.7198 11.4626 10.7198 11.2673 10.915L8.4389 13.7435L5.61048 10.915C5.41521 10.7198 5.09863 10.7198 4.90337 10.915C4.70811 11.1103 4.70811 11.4269 4.90337 11.6221L8.08535 14.8041ZM7.9389 3.89502L7.9389 14.4506L8.9389 14.4506L8.9389 3.89502L7.9389 3.89502Z"
+    fill="#C3C3C3"
+  />
+</svg>
+ Добавить логотип
+                </button>
+              </label>
+              <span class="subtitle"
+                >Возможные форматы: jpeg, png.<br />Не более 2 Мб</span
+              >
+            </div>
+            <section class="list-files">
+              <div class="lf-item">
+                <button type="button" class="btn-close">&#10006;</button>
+                <p class="lf-name">document.doc</p>
+              </div>
+            </section>
           </section>
         </details>
         <details class="number-list cart details-cart hide">
@@ -575,12 +611,12 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20220922150316"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20220923154736"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20220922150316"></script>
+	<script src="./assets/js/app.min.js?ver=20220923154736"></script>
 </body>
 </html>

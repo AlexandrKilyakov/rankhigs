@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация нового пользователя</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20220922150316" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20220922150316" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20220922150316" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20220922150316" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20220923154736" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20220923154736" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20220923154736" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20220923154736" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -226,11 +226,13 @@
                       placeholder=" "
                       autocorrect="off"
                       autocomplete="name"
-                      required
                     />
-                    <span class="placeholder">Наименование подразделения:</span>
+                    <span class="placeholder important"
+                      >Наименование подразделения:</span
+                    >
                   </label>
                 </details>
+                <!-- TODO: Если в input или textarea нужно вывести ошибку, используй класс "input-error" -->
                 <label>
                   <input
                     type="email"
@@ -240,8 +242,13 @@
                     autocapitalize="off"
                     autocomplete="email"
                     required
+                    class="input-error"
                   />
                   <span class="placeholder">E-mail</span>
+                  <!-- TODO: Текст ошибки пиши сюда, если у поля выше будет класс "input-error", то текст появится на странице -->
+                  <span class="error-placeholder"
+                    >Введите корректный e-mail</span
+                  >
                 </label>
                 <label>
                   <input
@@ -255,6 +262,16 @@
                   />
                   <span class="placeholder">Пароль:</span>
                 </label>
+              </div>
+              <div class="error-reg">
+                <div class="er-ava"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1244 1L0 22H24.2487L12.1244 1ZM12.1244 3L1.73205 21H22.5167L12.1244 3Z" fill="#921A1D"/>
+    <path d="M11.3714 9H12.6286V15.7606H11.3714V9ZM12 19C11.7238 19 11.4857 18.9061 11.2857 18.7183C11.0952 18.5211 11 18.2864 11 18.0141C11 17.7324 11.0952 17.4977 11.2857 17.3099C11.4857 17.1221 11.7238 17.0282 12 17.0282C12.2762 17.0282 12.5095 17.1221 12.7 17.3099C12.9 17.4977 13 17.7324 13 18.0141C13 18.2864 12.9 18.5211 12.7 18.7183C12.5095 18.9061 12.2762 19 12 19Z" fill="#921A1D"/>
+</svg>    </div>
+                <p class="er-txt">
+                  <small>Регистрация невозможна.</small>
+                  <small>Проверьте корректность введенных данных.</small>
+                </p>
               </div>
               <button
                 class="btn btn-submit allow-after-consent disabled"
@@ -534,12 +551,12 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20220922150316"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20220923154736"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20220922150316"></script>
+	<script src="./assets/js/app.min.js?ver=20220923154736"></script>
 </body>
 </html>
