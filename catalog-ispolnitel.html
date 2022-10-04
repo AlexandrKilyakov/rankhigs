@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Каталог заказчиков</title>
+    <title>Каталог исполнителей</title>
     <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221004173823" />
     <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221004173823" />
     <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221004173823" />
@@ -204,19 +204,39 @@
     <main role="main">
 
 <div class="start-page">
-  <div class="container">
+  <div class="full-container">
     <div class="bread-crumbs">
       <a href="/" class="bc-link">Главная</a>
       <p class="slash">/</p>
-      <a href="#" class="bc-link">Каталог заказчиков</a>
+      <a href="#" class="bc-link">Каталог исполнителей</a>
     </div>
-    <h1 class="sp-title">Каталог заказчиков</h1>
+    <h1 class="sp-title">Каталог исполнителей</h1>
   </div>
 </div>
 
 <div class="catalog-filter">
-  <div class="container">
-    <form action="" class="form-filter" method="get">
+  <div class="full-container">
+    <form action="" class="form-filter grid-4" method="get">
+      <label>
+        <select name="city" class="select2-std">
+          <option value="" selected disabled></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <span class="placeholder">Компетенция</span>
+      </label>
+      <label>
+        <select name="city" class="select2-std">
+          <option value="" selected disabled></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <span class="placeholder">Город</span>
+      </label>
       <div class="form-search">
         <input
           type="text"
@@ -230,16 +250,6 @@
 </svg>
         </button>
       </div>
-      <label>
-        <select name="city" class="select2-std">
-          <option value="" selected disabled></option>
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="opel">Opel</option>
-          <option value="audi">Audi</option>
-        </select>
-        <span class="placeholder">Город</span>
-      </label>
       <div class="label-for-not sorting-method">
         <button type="button" class="btn-sorting-method">
           <svg
@@ -267,13 +277,141 @@
         <span class="placeholder">По рейтингу</span>
       </div>
     </form>
+    <div class="accordion">
+      <div class="accordion-name accordion-filter-std">
+        <p class="name">Расширенный поиск</p>
+        <button class="accordion-arrow accordion-btn-arrow">
+          <span class="arrow-std">
+            <span class="arrow-left"></span>
+            <span class="arrow-right"></span>
+          </span>
+        </button>
+      </div>
+      <div class="accordion-child">
+        <form action="" class="add-form-filter">
+          <div class="chick-ver">
+            <p class="cv-title">Показывать:</p>
+            <div class="cv-items">
+              <div class="cv-item">
+                <label class="checkbox">
+                  <input type="checkbox" name="agreement" />
+                  <span class="checktext">Всех</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="agreement" />
+                  <span class="checktext">Частные исполнители</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="agreement" />
+                  <span class="checktext">Компании-исполнители</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="grid-4 add-filter">
+            <label>
+              <select name="city" class="select2-std">
+                <option value="" selected disabled></option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <span class="placeholder">Уровень образования</span>
+            </label>
+            <label>
+              <select name="city" class="select2-std">
+                <option value="" selected disabled></option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <span class="placeholder">Ученая степень</span>
+            </label>
+            <label>
+              <select name="city" class="select2-std">
+                <option value="" selected disabled></option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <span class="placeholder">Научная сфера</span>
+            </label>
+            <label>
+              <select name="city" class="select2-std">
+                <option value="" selected disabled></option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <span class="placeholder">Ученое звание</span>
+            </label>
+            <label>
+              <select name="city" class="select2-std">
+                <option value="" selected disabled></option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <span class="placeholder">Иностранный язык</span>
+            </label>
+            <div class="fil-item text-center">
+              <p class="fi-title grey-50">Минимальный рейтинг:</p>
+              <div class="rating-area">
+                <input type="radio" id="s-5" name="rating" value="5" />
+                <label for="s-5" title="Оценка «5»"></label>
+                <input type="radio" id="s-4" name="rating" value="4" />
+                <label for="s-4" title="Оценка «4»"></label>
+                <input type="radio" id="s-3" name="rating" value="3" />
+                <label for="s-3" title="Оценка «3»"></label>
+                <input type="radio" id="s-2" name="rating" value="2" />
+                <label for="s-2" title="Оценка «2»"></label>
+                <input type="radio" id="s-1" name="rating" value="1" />
+                <label for="s-1" title="Оценка «1»"></label>
+              </div>
+            </div>
+            <div class="range-box">
+              <p class="grey-50 range-title">Стаж в сфере экспертизы (лет):</p>
+              <div class="range-item">
+                <input type="number" class="min range-value" value="0" />
+                <div class="range-container">
+                  <input type="range" min="0" max="50" step="1" value="0" />
+                  <input type="range" min="0" max="50" step="1" value="50" />
+                  <div class="range-color"></div>
+                </div>
+                <input type="number" class="max range-value" value="10" />
+              </div>
+            </div>
+            <div class="range-box">
+              <p class="grey-50 range-title">Количество выполненных проектов</p>
+              <div class="range-item">
+                <input type="number" class="min range-value" value="0" />
+                <div class="range-container">
+                  <input type="range" min="0" max="50" step="1" value="0" />
+                  <input type="range" min="0" max="50" step="1" value="50" />
+                  <div class="range-color"></div>
+                </div>
+                <input type="number" class="max range-value" value="10" />
+              </div>
+            </div>
+          </div>
+          <button class="btn add-btn-filter" title="Применить">
+            Применить
+          </button>
+        </form>
+      </div>
+    </div>
   </div>
 </div>
 
 <div class="catalog">
-  <div class="container">
+  <div class="full-container">
     <section class="variants grid-3">
-      <article class="catalog-cart">
+      <article class="catalog-cart-isp">
         <a href="/link" class="block-link">
           <span class="btn"
             ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -281,10 +419,66 @@
 </svg>    </span
           >
         </a>
-        <header class="catalog-header">
+        <header class="ci-header">
+          <div class="catalog-rating stars-5">
+            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
+          </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
+        </header>
+
+        <div class="catalog-persone">
           <div class="catalog-ava">
             <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
           </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
           <div class="catalog-rating stars-5">
             <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
@@ -293,61 +487,57 @@
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
           </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
         </header>
-        <h2 class="fake-h5 catalog-name">
-          Фонд поддержки научной, научно-технической и инновационной
-          деятельности "Энергия без границ"
-        </h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
-          <div class="catalog-ava">
-            <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
-          </div>
-          <div class="catalog-rating stars-5">
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
-    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
-    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
-    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
-    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
-</svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
-          </div>
-        </header>
-        <h2 class="fake-h5 catalog-name">ООО "Российские железные дороги"</h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
+
+        <div class="catalog-persone">
           <div class="catalog-ava">
             <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
           </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
           <div class="catalog-rating stars-5">
             <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
@@ -356,31 +546,57 @@
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
           </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
         </header>
-        <h2 class="fake-h5 catalog-name">
-          Фонд поддержки научной, научно-технической и инновационной
-          деятельности "Энергия без границ"
-        </h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
+
+        <div class="catalog-persone">
           <div class="catalog-ava">
             <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
           </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
           <div class="catalog-rating stars-5">
             <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
@@ -389,61 +605,57 @@
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
           </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
         </header>
-        <h2 class="fake-h5 catalog-name">
-          Фонд поддержки научной, научно-технической и инновационной
-          деятельности "Энергия без границ"
-        </h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
-          <div class="catalog-ava">
-            <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
-          </div>
-          <div class="catalog-rating stars-5">
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
-    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
-    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
-    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
-    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
-</svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
-          </div>
-        </header>
-        <h2 class="fake-h5 catalog-name">ООО "Российские железные дороги"</h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
+
+        <div class="catalog-persone">
           <div class="catalog-ava">
             <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
           </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
           <div class="catalog-rating stars-5">
             <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
@@ -452,31 +664,57 @@
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
           </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
         </header>
-        <h2 class="fake-h5 catalog-name">
-          Фонд поддержки научной, научно-технической и инновационной
-          деятельности "Энергия без границ"
-        </h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
+
+        <div class="catalog-persone">
           <div class="catalog-ava">
             <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
           </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
           <div class="catalog-rating stars-5">
             <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
@@ -485,61 +723,57 @@
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
           </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
         </header>
-        <h2 class="fake-h5 catalog-name">
-          Фонд поддержки научной, научно-технической и инновационной
-          деятельности "Энергия без границ"
-        </h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
-          <div class="catalog-ava">
-            <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
-          </div>
-          <div class="catalog-rating stars-5">
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
-    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
-    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
-    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
-    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
-</svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
-          </div>
-        </header>
-        <h2 class="fake-h5 catalog-name">ООО "Российские железные дороги"</h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
-        </div>
-      </article>
-      <article class="catalog-cart">
-        <a href="/link" class="block-link">
-          <span class="btn"
-            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    </span
-          >
-        </a>
-        <header class="catalog-header">
+
+        <div class="catalog-persone">
           <div class="catalog-ava">
             <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
           </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
           <div class="catalog-rating stars-5">
             <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
@@ -548,17 +782,164 @@
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-            <p class="catalog-rating-subtitle">0.0 <small>(0 оценок)</small></p>
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
           </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
         </header>
-        <h2 class="fake-h5 catalog-name">
-          Фонд поддержки научной, научно-технической и инновационной
-          деятельности "Энергия без границ"
-        </h2>
-        <div class="press-end">
-          <p class="subcity">Санкт-Петербург</p>
-          <p class="stat">Всего проектов: <b>126</b></p>
-          <p class="stat">Активных проектов: <b>10</b></p>
+
+        <div class="catalog-persone">
+          <div class="catalog-ava">
+            <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+          </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
+          <div class="catalog-rating stars-5">
+            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
+          </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
+        </header>
+
+        <div class="catalog-persone">
+          <div class="catalog-ava">
+            <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+          </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
+        </div>
+      </article>
+      <article class="catalog-cart-isp">
+        <a href="/link" class="block-link">
+          <span class="btn"
+            ><span>Подробнее</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </span
+          >
+        </a>
+        <header class="ci-header">
+          <div class="catalog-rating stars-5">
+            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+            <p class="catalog-rating-subtitle">(Оценок: 126)</p>
+          </div>
+          <button class="btn-like"><svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+</button>
+        </header>
+
+        <div class="catalog-persone">
+          <div class="catalog-ava">
+            <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+          </div>
+          <div class="catalog-info">
+            <h2 class="fake-h5 catalog-name">Иван Иванович</h2>
+            <p class="persone-rank">доктор юридических наук</p>
+            <p class="subcity">Санкт-Петербург</p>
+          </div>
+        </div>
+        <div class="tags-knows">
+          <p class="tag-item">Правовая экспертиза</p>
+          <p class="tag-item">Налоговая практика</p>
+          <p class="tag-item">Строительство</p>
+          <p class="tag-item">ГЧП</p>
+          <button class="btn-tag-more">+13 компетенций</button>
+          <span class="tag-more hide">
+            <p class="tag-item">Налоговая практика</p>
+            <p class="tag-item">Строительство</p>
+            <p class="tag-item">ГЧП</p>
+          </span>
         </div>
       </article>
     </section>

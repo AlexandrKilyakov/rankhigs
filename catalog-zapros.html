@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Логин</title>
+    <title>Открытые запросы</title>
     <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221004173823" />
     <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221004173823" />
     <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221004173823" />
@@ -203,67 +203,467 @@
     </header>
     <main role="main">
 
-<div class="reg">
-  <div class="container">
-    <div class="cart login-body">
-      <p class="fake-h2 modal-name">Вход</p>
-      <div class="reg-help">
-        <p class="reg-name">Войдите с помощью:</p>
-        <div class="reg-options">
-          <a href="#" class="reg-link">
-            <img src="./assets/svg/art/rankhigs.svg" alt="" />
-          </a>
-          <a href="#" class="reg-link">
-            <img src="./assets/svg/art/public-services.svg" alt="" />
-          </a>
-          <a href="#" class="reg-link">
-            <img src="./assets/svg/art/yandex.svg" alt="" />
-          </a>
-          <a href="#" class="reg-link">
-            <img src="./assets/svg/art/mail.svg" alt="" />
-          </a>
-          <a href="#" class="reg-link">
-            <img src="./assets/svg/art/vk.svg" alt="" />
-          </a>
-        </div>
-      </div>
-      <form action="" class="reg-from" method="post">
-        <fieldset class="border-top">
-          <legend>Или заполните ваши данные</legend>
-          <label>
-            <input
-              type="text"
-              name="name"
-              placeholder=" "
-              autocorrect="off"
-              autocomplete="username"
-            />
-            <span class="placeholder">Имя:</span>
-          </label>
-          <label>
-            <input
-              type="password"
-              name="password"
-              placeholder=" "
-              autocorrect="off"
-              autocapitalize="off"
-              autocomplete="new-password"
-              required
-            />
-            <span class="placeholder">Пароль:</span>
-          </label>
-          <button class="btn btn-submit" title="Вход">Вход</button>
-          <div class="list-link">
-            <a href="#" class="modal-link link-color" title="Забыли пароль?"
-              >Забыли пароль?</a
-            >
-            <a href="#" class="modal-link link-color" title="Регистрация"
-              >Регистрация</a
-            >
-          </div>
-        </fieldset>
-      </form>
+<div class="start-page">
+  <div class="full-container">
+    <div class="bread-crumbs">
+      <a href="/" class="bc-link">Главная</a>
+      <p class="slash">/</p>
+      <a href="#" class="bc-link">Открытые запросы</a>
     </div>
+    <h1 class="sp-title">Открытые запросы</h1>
+  </div>
+</div>
+
+<div class="catalog-filter">
+  <div class="full-container">
+    <form action="" class="form-filter grid-4" method="get">
+      <label>
+        <select name="city" class="select2-std">
+          <option value="" selected disabled></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <span class="placeholder">Компетенция</span>
+      </label>
+      <label>
+        <select name="city" class="select2-std">
+          <option value="" selected disabled></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <span class="placeholder">Город</span>
+      </label>
+      <div class="form-search">
+        <input
+          type="text"
+          class="search"
+          placeholder="Поиск по ключевым словам"
+        />
+        <button type="submit" class="btn-filter">
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+        </button>
+      </div>
+      <div class="label-for-not sorting-method">
+        <button type="button" class="btn-sorting-method">
+          <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect x="4" y="5" width="6" height="1" fill="#C3C3C3" />
+  <rect x="4" y="8" width="10" height="1" fill="#C3C3C3" />
+  <rect x="4" y="11" width="12" height="1" fill="#C3C3C3" />
+  <rect x="4" y="14" width="14" height="1" fill="#C3C3C3" />
+  <rect x="4" y="17" width="16" height="1" fill="#C3C3C3" />
+</svg>
+
+        </button>
+        <select name="city" class="select2-std">
+          <option value="" selected disabled></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <span class="placeholder">По рейтингу заказчика</span>
+      </div>
+    </form>
+    <div class="accordion">
+      <div class="accordion-name accordion-filter-std">
+        <p class="name">Расширенный поиск</p>
+        <button class="accordion-arrow accordion-btn-arrow">
+          <span class="arrow-std">
+            <span class="arrow-left"></span>
+            <span class="arrow-right"></span>
+          </span>
+        </button>
+      </div>
+      <div class="accordion-child">
+        <form action="" class="add-form-filter">
+          <div class="grid-4 add-filter">
+            <label>
+              <select name="city" class="select2-std">
+                <option value="" selected disabled></option>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="opel">Opel</option>
+                <option value="audi">Audi</option>
+              </select>
+              <span class="placeholder">Иностранный язык</span>
+            </label>
+            <div class="fil-item text-center">
+              <p class="fi-title grey-50">Минимальный рейтинг:</p>
+              <div class="rating-area">
+                <input type="radio" id="s-5" name="rating" value="5" />
+                <label for="s-5" title="Оценка «5»"></label>
+                <input type="radio" id="s-4" name="rating" value="4" />
+                <label for="s-4" title="Оценка «4»"></label>
+                <input type="radio" id="s-3" name="rating" value="3" />
+                <label for="s-3" title="Оценка «3»"></label>
+                <input type="radio" id="s-2" name="rating" value="2" />
+                <label for="s-2" title="Оценка «2»"></label>
+                <input type="radio" id="s-1" name="rating" value="1" />
+                <label for="s-1" title="Оценка «1»"></label>
+              </div>
+            </div>
+            <div class="range-box">
+              <p class="grey-50 range-title">Количество выполненных проектов</p>
+              <div class="range-item">
+                <input type="number" class="min range-value" value="0" />
+                <div class="range-container">
+                  <input type="range" min="0" max="50" step="1" value="0" />
+                  <input type="range" min="0" max="50" step="1" value="50" />
+                  <div class="range-color"></div>
+                </div>
+                <input type="number" class="max range-value" value="10" />
+              </div>
+            </div>
+            <div class="range-box">
+              <p class="grey-50 range-title text-center">
+                Сотрудники с учеными <br />званиями/степенями:
+              </p>
+              <div class="zapros-options only-radio">
+                <label class="checkbox">
+                  <input type="checkbox" name="agreement" />
+                  <span class="checktext">Да</span>
+                </label>
+                <label class="checkbox">
+                  <input type="checkbox" name="agreement" />
+                  <span class="checktext">не важно</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <button class="btn add-btn-filter" title="Применить">
+            Применить
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="catalog">
+  <div class="full-container">
+    <section class="variants">
+      <article class="zapros-cart cart">
+        <div class="zc-item">
+          <h2 class="zc-title">
+            Обработка поверхности муфт без травления/обезжиривания
+          </h2>
+          <div class="zc-info">
+            <div class="zci-item">
+              <p class="fake-table-title">Сфера компетенции:</p>
+              <p class="tag-std">Юридическая экспертиза</p>
+            </div>
+            <div class="zci-item">
+              <p class="fake-table-title">Заказчик:</p>
+              <a href="#" class="zc-link fake-h5"
+                >БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</a
+              >
+            </div>
+            <div class="zci-item">
+              <p class="fake-table-title">Дата публикации запроса:</p>
+              <time class="zc-value">22.11.2000</time>
+            </div>
+          </div>
+          <div class="cart-btns">
+            <button class="btn-cart">
+              <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M8.58984 13.51L15.4198 17.49"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M15.4098 6.51001L8.58984 10.49"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ Поделиться ссылкой на запрос
+            </button>
+            <button class="btn-cart">
+              <svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ Добавить запрос в избранное
+            </button>
+          </div>
+        </div>
+        <div class="end-item">
+          <div class="tag-cost">
+            <p class="tc-text">от 1.000</p>
+            <p class="tc-text">до 2.000.000 руб.</p>
+          </div>
+          <button class="btn">Откликнуться</button>
+        </div>
+      </article>
+      <article class="zapros-cart cart">
+        <div class="zc-item">
+          <h2 class="zc-title">
+            Обработка поверхности муфт без травления/обезжиривания
+          </h2>
+          <div class="zc-info">
+            <div class="zci-item">
+              <p class="fake-table-title">Сфера компетенции:</p>
+              <p class="tag-std">Юридическая экспертиза</p>
+            </div>
+            <div class="zci-item">
+              <p class="fake-table-title">Заказчик:</p>
+              <a href="#" class="zc-link fake-h5"
+                >БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</a
+              >
+            </div>
+            <div class="zci-item">
+              <p class="fake-table-title">Дата публикации запроса:</p>
+              <time class="zc-value">22.11.2000</time>
+            </div>
+          </div>
+          <div class="cart-btns">
+            <button class="btn-cart">
+              <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M8.58984 13.51L15.4198 17.49"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M15.4098 6.51001L8.58984 10.49"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ Поделиться ссылкой на запрос
+            </button>
+            <button class="btn-cart">
+              <svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ Добавить запрос в избранное
+            </button>
+          </div>
+        </div>
+        <div class="end-item">
+          <div class="tag-cost">
+            <p class="tc-text">от 1.000</p>
+            <p class="tc-text">до 2.000.000 руб.</p>
+          </div>
+          <button class="btn">Откликнуться</button>
+        </div>
+      </article>
+      <article class="zapros-cart cart">
+        <div class="zc-item">
+          <h2 class="zc-title">
+            Обработка поверхности муфт без травления/обезжиривания
+          </h2>
+          <div class="zc-info">
+            <div class="zci-item">
+              <p class="fake-table-title">Сфера компетенции:</p>
+              <p class="tag-std">Юридическая экспертиза</p>
+            </div>
+            <div class="zci-item">
+              <p class="fake-table-title">Заказчик:</p>
+              <a href="#" class="zc-link fake-h5"
+                >БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</a
+              >
+            </div>
+            <div class="zci-item">
+              <p class="fake-table-title">Дата публикации запроса:</p>
+              <time class="zc-value">22.11.2000</time>
+            </div>
+          </div>
+          <div class="cart-btns">
+            <button class="btn-cart">
+              <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M18 8C19.6569 8 21 6.65685 21 5C21 3.34315 19.6569 2 18 2C16.3431 2 15 3.34315 15 5C15 6.65685 16.3431 8 18 8Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M6 15C7.65685 15 9 13.6569 9 12C9 10.3431 7.65685 9 6 9C4.34315 9 3 10.3431 3 12C3 13.6569 4.34315 15 6 15Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M18 22C19.6569 22 21 20.6569 21 19C21 17.3431 19.6569 16 18 16C16.3431 16 15 17.3431 15 19C15 20.6569 16.3431 22 18 22Z"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M8.58984 13.51L15.4198 17.49"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M15.4098 6.51001L8.58984 10.49"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ Поделиться ссылкой на запрос
+            </button>
+            <button class="btn-cart">
+              <svg
+  width="26"
+  height="24"
+  viewBox="0 0 26 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M23.1494 3.21927C22.5629 2.62135 21.8667 2.14703 21.1003 1.82342C20.334 1.49981 19.5126 1.33325 18.6831 1.33325C17.8535 1.33325 17.0321 1.49981 16.2658 1.82342C15.4994 2.14703 14.8032 2.62135 14.2167 3.21927L12.9997 4.4596L11.7826 3.21927C10.5981 2.01207 8.99152 1.33388 7.31633 1.33388C5.64114 1.33388 4.03455 2.01207 2.85001 3.21927C1.66547 4.42647 1 6.06378 1 7.77102C1 9.47826 1.66547 11.1156 2.85001 12.3228L4.06705 13.5631L12.9997 22.6666L21.9323 13.5631L23.1494 12.3228C23.7361 11.7251 24.2015 11.0155 24.519 10.2345C24.8366 9.45352 25 8.61641 25 7.77102C25 6.92563 24.8366 6.08852 24.519 5.30751C24.2015 4.52651 23.7361 3.81692 23.1494 3.21927V3.21927Z"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>
+ Добавить запрос в избранное
+            </button>
+          </div>
+        </div>
+        <div class="end-item">
+          <div class="tag-cost">
+            <p class="tc-text">от 1.000</p>
+            <p class="tc-text">до 2.000.000 руб.</p>
+          </div>
+          <button class="btn">Откликнуться</button>
+        </div>
+      </article>
+    </section>
+    <div class="pazzle-preloader"><svg
+  width="32"
+  height="32"
+  viewBox="0 0 32 32"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect width="32" height="32" rx="3" fill="white" />
+  <path
+    class="opacity-75"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M0 2.61937C0 1.17273 1.17113 0 2.6158 0H16V5.00122C16.4876 4.60384 17.1098 4.36562 17.7875 4.36562C19.3525 4.36562 20.6213 5.63608 20.6213 7.20327C20.6213 8.77047 19.3525 10.0409 17.7875 10.0409C17.1098 10.0409 16.4876 9.80271 16 9.40533V16.0218H9.39251C9.78935 15.5335 10.0272 14.9106 10.0272 14.2319C10.0272 12.6647 8.75852 11.3943 7.19346 11.3943C5.6284 11.3943 4.35967 12.6647 4.35967 14.2319C4.35967 14.9106 4.59757 15.5335 4.99441 16.0218H0V2.61937Z"
+    fill="#921A1D"
+  />
+  <path
+    class="opacity-25"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M32 29.3806C32 30.8273 30.8289 32 29.3842 32H16V26.9988C15.5124 27.3962 14.8902 27.6344 14.2125 27.6344C12.6475 27.6344 11.3787 26.3639 11.3787 24.7967C11.3787 23.2295 12.6475 21.9591 14.2125 21.9591C14.8902 21.9591 15.5124 22.1973 16 22.5947V15.9782H22.6075C22.2106 16.4665 21.9728 17.0894 21.9728 17.7681C21.9728 19.3353 23.2415 20.6057 24.8065 20.6057C26.3716 20.6057 27.6403 19.3353 27.6403 17.7681C27.6403 17.0894 27.4024 16.4665 27.0056 15.9782H32V29.3806Z"
+    fill="#921A1D"
+  />
+  <path
+    class="opacity-100"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M2.6158 32C1.17113 32 -5.11919e-08 30.8273 -1.1434e-07 29.3806L-6.99382e-07 15.9782L4.95963 15.9782C4.58371 15.4967 4.35967 14.8905 4.35967 14.2319C4.35967 12.6647 5.6284 11.3943 7.19346 11.3943C8.75852 11.3943 10.0272 12.6647 10.0272 14.2319C10.0272 14.8905 9.80321 15.4967 9.42729 15.9782L16 15.9782L16 22.5947C15.5124 22.1973 14.8902 21.9591 14.2125 21.9591C12.6475 21.9591 11.3787 23.2295 11.3787 24.7967C11.3787 26.3639 12.6475 27.6344 14.2125 27.6344C14.8902 27.6344 15.5124 27.3962 16 26.9988L16 32L2.6158 32Z"
+    fill="#921A1D"
+  />
+  <path
+    class="opacity-5"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M29.3842 1.14496e-07C30.8289 5.12618e-08 32 1.17273 32 2.61937L32 16.0218L27.0404 16.0218C27.4163 16.5033 27.6403 17.1095 27.6403 17.7681C27.6403 19.3353 26.3716 20.6057 24.8065 20.6057C23.2415 20.6057 21.9728 19.3353 21.9728 17.7681C21.9728 17.1095 22.1968 16.5033 22.5727 16.0218L16 16.0218L16 9.40533C16.4876 9.80271 17.1098 10.0409 17.7875 10.0409C19.3525 10.0409 20.6213 8.77047 20.6213 7.20327C20.6213 5.63608 19.3525 4.36562 17.7875 4.36562C17.1098 4.36562 16.4876 4.60384 16 5.00122L16 7.00336e-07L29.3842 1.14496e-07Z"
+    fill="#921A1D"
+  />
+</svg>
+</div>
   </div>
 </div>
 
