@@ -1,0 +1,178 @@
+.accordion {
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  position: relative;
+  overflow: hidden;
+}
+
+.accordion-name {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  cursor: pointer;
+}
+
+.accordion-btn-arrow {
+  border-color: var(--main);
+  border-radius: 1.25rem;
+  border-width: 0.0325rem;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.accordion-btn-arrow .arrow-std {
+  -webkit-transform: translateY(50%) !important;
+      -ms-transform: translateY(50%) !important;
+          transform: translateY(50%) !important;
+}
+
+.accordion-btn-arrow .arrow-left:after,
+.accordion-btn-arrow .arrow-right:after {
+  height: 0.125rem;
+  background-color: var(--color);
+  border-radius: 0.125rem;
+}
+
+.accordion-btn-arrow:hover .arrow-left:after,
+.accordion-btn-arrow:hover .arrow-right:after,
+.accordion-btn-arrow:active .arrow-left:after,
+.accordion-btn-arrow:active .arrow-right:after {
+  background-color: var(--light);
+}
+
+.accordion-arrow-active:not(.accordion-btn-arrow) {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.accordion-arrow-active .arrow-left:after,
+.accordion-arrow-active .arrow-right:after {
+  -webkit-transform-origin: center center;
+      -ms-transform-origin: center center;
+          transform-origin: center center;
+}
+
+.accordion-arrow-active .arrow-left:after {
+  -webkit-transform: rotate(-70deg);
+      -ms-transform: rotate(-70deg);
+          transform: rotate(-70deg);
+}
+
+.accordion-arrow-active .arrow-right:after {
+  -webkit-transform: rotate(70deg);
+      -ms-transform: rotate(70deg);
+          transform: rotate(70deg);
+}
+
+.accordion-child {
+  overflow: hidden;
+  -webkit-transition: 0.5s height cubic-bezier(0.39, 0.58, 0.57, 1);
+  -o-transition: 0.5s height cubic-bezier(0.39, 0.58, 0.57, 1);
+  transition: 0.5s height cubic-bezier(0.39, 0.58, 0.57, 1);
+}
+
+.accordion-right {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: 0.5rem;
+}
+
+.accordion-right .name {
+  font-weight: 600;
+}
+
+.accordion-filter-std {
+  position: relative;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border: var(--line-std);
+  border-radius: 0.25rem;
+  padding: 0.625rem 5rem;
+  margin: 1rem auto 0;
+  -webkit-transition: all 0.1s linear;
+  -o-transition: all 0.1s linear;
+  transition: all 0.1s linear;
+}
+
+.accordion-filter-std .name {
+  line-height: 120%;
+}
+
+.accordion-filter-std:before,
+.accordion-filter-std:after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 100%;
+  height: 0.0625rem;
+  background-color: var(--grey-25);
+  opacity: 0;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.accordion-filter-std::after {
+  top: 100%;
+}
+
+.accordion-filter-std::before {
+  bottom: 100%;
+}
+
+.accordion-filter-std .accordion-btn-arrow {
+  border: none;
+}
+
+.accordion-filter-std .accordion-btn-arrow:active {
+  background-color: var(--main);
+}
+
+.accordion-filter-std .accordion-btn-arrow .arrow-left:after,
+.accordion-filter-std .accordion-btn-arrow .arrow-right:after {
+  height: 0.0625rem;
+  background-color: var(--main);
+}
+
+.accordion-filter-std:hover {
+  background-color: var(--main);
+}
+
+.accordion-filter-std:hover .accordion-btn-arrow .arrow-left:after,
+.accordion-filter-std:hover .accordion-btn-arrow .arrow-right:after {
+  background-color: var(--light);
+}
+
+.accordion-filter-std:hover .name {
+  color: var(--light);
+}
+
+.accordion-show .accordion-filter-std {
+  border-color: transparent;
+  color: var(--grey-50);
+}
+
+.accordion-show .accordion-filter-std:before,
+.accordion-show .accordion-filter-std:after {
+  width: calc(100vw - 2rem);
+  opacity: 1;
+}

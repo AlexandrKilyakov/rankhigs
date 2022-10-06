@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Заказчик</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221004173823" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221004173823" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221004173823" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221004173823" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221006151027" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221006151027" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221006151027" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221006151027" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -327,20 +327,19 @@
       </header>
       <section class="cart about-me">
         <h2 class="fake-h3 about-title">О заказчике</h2>
-        <table class="table-std">
-          <thead>
-            <tr>
-              <th>Город:</th>
-              <th>Короткое название:</th>
-              <th>Социальные сети:</th>
-              <th>Официальный сайт:</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Санкт-Петербург</td>
-              <td>БГТУ «ВОЕНМЕХ»</td>
-              <td class="flex-start soc">
+        <div class="fake-grid">
+          <div class="fg-start">
+            <p class="fake-table-title">Город:</p>
+            <p class="value">Санкт-Петербург</p>
+          </div>
+          <div class="grid-3-auto">
+            <div>
+              <p class="fake-table-title">Короткое название:</p>
+              <p class="value">БГТУ «ВОЕНМЕХ»</p>
+            </div>
+            <div>
+              <p class="fake-table-title">Социальные сети:</p>
+              <div class="flex-start soc">
                 <a href="#" class="icon-link" target="_blank"
                   ><svg
   width="24"
@@ -407,13 +406,14 @@
 </svg>
 </a
                 >
-              </td>
-              <td>
-                <a href="https://voenmeh.ru" target="_blank">voenmeh.ru</a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </div>
+            </div>
+            <div>
+              <p class="fake-table-title">Официальный сайт:</p>
+              <a href="https://voenmeh.ru" target="_blank">voenmeh.ru</a>
+            </div>
+          </div>
+        </div>
         <p class="about-text">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam phasellus
           enim aliquet commodo urna ultrices et orci enim. Placerat et viverra
@@ -1125,12 +1125,12 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20221004173823"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20221006151027"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20221004173823"></script>
+	<script src="./assets/js/app.min.js?ver=20221006151027"></script>
 </body>
 </html>

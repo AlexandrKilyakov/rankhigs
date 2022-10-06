@@ -1,0 +1,1299 @@
+:root {
+  --main: #921a1d;
+  --color: #101010;
+  --grey-75: #4c4c4c;
+  --grey-50: #888;
+  --grey-25: #c3c3c3;
+  --grey-10: #e8e8e8;
+  --grey-5: #f3f3f3;
+  --light: #fff;
+  --deep-red: #330001;
+  --stop: #e62b25;
+  --ready: #e78e24;
+  --ok: #34a853;
+  --error: rgba(146, 26, 29, 0.2);
+  --m-std: 4rem 0;
+  --m-big: 8rem 0;
+  --m-cart: 1.25rem;
+  --mm-cart: -1.25rem;
+  --p-munu-bar: 1.5rem;
+  --line-std: var(--main) 0.0625rem solid;
+  --h1: 2.5rem;
+  --h2: 2rem;
+  --h3: 1.5rem;
+  --h4: 1.25rem;
+  --h5: 1.125rem;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body,
+input,
+textarea,
+button {
+  font-family: "Golos Text";
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+
+body {
+  max-width: 100vw;
+  width: 100%;
+  background-color: var(--grey-5);
+  color: var(--color);
+  overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: var(--grey-10);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--grey-25);
+  border-radius: 0.25rem;
+}
+
+::-moz-selection {
+  background: var(--grey-10);
+}
+
+::selection {
+  background: var(--grey-10);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+body {
+  margin: 0;
+}
+
+::-webkit-input-placeholder {
+  line-height: 120%;
+}
+
+::-moz-placeholder {
+  line-height: 120%;
+}
+
+:-ms-input-placeholder {
+  line-height: 120%;
+}
+
+::-ms-input-placeholder {
+  line-height: 120%;
+}
+
+h1,
+.fake-h1,
+h2,
+.fake-h2,
+h3,
+.fake-h3,
+h4,
+.fake-h4,
+h5,
+.fake-h5,
+.name-card,
+small,
+a,
+button,
+::placeholder {
+  line-height: 120%;
+}
+
+h2,
+.fake-h2,
+h3,
+.fake-h3,
+h5,
+.fake-h5 {
+  font-weight: 600;
+}
+
+h1,
+.fake-h1 {
+  font-weight: 700;
+  font-size: var(--h1);
+  margin-bottom: 0.8em;
+}
+
+h2,
+.fake-h2 {
+  font-size: var(--h2);
+  margin-bottom: 0.75em;
+}
+
+h3,
+.fake-h3,
+.h3-regular {
+  font-size: var(--h3);
+  margin-bottom: 1em;
+}
+
+.h3-regular,
+h4,
+.fake-h4 {
+  font-weight: 400;
+}
+
+h4,
+.fake-h4 {
+  font-size: var(--h4);
+  margin-bottom: 0.4em;
+}
+
+h5,
+.fake-h5 {
+  font-size: var(--h5);
+  margin-bottom: 0.889em;
+}
+
+svg,
+img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+table {
+  width: 100%;
+}
+
+.grey-25 {
+  font-weight: 600;
+}
+
+small {
+  font-weight: 400;
+  font-size: 0.75rem;
+}
+
+p:empty {
+  width: 0;
+  display: none;
+}
+
+p a {
+  display: initial;
+}
+
+:target {
+  background-color: var(--ready);
+}
+
+a {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-decoration: none;
+  -webkit-transition: 0.1s color linear;
+  -o-transition: 0.1s color linear;
+  transition: 0.1s color linear;
+  color: var(--color);
+  position: relative;
+}
+
+a:after {
+  content: "";
+  width: 0;
+  height: 0.0625rem;
+  background-color: var(--color);
+  position: absolute;
+  top: 100%;
+  right: 0;
+  -webkit-transition: 0.3s width ease-in;
+  -o-transition: 0.3s width ease-in;
+  transition: 0.3s width ease-in;
+}
+
+a:hover {
+  color: var(--main);
+}
+
+a:hover:after {
+  width: 100%;
+  background-color: var(--main);
+  left: 0;
+}
+
+a:hover path[fill-rule=evenodd] {
+  fill: var(--main);
+}
+
+a:hover path:not([fill-rule=evenodd]),
+a:hover rect[stroke],
+a:hover circle[stroke] {
+  stroke: var(--main);
+}
+
+a:visited {
+  color: var(--stop);
+}
+
+a:visited:after {
+  background-color: var(--stop);
+}
+
+a:visited path[fill-rule=evenodd] {
+  fill: var(--stop);
+}
+
+a:visited path:not([fill-rule=evenodd]),
+a:visited rect[stroke],
+a:visited circle[stroke] {
+  stroke: var(--stop);
+}
+
+a:visited:active {
+  color: var(--grey-75);
+}
+
+a:visited:active:after {
+  background-color: var(--grey-75);
+}
+
+a:visited:active path[fill-rule=evenodd] {
+  fill: var(--grey-75);
+}
+
+a:visited:active path:not([fill-rule=evenodd]),
+a:visited:active rect[stroke],
+a:visited:active circle[stroke] {
+  stroke: var(--grey-75);
+}
+
+a:link {
+  color: var(--color);
+}
+
+a:link:after {
+  background-color: var(--color);
+}
+
+a:link path[fill-rule=evenodd] {
+  fill: var(--color);
+}
+
+a:link path:not([fill-rule=evenodd]),
+a:link rect[stroke],
+a:link circle[stroke] {
+  stroke: var(--color);
+}
+
+a:link:hover {
+  color: var(--stop);
+}
+
+a:link:hover:after {
+  background-color: var(--stop);
+}
+
+a:link:hover path[fill-rule=evenodd] {
+  fill: var(--stop);
+}
+
+a:link:hover path:not([fill-rule=evenodd]),
+a:link:hover rect[stroke],
+a:link:hover circle[stroke] {
+  stroke: var(--stop);
+}
+
+a:link:active {
+  color: var(--grey-75);
+}
+
+a:link:active:after {
+  background-color: var(--grey-75);
+}
+
+a:link:active path[fill-rule=evenodd] {
+  fill: var(--grey-75);
+}
+
+a:link:active path:not([fill-rule=evenodd]),
+a:link:active rect[stroke],
+a:link:active circle[stroke] {
+  stroke: var(--grey-75);
+}
+
+.stop-hover-link:after {
+  display: none;
+}
+
+.stop-hover-link:link svg path[fill-rule=evenodd],
+.stop-hover-link:link svg path:not([fill-rule=evenodd]),
+.stop-hover-link:link svg rect[stroke],
+.stop-hover-link:link svg circle[stroke],
+.stop-hover-link:visited svg path[fill-rule=evenodd],
+.stop-hover-link:visited svg path:not([fill-rule=evenodd]),
+.stop-hover-link:visited svg rect[stroke],
+.stop-hover-link:visited svg circle[stroke] {
+  fill: var(--main) !important;
+  stroke: initial !important;
+}
+
+.stop-hover-link:hover:link svg path[fill-rule=evenodd],
+.stop-hover-link:hover:link svg path:not([fill-rule=evenodd]),
+.stop-hover-link:hover:link svg rect[stroke],
+.stop-hover-link:hover:link svg circle[stroke],
+.stop-hover-link:hover:visited svg path[fill-rule=evenodd],
+.stop-hover-link:hover:visited svg path:not([fill-rule=evenodd]),
+.stop-hover-link:hover:visited svg rect[stroke],
+.stop-hover-link:hover:visited svg circle[stroke] {
+  stroke: var(--main) !important;
+}
+
+button[disabled] {
+  background-color: var(--grey-25);
+  border-color: var(--grey-25);
+  pointer-events: none;
+}
+
+button,
+.btn-std {
+  color: var(--color);
+  background-color: transparent;
+}
+
+a.btn-std:link,
+a.btn-std:visited {
+  color: var(--color);
+}
+
+a.btn-std:hover:link,
+a.btn-std:hover:visited,
+a.btn-std:active:link,
+a.btn-std:active:visited {
+  color: var(--grey-5);
+}
+
+button,
+.btn,
+.btn-std {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.625rem 1rem;
+  border: var(--line-std);
+  border-radius: 0.25rem;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  position: relative;
+  -webkit-transition: 0.1s background-color linear, 0.1s color linear, 0.1s border-color linear, 0.3s width ease-in;
+  -o-transition: 0.1s background-color linear, 0.1s color linear, 0.1s border-color linear, 0.3s width ease-in;
+  transition: 0.1s background-color linear, 0.1s color linear, 0.1s border-color linear, 0.3s width ease-in;
+  overflow: hidden;
+}
+
+button:before,
+.btn:before,
+.btn-std:before {
+  content: "";
+  background-color: var(--grey-5);
+  height: 100%;
+  width: 3em;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: -4.5em;
+  -webkit-transform: skewX(-45deg) translateX(0);
+      -ms-transform: skewX(-45deg) translateX(0);
+          transform: skewX(-45deg) translateX(0);
+  -webkit-transition: none;
+  -o-transition: none;
+  transition: none;
+  -webkit-filter: blur(0.125rem);
+          filter: blur(0.125rem);
+}
+
+button path[fill-rule=evenodd],
+.btn path[fill-rule=evenodd],
+.btn-std path[fill-rule=evenodd] {
+  -webkit-transition: 0.1s fill linear;
+  -o-transition: 0.1s fill linear;
+  transition: 0.1s fill linear;
+}
+
+button path:not([fill-rule=evenodd]),
+button rect[stroke],
+button circle[stroke],
+.btn path:not([fill-rule=evenodd]),
+.btn rect[stroke],
+.btn circle[stroke],
+.btn-std path:not([fill-rule=evenodd]),
+.btn-std rect[stroke],
+.btn-std circle[stroke] {
+  -webkit-transition: 0.1s stroke linear;
+  -o-transition: 0.1s stroke linear;
+  transition: 0.1s stroke linear;
+}
+
+button:hover,
+.btn:hover,
+.btn-std:hover {
+  background-color: var(--main);
+  color: var(--grey-5);
+}
+
+button:hover:before,
+.btn:hover:before,
+.btn-std:hover:before {
+  left: calc(100% + 4.5em);
+  -webkit-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+button:hover path[fill-rule=evenodd],
+.btn:hover path[fill-rule=evenodd],
+.btn-std:hover path[fill-rule=evenodd] {
+  fill: var(--grey-5);
+}
+
+button:hover path:not([fill-rule=evenodd]),
+button:hover rect[stroke],
+button:hover circle[stroke],
+.btn:hover path:not([fill-rule=evenodd]),
+.btn:hover rect[stroke],
+.btn:hover circle[stroke],
+.btn-std:hover path:not([fill-rule=evenodd]),
+.btn-std:hover rect[stroke],
+.btn-std:hover circle[stroke] {
+  stroke: var(--grey-5);
+}
+
+button:active,
+.btn:active,
+.btn-std:active {
+  background-color: var(--deep-red);
+  border-color: var(--deep-red);
+  color: var(--grey-5);
+}
+
+.btn {
+  background-color: var(--main);
+  color: var(--grey-5);
+}
+
+.btn path[fill-rule=evenodd] {
+  fill: var(--grey-5);
+}
+
+.btn path:not([fill-rule=evenodd]),
+.btn rect[stroke],
+.btn circle[stroke] {
+  stroke: var(--grey-5);
+}
+
+.btn-arrow {
+  border: var(--line-std);
+  border-radius: 1.25rem;
+  width: 2rem;
+  height: 2rem;
+  -webkit-transition: 0.3s width cubic-bezier(0.46, 0.03, 0.52, 0.96), 0.1s background-color linear;
+  -o-transition: 0.3s width cubic-bezier(0.46, 0.03, 0.52, 0.96), 0.1s background-color linear;
+  transition: 0.3s width cubic-bezier(0.46, 0.03, 0.52, 0.96), 0.1s background-color linear;
+}
+
+.btn-arrow::after {
+  display: none;
+}
+
+.btn-arrow::after:hover {
+  width: 0;
+}
+
+a.btn {
+  color: var(--grey-5);
+}
+
+a.btn path[fill-rule=evenodd] {
+  -webkit-transition: 0.1s fill linear;
+  -o-transition: 0.1s fill linear;
+  transition: 0.1s fill linear;
+  fill: var(--grey-5);
+}
+
+a.btn path:not([fill-rule=evenodd]),
+a.btn rect[stroke],
+a.btn circle[stroke] {
+  -webkit-transition: 0.1s stroke linear;
+  -o-transition: 0.1s stroke linear;
+  transition: 0.1s stroke linear;
+  stroke: var(--grey-5);
+}
+
+a.btn:link,
+a.btn:visited {
+  color: var(--grey-5);
+}
+
+a.btn:link path[fill-rule=evenodd],
+a.btn:visited path[fill-rule=evenodd] {
+  fill: var(--grey-5);
+}
+
+a.btn:link path:not([fill-rule=evenodd]),
+a.btn:link rect[stroke],
+a.btn:link circle[stroke],
+a.btn:visited path:not([fill-rule=evenodd]),
+a.btn:visited rect[stroke],
+a.btn:visited circle[stroke] {
+  stroke: var(--grey-5);
+}
+
+button,
+.btn,
+a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button svg,
+a svg {
+  width: auto;
+  height: 0.75rem;
+}
+
+button svg:not(:only-child):first-child,
+a svg:not(:only-child):first-child {
+  margin-right: 0.5rem;
+}
+
+button svg:not(:only-child):last-child,
+a svg:not(:only-child):last-child {
+  margin-left: 1rem;
+}
+
+.select2-container--default .select2-selection--single {
+  border: none;
+  background-color: transparent;
+  height: 1.5rem;
+}
+
+.select2 {
+  background-color: var(--light);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow {
+  width: 0.875rem;
+  height: 0.4375rem;
+  padding: 0;
+  top: 50%;
+  right: 1rem;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow b {
+  display: none;
+}
+
+.select2-container--default .select2-selection--single .select2-selection__arrow:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0.6187184335rem;
+  aspect-ratio: 1;
+  border-top: var(--line-std);
+  border-right: var(--line-std);
+  -webkit-transform: translateX(-50%) rotate(135deg);
+      -ms-transform: translateX(-50%) rotate(135deg);
+          transform: translateX(-50%) rotate(135deg);
+  -webkit-transition: 0.1s all linear;
+  -o-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+
+.select2-container--open .select2-selection--single .select2-selection__arrow:after {
+  top: 0;
+  bottom: auto;
+  -webkit-transform: translateX(-50%) rotate(-45deg);
+      -ms-transform: translateX(-50%) rotate(-45deg);
+          transform: translateX(-50%) rotate(-45deg);
+}
+
+input,
+textarea,
+select,
+.select2 {
+  max-width: 100%;
+  width: 100%;
+  display: block;
+  font-size: 1rem;
+  color: var(--color);
+  padding: 0.5rem 1rem;
+  border: var(--grey-25) 0.0625rem solid;
+  border-radius: 0.25rem;
+}
+
+input[disabled],
+textarea[disabled],
+select[disabled],
+.select2[disabled] {
+  background-color: var(--grey-10) !important;
+  border-color: var(--grey-10) !important;
+  color: var(--grey-50) !important;
+}
+
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: none;
+}
+
+textarea {
+  height: 8.75rem;
+  width: 100%;
+  resize: none;
+}
+
+select {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+
+select:not([multiple]) {
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: calc(100% - 1rem);
+  background-size: 1rem auto;
+  background-image: url("../svg/art/arrow.svg");
+  padding-right: 2.5rem;
+}
+
+select:focus-visible {
+  background-image: url("../svg/art/arrow-up.svg");
+}
+
+select :checked {
+  background-color: var(--grey-10);
+}
+
+select:focus-within {
+  background-color: var(--light);
+}
+
+::-webkit-input-placeholder {
+  font-weight: 400;
+  color: var(--grey-50);
+}
+
+::-moz-placeholder {
+  font-weight: 400;
+  color: var(--grey-50);
+}
+
+:-ms-input-placeholder {
+  font-weight: 400;
+  color: var(--grey-50);
+}
+
+::-ms-input-placeholder {
+  font-weight: 400;
+  color: var(--grey-50);
+}
+
+::placeholder {
+  font-weight: 400;
+  color: var(--grey-50);
+}
+
+.main-header ::-webkit-input-placeholder {
+  font-size: 0.75rem;
+}
+
+.main-header ::-moz-placeholder {
+  font-size: 0.75rem;
+}
+
+.main-header :-ms-input-placeholder {
+  font-size: 0.75rem;
+}
+
+.main-header ::-ms-input-placeholder {
+  font-size: 0.75rem;
+}
+
+.main-header ::placeholder {
+  font-size: 0.75rem;
+}
+
+input[type=number]:out-of-range {
+  background-color: rgba(146, 26, 29, 0.5) !important;
+  border-color: var(--stop) !important;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+label:not(for):not(.checkbox),
+.label-for-not {
+  position: relative;
+  display: block;
+  padding-top: 1.125rem;
+  margin-top: 0.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+label:not(for):not(.checkbox):first-child,
+.label-for-not:first-child {
+  margin-top: 0;
+}
+
+label:not(for):not(.checkbox) .placeholder,
+.label-for-not .placeholder {
+  position: absolute;
+  bottom: 0;
+  left: 0.625rem;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  font-weight: 400;
+  font-size: 1rem;
+  line-height: 130%;
+  color: var(--grey-50);
+  -webkit-transition: font-size 0.1s linear, line-height 0.1s linear, bottom 0.1s linear, top 0.1s linear;
+  -o-transition: font-size 0.1s linear, line-height 0.1s linear, bottom 0.1s linear, top 0.1s linear;
+  transition: font-size 0.1s linear, line-height 0.1s linear, bottom 0.1s linear, top 0.1s linear;
+  pointer-events: none;
+}
+
+label:not(for):not(.checkbox).done .placeholder,
+.label-for-not.done .placeholder {
+  bottom: auto;
+  top: 0;
+  left: 0;
+  -webkit-transform: inherit;
+      -ms-transform: inherit;
+          transform: inherit;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+label:not(for):not(.checkbox) input[required] ~ .placeholder::after,
+label:not(for):not(.checkbox) textarea[required] ~ .placeholder::after,
+label:not(for):not(.checkbox) select[required] ~ .placeholder::after,
+.label-for-not input[required] ~ .placeholder::after,
+.label-for-not textarea[required] ~ .placeholder::after,
+.label-for-not select[required] ~ .placeholder::after {
+  content: "*";
+  color: var(--main);
+  margin-left: 0.25rem;
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):not(:-moz-placeholder-shown) + .placeholder, label:not(for):not(.checkbox) textarea:not([type=checkbox]):not(:-moz-placeholder-shown) + .placeholder, .label-for-not input:not([type=checkbox]):not(:-moz-placeholder-shown) + .placeholder, .label-for-not textarea:not([type=checkbox]):not(:-moz-placeholder-shown) + .placeholder {
+  bottom: auto;
+  top: 0;
+  left: 0;
+  transform: inherit;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):not(:-ms-input-placeholder) + .placeholder, label:not(for):not(.checkbox) textarea:not([type=checkbox]):not(:-ms-input-placeholder) + .placeholder, .label-for-not input:not([type=checkbox]):not(:-ms-input-placeholder) + .placeholder, .label-for-not textarea:not([type=checkbox]):not(:-ms-input-placeholder) + .placeholder {
+  bottom: auto;
+  top: 0;
+  left: 0;
+  -ms-transform: inherit;
+      transform: inherit;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):focus + .placeholder,
+label:not(for):not(.checkbox) input:not([type=checkbox]):not(:placeholder-shown) + .placeholder,
+label:not(for):not(.checkbox) textarea:not([type=checkbox]):focus + .placeholder,
+label:not(for):not(.checkbox) textarea:not([type=checkbox]):not(:placeholder-shown) + .placeholder,
+label:not(for):not(.checkbox) select:focus-within + .placeholder,
+label:not(for):not(.checkbox) .selected + .placeholder,
+label:not(for):not(.checkbox) .select2-container--open + .placeholder,
+label:not(for):not(.checkbox) .select2-container--below + .placeholder,
+label:not(for):not(.checkbox) .select2-container--above + .placeholder,
+.label-for-not input:not([type=checkbox]):focus + .placeholder,
+.label-for-not input:not([type=checkbox]):not(:placeholder-shown) + .placeholder,
+.label-for-not textarea:not([type=checkbox]):focus + .placeholder,
+.label-for-not textarea:not([type=checkbox]):not(:placeholder-shown) + .placeholder,
+.label-for-not select:focus-within + .placeholder,
+.label-for-not .selected + .placeholder,
+.label-for-not .select2-container--open + .placeholder,
+.label-for-not .select2-container--below + .placeholder,
+.label-for-not .select2-container--above + .placeholder {
+  bottom: auto;
+  top: 0;
+  left: 0;
+  -webkit-transform: inherit;
+      -ms-transform: inherit;
+          transform: inherit;
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]),
+label:not(for):not(.checkbox) textarea,
+.label-for-not input:not([type=checkbox]),
+.label-for-not textarea {
+  background-color: transparent;
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):not(:-moz-placeholder-shown), label:not(for):not(.checkbox) textarea:not(:-moz-placeholder-shown), .label-for-not input:not([type=checkbox]):not(:-moz-placeholder-shown), .label-for-not textarea:not(:-moz-placeholder-shown) {
+  border-color: var(--grey-25);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):not(:-ms-input-placeholder), label:not(for):not(.checkbox) textarea:not(:-ms-input-placeholder), .label-for-not input:not([type=checkbox]):not(:-ms-input-placeholder), .label-for-not textarea:not(:-ms-input-placeholder) {
+  border-color: var(--grey-25);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):not(:placeholder-shown),
+label:not(for):not(.checkbox) textarea:not(:placeholder-shown),
+.label-for-not input:not([type=checkbox]):not(:placeholder-shown),
+.label-for-not textarea:not(:placeholder-shown) {
+  border-color: var(--grey-25);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):focus,
+label:not(for):not(.checkbox) textarea:focus,
+.label-for-not input:not([type=checkbox]):focus,
+.label-for-not textarea:focus {
+  border-color: var(--deep-red);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox]):focus + .placeholder,
+label:not(for):not(.checkbox) input:not([type=checkbox]):focus + .important:after,
+label:not(for):not(.checkbox) textarea:focus + .placeholder,
+label:not(for):not(.checkbox) textarea:focus + .important:after,
+.label-for-not input:not([type=checkbox]):focus + .placeholder,
+.label-for-not input:not([type=checkbox]):focus + .important:after,
+.label-for-not textarea:focus + .placeholder,
+.label-for-not textarea:focus + .important:after {
+  color: var(--deep-red);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:-moz-placeholder-shown), label:not(for):not(.checkbox) textarea[disabled]:not(:-moz-placeholder-shown), .label-for-not input:not([type=checkbox])[disabled]:not(:-moz-placeholder-shown), .label-for-not textarea[disabled]:not(:-moz-placeholder-shown) {
+  color: var(--grey-50);
+  border-color: var(--grey-10);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:-ms-input-placeholder), label:not(for):not(.checkbox) textarea[disabled]:not(:-ms-input-placeholder), .label-for-not input:not([type=checkbox])[disabled]:not(:-ms-input-placeholder), .label-for-not textarea[disabled]:not(:-ms-input-placeholder) {
+  color: var(--grey-50);
+  border-color: var(--grey-10);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:placeholder-shown),
+label:not(for):not(.checkbox) textarea[disabled]:not(:placeholder-shown),
+.label-for-not input:not([type=checkbox])[disabled]:not(:placeholder-shown),
+.label-for-not textarea[disabled]:not(:placeholder-shown) {
+  color: var(--grey-50);
+  border-color: var(--grey-10);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:-moz-placeholder-shown) + .placeholder, label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:-moz-placeholder-shown) + .important:after, label:not(for):not(.checkbox) textarea[disabled]:not(:-moz-placeholder-shown) + .placeholder, label:not(for):not(.checkbox) textarea[disabled]:not(:-moz-placeholder-shown) + .important:after, .label-for-not input:not([type=checkbox])[disabled]:not(:-moz-placeholder-shown) + .placeholder, .label-for-not input:not([type=checkbox])[disabled]:not(:-moz-placeholder-shown) + .important:after, .label-for-not textarea[disabled]:not(:-moz-placeholder-shown) + .placeholder, .label-for-not textarea[disabled]:not(:-moz-placeholder-shown) + .important:after {
+  color: var(--grey-50);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:-ms-input-placeholder) + .placeholder, label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:-ms-input-placeholder) + .important:after, label:not(for):not(.checkbox) textarea[disabled]:not(:-ms-input-placeholder) + .placeholder, label:not(for):not(.checkbox) textarea[disabled]:not(:-ms-input-placeholder) + .important:after, .label-for-not input:not([type=checkbox])[disabled]:not(:-ms-input-placeholder) + .placeholder, .label-for-not input:not([type=checkbox])[disabled]:not(:-ms-input-placeholder) + .important:after, .label-for-not textarea[disabled]:not(:-ms-input-placeholder) + .placeholder, .label-for-not textarea[disabled]:not(:-ms-input-placeholder) + .important:after {
+  color: var(--grey-50);
+}
+
+label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:placeholder-shown) + .placeholder,
+label:not(for):not(.checkbox) input:not([type=checkbox])[disabled]:not(:placeholder-shown) + .important:after,
+label:not(for):not(.checkbox) textarea[disabled]:not(:placeholder-shown) + .placeholder,
+label:not(for):not(.checkbox) textarea[disabled]:not(:placeholder-shown) + .important:after,
+.label-for-not input:not([type=checkbox])[disabled]:not(:placeholder-shown) + .placeholder,
+.label-for-not input:not([type=checkbox])[disabled]:not(:placeholder-shown) + .important:after,
+.label-for-not textarea[disabled]:not(:placeholder-shown) + .placeholder,
+.label-for-not textarea[disabled]:not(:placeholder-shown) + .important:after {
+  color: var(--grey-50);
+}
+
+label:not(for):not(.checkbox) textarea:not(:focus) + .placeholder,
+.label-for-not textarea:not(:focus) + .placeholder {
+  bottom: auto;
+  top: 2.25rem;
+}
+
+.checkbox a:link,
+.checkbox a:visited {
+  color: var(--main);
+}
+
+.checkbox .checktext {
+  padding-left: 2.5rem;
+  display: block;
+}
+
+.checkbox .checktext::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 1.5rem;
+  aspect-ratio: 1;
+  display: block;
+  background-color: var(--light);
+  border: var(--grey-25) 0.0625rem solid;
+  border-radius: 0.25rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 1rem;
+}
+
+label.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 1rem;
+}
+
+label.checkbox .checksmall {
+  font-size: 0.75rem;
+  line-height: 120%;
+}
+
+label.checkbox input[type=checkbox] {
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: -1.5rem;
+}
+
+label.checkbox input[type=checkbox]:checked + .checktext::before {
+  background-image: url("../svg/art/check.svg");
+}
+
+details.checkbox {
+  margin: 0.5rem 0;
+  position: relative;
+}
+
+details.checkbox summary {
+  display: block;
+  padding-bottom: 0.25rem;
+}
+
+details.checkbox > *:not(summary) {
+  margin-top: 0.5rem;
+}
+
+details.checkbox[open] summary {
+  padding-bottom: 0;
+}
+
+details.checkbox[open] .checktext::before {
+  background-image: url("../svg/art/check.svg");
+}
+
+.container {
+  max-width: 73.125rem;
+  width: 100%;
+  padding: 0 0.9375rem;
+  margin: 0 auto;
+}
+
+.hide {
+  display: none !important;
+}
+
+.burger {
+  border: none;
+  background-color: transparent !important;
+  padding: 0.25rem;
+  width: 1.75rem;
+  height: 1.75rem;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  display: none;
+}
+
+.burger:after,
+.burger:before {
+  width: 0;
+  display: none;
+}
+
+.burger .line {
+  width: 100%;
+  background-color: var(--grey-50);
+  padding: 0;
+  height: 0.125rem;
+}
+
+.burger.close .line {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  background-color: var(--main);
+}
+
+.burger.close .line:nth-child(1) {
+  -webkit-transform: translate(-50%, -50%) rotate(45deg);
+      -ms-transform: translate(-50%, -50%) rotate(45deg);
+          transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.burger.close .line:nth-child(2) {
+  display: none;
+}
+
+.burger.close .line:nth-child(3) {
+  -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+      -ms-transform: translate(-50%, -50%) rotate(-45deg);
+          transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.burger:hover .line {
+  background-color: var(--stop);
+}
+
+.burger:active .line {
+  background-color: var(--main);
+}
+
+.hide-text {
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--grey-75)), to(rgba(76, 76, 76, 0)));
+  background: -o-linear-gradient(top, var(--grey-75) 0%, rgba(76, 76, 76, 0) 100%);
+  background: linear-gradient(180deg, var(--grey-75) 0%, rgba(76, 76, 76, 0) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+
+.tall {
+  color: var(--main);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+li {
+  margin-bottom: 1rem;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+.cart {
+  width: 100%;
+  background-color: var(--light);
+  border-radius: 0.25rem;
+  padding: 1.25rem;
+  margin-right: var(--m-cart);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.cart:last-child {
+  margin-right: 0;
+}
+
+meter {
+  width: 100%;
+  height: auto;
+  margin-top: 1rem;
+  -webkit-transition: 1s all linear;
+  -o-transition: 1s all linear;
+  transition: 1s all linear;
+}
+
+meter::-webkit-meter-bar {
+  background-color: var(--grey-25);
+  height: 0.25rem;
+  border: none !important;
+  -webkit-transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+meter:-moz-meter-optimum::-moz-meter-bar {
+  background-color: var(--grey-25);
+  border: none !important;
+  -moz-transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+meter::-webkit-meter-optimum-value {
+  background-color: var(--main);
+  border: none !important;
+  -webkit-transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+meter:-moz-meter-sub-optimum::-moz-meter-bar {
+  background-color: var(--main);
+  border: none !important;
+  -moz-transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+meter::-webkit-meter-suboptimum-value {
+  background-color: var(--main);
+  border: none !important;
+  -webkit-transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+meter:-moz-meter-sub-sub-optimum::-moz-meter-bar {
+  background-color: var(--main);
+  border: none !important;
+  -moz-transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+meter::-webkit-meter-even-less-good-value {
+  background-color: var(--main);
+  border: none !important;
+  -webkit-transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.3s all cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.block-link {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+main {
+  min-height: 100vh;
+  height: auto;
+  overflow: hidden;
+}
+
+.modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  z-index: 10;
+}
+
+.modal .modal-body {
+  position: relative;
+  max-width: 37rem;
+  width: 100%;
+  padding: 4rem;
+  overflow-y: auto;
+}
+
+.modal .modal-name {
+  text-align: center;
+}
+
+.modal .border-top > *:not(legend) {
+  max-width: 17.8125rem;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.modal .border-top legend {
+  max-width: -webkit-fit-content;
+  max-width: -moz-fit-content;
+  max-width: fit-content;
+  padding: 0 1rem;
+}
+
+.modal .btn-submit {
+  margin-top: 1.5rem;
+}
+
+.modal .modal-link {
+  margin-top: 1rem;
+}
+
+.modal .list-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 1rem;
+}
