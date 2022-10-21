@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Личный кабинет исполнителя</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221006151027" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221006151027" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221006151027" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221006151027" />
+    <title>Тут собранны модалки</title>
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221021134730" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221021134730" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221021134730" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221021134730" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <!-- <header class="main-header">
+    <!-- <header class="main-header hide">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -102,9 +102,11 @@
         <span class="line"></span>
       </button>
     </header> -->
+
     <!-- Для зареганых -->
     <header class="main-header header-for-login">
-      <a href="#" class="mh-logo stop-hover-link"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <a href="#" class="mh-logo stop-hover-link"
+        ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
     <path d="M129.195 14.3884H137.021V1.63968H142.891V34.7204H137.021V19.4439H129.195V34.7204H123.326V1.63968H129.195V14.3884Z" fill="#971914"/>
@@ -118,14 +120,17 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.06812 62C2.26907 62 -9.91844e-08 59.7278 -2.21535e-07 56.925L-1.35505e-06 30.9577L9.60929 30.9577C8.88094 30.0248 8.44687 28.8503 8.44687 27.5743C8.44687 24.5379 10.905 22.0764 13.9373 22.0764C16.9696 22.0764 19.4278 24.5379 19.4278 27.5743C19.4278 28.8503 18.9937 30.0248 18.2654 30.9577L31 30.9577L31 43.7772C30.0552 43.0073 28.8498 42.5457 27.5368 42.5457C24.5045 42.5457 22.0463 45.0072 22.0463 48.0437C22.0463 51.0801 24.5045 53.5416 27.5368 53.5416C28.8498 53.5416 30.0552 53.0801 31 52.3101L31 62L5.06812 62Z" fill="#921A1D"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9319 2.21837e-07C59.7309 9.93197e-08 62 2.27217 62 5.07503L62 31.0423L52.3907 31.0423C53.1191 31.9752 53.5531 33.1497 53.5531 34.4257C53.5531 37.4621 51.095 39.9236 48.0627 39.9236C45.0304 39.9236 42.5722 37.4621 42.5722 34.4257C42.5722 33.1497 43.0063 31.9752 43.7346 31.0423L31 31.0423L31 18.2228C31.9448 18.9927 33.1502 19.4543 34.4632 19.4543C37.4955 19.4543 39.9537 16.9928 39.9537 13.9563C39.9537 10.9199 37.4955 8.45839 34.4632 8.45839C33.1502 8.45839 31.9448 8.91995 31 9.68987L31 1.3569e-06L56.9319 2.21837e-07Z" fill="#921A1D" fill-opacity="0.5"/>
     <path d="M80.8 48H83.2V53.86H84.6L89.68 48H92.4L86.5 54.66L92.6 62H89.68L84.6 55.74H83.2V62H80.8V48ZM101.211 62.22C100.358 62.22 99.5443 62.0867 98.7709 61.82C97.9976 61.5533 97.3176 61.14 96.7309 60.58C96.1443 60.0067 95.6776 59.2733 95.3309 58.38C94.9843 57.4733 94.8109 56.38 94.8109 55.1V54.7C94.8109 53.4733 94.9843 52.4267 95.3309 51.56C95.6776 50.68 96.1443 49.96 96.7309 49.4C97.3176 48.84 97.9976 48.4333 98.7709 48.18C99.5443 47.9133 100.358 47.78 101.211 47.78C102.064 47.78 102.878 47.9133 103.651 48.18C104.424 48.4333 105.104 48.84 105.691 49.4C106.278 49.96 106.744 50.68 107.091 51.56C107.438 52.4267 107.611 53.4733 107.611 54.7V55.1C107.611 56.38 107.438 57.4733 107.091 58.38C106.744 59.2733 106.278 60.0067 105.691 60.58C105.104 61.14 104.424 61.5533 103.651 61.82C102.878 62.0867 102.064 62.22 101.211 62.22ZM101.211 60.1C101.704 60.1 102.184 60.0133 102.651 59.84C103.118 59.6667 103.531 59.3867 103.891 59C104.251 58.6 104.538 58.08 104.751 57.44C104.978 56.8 105.091 56.02 105.091 55.1V54.7C105.091 53.82 104.978 53.08 104.751 52.48C104.538 51.8667 104.251 51.3733 103.891 51C103.531 50.6133 103.118 50.3333 102.651 50.16C102.184 49.9867 101.704 49.9 101.211 49.9C100.704 49.9 100.218 49.9867 99.7509 50.16C99.2843 50.3333 98.8709 50.6133 98.5109 51C98.1509 51.3733 97.8643 51.8667 97.6509 52.48C97.4376 53.08 97.3309 53.82 97.3309 54.7V55.1C97.3309 56.02 97.4376 56.8 97.6509 57.44C97.8643 58.08 98.1509 58.6 98.5109 59C98.8709 59.3867 99.2843 59.6667 99.7509 59.84C100.218 60.0133 100.704 60.1 101.211 60.1ZM111.511 48H113.911V53.76H120.711V48H123.111V62H120.711V55.84H113.911V62H111.511V48ZM133.106 62.22C132.24 62.22 131.433 62.0867 130.686 61.82C129.953 61.5533 129.313 61.1333 128.766 60.56C128.22 59.9867 127.786 59.2533 127.466 58.36C127.16 57.4533 127.006 56.3667 127.006 55.1V54.7C127.006 53.4867 127.166 52.4467 127.486 51.58C127.806 50.7 128.24 49.98 128.786 49.42C129.346 48.86 129.993 48.4467 130.726 48.18C131.473 47.9133 132.266 47.78 133.106 47.78C133.88 47.78 134.6 47.88 135.266 48.08C135.933 48.2667 136.513 48.5533 137.006 48.94C137.513 49.3267 137.92 49.8067 138.226 50.38C138.546 50.9533 138.74 51.6267 138.806 52.4H136.286C136.113 51.5333 135.74 50.9 135.166 50.5C134.606 50.1 133.92 49.9 133.106 49.9C132.666 49.9 132.233 49.98 131.806 50.14C131.38 50.3 130.993 50.5667 130.646 50.94C130.313 51.3133 130.04 51.8067 129.826 52.42C129.626 53.0333 129.526 53.7933 129.526 54.7V55.1C129.526 56.06 129.633 56.86 129.846 57.5C130.073 58.14 130.36 58.6533 130.706 59.04C131.053 59.4267 131.433 59.7 131.846 59.86C132.273 60.02 132.693 60.1 133.106 60.1C134.066 60.1 134.806 59.88 135.326 59.44C135.86 58.9867 136.18 58.3733 136.286 57.6H138.806C138.726 58.4267 138.526 59.1333 138.206 59.72C137.886 60.3067 137.473 60.7867 136.966 61.16C136.473 61.52 135.893 61.7867 135.226 61.96C134.573 62.1333 133.866 62.22 133.106 62.22ZM149.884 58.84H144.204L143.024 62H140.624L145.924 48H148.324L153.624 62H151.064L149.884 58.84ZM144.984 56.76H149.104L147.064 51L144.984 56.76ZM156.509 62.22C156.402 62.22 156.282 62.2133 156.149 62.2C156.029 62.2 155.915 62.1867 155.809 62.16V59.88C155.875 59.8933 155.975 59.9 156.109 59.9C156.482 59.9 156.795 59.8133 157.049 59.64C157.302 59.4533 157.509 59.0733 157.669 58.5C157.829 57.9133 157.942 57.0733 158.009 55.98C158.075 54.8867 158.109 53.4267 158.109 51.6V48H167.909V62H165.509V50.08H160.429V52C160.429 54.1733 160.342 55.9333 160.169 57.28C160.009 58.6133 159.762 59.6467 159.429 60.38C159.109 61.1133 158.702 61.6067 158.209 61.86C157.729 62.1 157.162 62.22 156.509 62.22ZM175.803 50.08H171.103V48H182.903V50.08H178.203V62H175.803V50.08ZM186.101 48H188.501V58.2L195.381 48H197.701V62H195.301V51.8L188.421 62H186.101V48ZM202.296 48H204.696V53.76H211.496V48H213.896V62H211.496V55.84H204.696V62H202.296V48ZM218.491 48H227.491V50.08H220.891V62H218.491V48Z" fill="#921A1D"/>
-</svg>    </a>
-      <a href="#" class="mh-mobile stop-hover-link"><svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
+</svg>    </a
+      >
+      <a href="#" class="mh-mobile stop-hover-link"
+        ><svg width="62" height="62" viewBox="0 0 62 62" fill="none" xmlns="http://www.w3.org/2000/svg">
     <rect width="62" height="62" rx="31" fill="white"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M0 5.07503C0 2.27217 2.26907 0 5.06812 0H31V9.68987C31.9448 8.91994 33.1502 8.45839 34.4632 8.45839C37.4955 8.45839 39.9537 10.9199 39.9537 13.9563C39.9537 16.9928 37.4955 19.4543 34.4632 19.4543C33.1502 19.4543 31.9448 18.9927 31 18.2228V31.0423H18.198C18.9669 30.0962 19.4278 28.8892 19.4278 27.5744C19.4278 24.5379 16.9696 22.0764 13.9373 22.0764C10.905 22.0764 8.44687 24.5379 8.44687 27.5744C8.44687 28.8892 8.90779 30.0962 9.67667 31.0423H0V5.07503Z" fill="#921A1D" fill-opacity="0.75"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M62 56.925C62 59.7278 59.7309 62 56.9319 62H31V52.3101C30.0552 53.0801 28.8498 53.5416 27.5368 53.5416C24.5045 53.5416 22.0463 51.0801 22.0463 48.0437C22.0463 45.0072 24.5045 42.5457 27.5368 42.5457C28.8498 42.5457 30.0552 43.0073 31 43.7772V30.9577H43.802C43.0331 31.9038 42.5722 33.1108 42.5722 34.4256C42.5722 37.4621 45.0304 39.9236 48.0627 39.9236C51.095 39.9236 53.5531 37.4621 53.5531 34.4256C53.5531 33.1108 53.0922 31.9038 52.3233 30.9577H62V56.925Z" fill="#921A1D" fill-opacity="0.25"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M5.06812 62C2.26907 62 -9.91844e-08 59.7278 -2.21535e-07 56.925L-1.35505e-06 30.9577L9.60929 30.9577C8.88094 30.0248 8.44687 28.8503 8.44687 27.5743C8.44687 24.5379 10.905 22.0764 13.9373 22.0764C16.9696 22.0764 19.4278 24.5379 19.4278 27.5743C19.4278 28.8503 18.9937 30.0248 18.2654 30.9577L31 30.9577L31 43.7772C30.0552 43.0073 28.8498 42.5457 27.5368 42.5457C24.5045 42.5457 22.0463 45.0072 22.0463 48.0437C22.0463 51.0801 24.5045 53.5416 27.5368 53.5416C28.8498 53.5416 30.0552 53.0801 31 52.3101L31 62L5.06812 62Z" fill="#921A1D"/>
     <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9319 2.21837e-07C59.7309 9.93197e-08 62 2.27217 62 5.07503L62 31.0423L52.3907 31.0423C53.1191 31.9752 53.5531 33.1497 53.5531 34.4257C53.5531 37.4621 51.095 39.9236 48.0627 39.9236C45.0304 39.9236 42.5722 37.4621 42.5722 34.4257C42.5722 33.1497 43.0063 31.9752 43.7346 31.0423L31 31.0423L31 18.2228C31.9448 18.9927 33.1502 19.4543 34.4632 19.4543C37.4955 19.4543 39.9537 16.9928 39.9537 13.9563C39.9537 10.9199 37.4955 8.45839 34.4632 8.45839C33.1502 8.45839 31.9448 8.91995 31 9.68987L31 1.3569e-06L56.9319 2.21837e-07Z" fill="#921A1D" fill-opacity="0.5"/>
-</svg>    </a>
+</svg>    </a
+      >
       <nav class="mh-nav">
         <a href="#" class="mh-link link-color" title="Исполнители"
           >Исполнители</a
@@ -174,7 +179,7 @@
 </svg>
 </a
         >
-        <a href="#" class="lp-link" title="Открыть сообщения"
+        <a href="#" class="lp-link active" title="Открыть сообщения"
           ><svg
   width="28"
   height="26"
@@ -196,180 +201,434 @@
           <span class="line"></span>
           <span class="line"></span>
         </button>
-        <div class="avatar">
+        <!-- Тут ссылка на личный кабинет пользователя -->
+        <a href="#" class="avatar check">
           <span class="temporary-avatar">АИ</span>
+        </a>
+      </div>
+      <div class="user-menu hide">
+        <div class="um-container">
+          <button type="button" class="btn-close">&#10006;</button>
+          <!-- заказчик -->
+          <div class="mu-links">
+            <a href="#" class="um-link">Мои запросы</a>
+            <a href="#" class="um-link">Запросы в работе</a>
+          </div>
+          <!-- исполнитель -->
+          <div class="mu-links hide">
+            <a href="#" class="um-link">Мои отклики</a>
+            <a href="#" class="um-link">Приглашения</a>
+          </div>
+          <!--  исполнитель-заказчик -->
+          <div class="mu-links hide">
+            <a href="#" class="um-link">Мои отклики</a>
+            <a href="#" class="um-link">Приглашения</a>
+            <a href="#" class="um-link">Текущие проекты</a>
+          </div>
+
+          <div class="um-end">
+            <a href="#" class="um-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <circle cx="12" cy="12" r="10.5" stroke="#4C4C4C"/>
+    <path d="M11.3602 14.0001C11.3602 13.7975 11.3709 13.6108 11.3922 13.4401C11.4242 13.2588 11.4829 13.0828 11.5682 12.9121C11.6642 12.7308 11.7922 12.5441 11.9522 12.3521C12.1229 12.1601 12.3469 11.9468 12.6242 11.7121C13.0722 11.3281 13.4135 10.9815 13.6482 10.6721C13.8829 10.3628 14.0002 10.0321 14.0002 9.68014C14.0002 9.16814 13.8295 8.7468 13.4882 8.41614C13.1469 8.08547 12.6775 7.92014 12.0802 7.92014C11.4829 7.92014 11.0135 8.08547 10.6722 8.41614C10.3309 8.7468 10.1602 9.16814 10.1602 9.68014H8.72021C8.72021 9.2428 8.79488 8.8428 8.94421 8.48014C9.10421 8.1068 9.32821 7.7868 9.61621 7.52014C9.91488 7.2428 10.2722 7.02947 10.6882 6.88014C11.1042 6.72014 11.5682 6.64014 12.0802 6.64014C12.5922 6.64014 13.0562 6.72014 13.4722 6.88014C13.8882 7.02947 14.2402 7.2428 14.5282 7.52014C14.8269 7.7868 15.0509 8.1068 15.2002 8.48014C15.3602 8.8428 15.4402 9.2428 15.4402 9.68014C15.4402 9.9788 15.3922 10.2615 15.2962 10.5281C15.2002 10.7948 15.0669 11.0508 14.8962 11.2961C14.7362 11.5308 14.5495 11.7601 14.3362 11.9841C14.1229 12.1975 13.9042 12.4001 13.6802 12.5921C13.4989 12.7415 13.3495 12.8855 13.2322 13.0241C13.1149 13.1521 13.0189 13.2801 12.9442 13.4081C12.8802 13.5255 12.8322 13.6481 12.8002 13.7761C12.7789 13.8935 12.7682 14.0215 12.7682 14.1601V14.4801H11.3602V14.0001ZM12.0802 18.1601C11.7709 18.1601 11.5042 18.0535 11.2802 17.8401C11.0669 17.6161 10.9602 17.3495 10.9602 17.0401C10.9602 16.7201 11.0669 16.4535 11.2802 16.2401C11.5042 16.0268 11.7709 15.9201 12.0802 15.9201C12.3895 15.9201 12.6509 16.0268 12.8642 16.2401C13.0882 16.4535 13.2002 16.7201 13.2002 17.0401C13.2002 17.3495 13.0882 17.6161 12.8642 17.8401C12.6509 18.0535 12.3895 18.1601 12.0802 18.1601Z" fill="#4C4C4C"/>
+</svg>    
+              <span class="um-text">Справка</span>
+            </a>
+            <button class="um-link">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M3.6665 2.64307V21.5359" stroke="#4C4C4C" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M20.6869 12.8536C20.8821 12.6583 20.8821 12.3417 20.6869 12.1464L17.5049 8.96447C17.3096 8.7692 16.9931 8.7692 16.7978 8.96447C16.6025 9.15973 16.6025 9.47631 16.7978 9.67157L19.6262 12.5L16.7978 15.3284C16.6025 15.5237 16.6025 15.8403 16.7978 16.0355C16.9931 16.2308 17.3096 16.2308 17.5049 16.0355L20.6869 12.8536ZM7 13L20.3333 13V12L7 12V13Z" fill="#4C4C4C"/>
+</svg>    
+              <span class="um-text">Выйти из профиля</span>
+            </button>
+          </div>
         </div>
       </div>
     </header>
     <main role="main">
 
-<aside class="menu-bar">
-  <header class="mb-header">
-    <div class="persone">
-      <div class="avatar">
-        <!-- Временная аватарка содержит в себе Первые буква имени (max 2) -->
-        <span class="temporary-avatar">АИ</span>
-      </div>
-      <p class="persone-name">Андрей Иванов</p>
+<style>
+  .main-header,
+  .main-footer {
+    display: none;
+  }
+  .modal {
+    position: initial;
+  }
+</style>
+
+<!-- Тут модалка "Отправить запрос исполнителю" - состояние НЕ активное -->
+<!-- Такая модалка вылетает, если у заказчика нет ни одного запроса -->
+<dialog id="send-request-artist" class="modal send-request-artist">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Отправить запрос исполнителю</p>
+    <p class="modal-descr">
+      Выберите из списка запрос, который выхотите отправить
+      <span class="color-main">Андрею Иванову</span>
+    </p>
+
+    <form class="form-search">
+      <input
+        type="text"
+        class="search"
+        placeholder="Название запроса"
+        required
+      />
+      <button type="submit" class="btn-filter">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </form>
+
+    <div class="modal-result">
+      <p class="void">
+        У вас нет запросов, чтобы обратиться за услугой к исполнителю создайте
+        новый запрос
+      </p>
     </div>
-    <div class="persone-rating stars-5">
-      <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+    <button class="btn" title="Добавить запрос">Добавить запрос</button>
+  </div>
+</dialog>
+
+<!-- Тут модалка "Отправить запрос исполнителю" - состояние активное -->
+<dialog id="send-request-artist" class="modal send-request-artist">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Отправить запрос исполнителю</p>
+    <p class="modal-descr">
+      Выберите из списка запрос, который выхотите отправить
+      <span class="color-main">Андрею Иванову</span>
+    </p>
+
+    <form class="form-search">
+      <input
+        type="text"
+        class="search"
+        placeholder="Название запроса"
+        required
+      />
+      <button type="submit" class="btn-filter">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </form>
+    <!-- Эта модалка появляется если есть хотя бы один запрос без назначенного исполнителя. Мультиселект. -->
+    <div class="modal-result">
+      <div class="mr-content">
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" />
+          <span class="checktext">Промышленная подготовка угля к погрузке</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" />
+          <span class="checktext">Промышленная подготовка угля к погрузке</span>
+        </label>
+        <!-- Так выглядит строчка если запрос отправлен, но еще нет ответа. -->
+        <label class="checkbox zapros-sends">
+          <input type="checkbox" name="agreement" disabled />
+          <span class="checktext"
+            >Промышленная подготовка угля к погрузке
+            <span class="status-wait">Запрос отправлен 22.11.2021</span>
+          </span>
+        </label>
+        <!-- Так, если запрос отклонён исполнителем -->
+        <label class="checkbox zapros-sends">
+          <input type="checkbox" name="agreement" disabled />
+          <span class="checktext"
+            >Промышленная подготовка угля к погрузке
+            <span class="status-close">Запрос отклонён 22.11.2021</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <button class="btn" title="Отправить запрос">Отправить запрос</button>
+  </div>
+</dialog>
+
+<!-- Тут модалка "Отправить запрос исполнителям" -->
+<dialog id="send-artistes" class="modal send-artistes">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Отправить запрос исполнителям</p>
+    <p class="modal-descr">
+      Введите имя или название компании исполнителя или перейдите в
+      <a href="#" class="link-main" target="_blank">каталог исполнителей</a>
+    </p>
+
+    <form class="form-search">
+      <input
+        type="text"
+        class="search"
+        placeholder="Имя или название компании"
+        required
+      />
+      <button type="submit" class="btn-filter">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </form>
+    <div class="modal-result">
+      <p class="void hide">
+        У вас нет избранных исполнителей, воспользуйтесь поиском
+      </p>
+      <!--Пока нет результата -->
+      <div class="mr-content">
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture></span>ПАО
+              «ГАЗПРОМ»</span
+            ></span
+          >
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture></span>ПАО
+              «ГАЗПРОМ»</span
+            ></span
+          >
+        </label>
+        <label class="checkbox zapros-sends">
+          <input type="checkbox" name="agreement" disabled />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture></span>ПАО
+              «ГАЗПРОМ»</span
+            >
+            <span class="status-wait">Запрос отправлен 22.11.221</span>
+          </span>
+        </label>
+      </div>
+    </div>
+    <div class="result-items-empl">
+      <div class="rie-cart">
+        <a href="#" class="rie-cart-link" target="_blank"></a>
+        <div class="rie-info">
+          <div class="ava">
+            <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.png" alt="" /></picture>
+          </div>
+          <p class="name">Анна Николаева</p>
+        </div>
+        <button class="btn-close">&#10006;</button>
+      </div>
+    </div>
+    <button class="btn" title="Добавить сотрудников (1)">
+      Добавить сотрудников (1)
+    </button>
+  </div>
+</dialog>
+
+<!-- Тут модалка "Добавить сотрудника" -->
+<dialog id="add-employee" class="modal add-employee">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Добавить сотрудника</p>
+    <p class="modal-descr">
+      Введите имя исполителя и добавьте его в список сотрудников своей компании.
+    </p>
+
+    <form class="form-search">
+      <input type="text" class="search" placeholder="Имя сотрудника" required />
+      <button type="submit" class="btn-filter">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </form>
+    <div class="modal-result">
+      <p class="void hide">
+        У вас нет избранных сотрудников, воспользуйтесь поиском
+      </p>
+      <!--Пока нет результата -->
+      <div class="mr-content">
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.png" alt="" /></picture></span>Анна
+              Николаева</span
+            ></span
+          >
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.png" alt="" /></picture></span>Анна
+              Николаева</span
+            ></span
+          >
+        </label>
+        <label class="checkbox zapros-sends">
+          <input type="checkbox" name="agreement" disabled />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.png" alt="" /></picture></span>Анна
+              Николаева</span
+            >
+            <span class="status-wait">Сотрудник</span>
+          </span>
+        </label>
+      </div>
+    </div>
+    <div class="result-items-empl">
+      <div class="rie-cart">
+        <a href="#" class="rie-cart-link" target="_blank"></a>
+        <div class="rie-info">
+          <div class="ava">
+            <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.png" alt="" /></picture>
+          </div>
+          <p class="name">Анна Николаева</p>
+        </div>
+        <button class="btn-close">&#10006;</button>
+      </div>
+    </div>
+    <button class="btn" title="Добавить сотрудников (1)">
+      Добавить сотрудников (1)
+    </button>
+  </div>
+</dialog>
+
+<!-- Тут модалка "Отклик на запрос" -->
+<dialog id="modal-respond" class="modal modal-respond">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Отклик на запрос</p>
+    <p class="modal-text">
+      Вы хотите откликнуть на запрос “<b class="respond-name"
+        >Обработка поверхности муфт без травления/обезжиривания</b
+      >”, чтобы заказчик принял вас быстрее, напишите сопросодительное письмо.
+    </p>
+    <form action="" class="reg-from" method="post">
+      <label>
+        <textarea name="text" cols="30" rows="10" placeholder=" "></textarea>
+        <span class="placeholder">Напишите здесь сопроводительное письмо</span>
+      </label>
+      <button class="btn btn-submit" title="Откликнуться" disabled>
+        Откликнуться
+      </button>
+    </form>
+  </div>
+</dialog>
+
+<!-- Тут модалка "Оспорить отзыв" -->
+<dialog id="dispute-review" class="modal dispute-review">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Оспорить отзыв</p>
+    <form action="" class="reg-from" method="post">
+      <label>
+        <textarea name="text" cols="30" rows="10" placeholder=" "></textarea>
+        <span class="placeholder">Напишите, с чем вы не согласны</span>
+      </label>
+      <button class="btn btn-submit" title="Оспорить" disabled>Оспорить</button>
+    </form>
+  </div>
+</dialog>
+
+<!-- Тут модалка для откликов (для кнопки "Снять запрос с публикации") - вызов работает -->
+<dialog id="remove-the-request" class="modal">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <div class="modal-header">
+      <div class="modal-ava"><svg
+  width="76"
+  height="76"
+  viewBox="0 0 76 76"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M19 19L34.8333 34.8333M50.6667 50.6667L34.8333 34.8333M34.8333 34.8333L50.6667 19M34.8333 34.8333L19 50.6667"
+    stroke="#921A1D"
+  />
+  <circle cx="34.8334" cy="34.8333" r="31.1667" stroke="#921A1D" />
+  <path
+    d="M50.6667 44.9765V67.8359C50.6667 68.8463 51.056 69.8154 51.7488 70.5299C52.4417 71.2444 53.3814 71.6458 54.3612 71.6458H69.139C70.1188 71.6458 71.0585 71.2444 71.7513 70.5299C72.4442 69.8154 72.8334 68.8463 72.8334 67.8359V51.1524C72.8334 50.6448 72.735 50.1424 72.544 49.6746C72.353 49.2068 72.0734 48.7831 71.7214 48.4283L65.5978 42.2524C64.9077 41.5565 63.9807 41.1667 63.0154 41.1666H54.3612C53.3814 41.1666 52.4417 41.568 51.7488 42.2825C51.056 42.997 50.6667 43.9661 50.6667 44.9765Z"
+    fill="white"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <line x1="56.2085" y1="54.5208" x2="67.2918" y2="54.5208" stroke="#888888" />
+  <line x1="56.2085" y1="60.0625" x2="67.2918" y2="60.0625" stroke="#888888" />
+  <line x1="56.2085" y1="65.6041" x2="67.2918" y2="65.6041" stroke="#888888" />
+</svg>
+</div>
+      <h2 class="modal-name">Снять запрос с публикации?</h2>
+    </div>
+    <p class="modal-text">
+      Ваш запрос будет перенесен в вкладку “<span class="color-main delete-name"
+        >Черновики</span
+      >”, при необходимости, Вы всегда сможете восстановить задачу или
+      скопировать её содержение.
+    </p>
+    <div class="modal-btns">
+      <button class="btn">Снять запрос с публикации</button>
+      <button class="close-modal">Отмена</button>
+    </div>
+  </div>
+</dialog>
+
+<!-- Тут модалка для откликов (для кнопки "Отклики на запрос") -->
+<dialog id="responses-to-the-request" class="modal modal-responses-request">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <h2 class="modal-name mrr-title">
+      Отклики на запрос <span class="grey-25">(3)</span>
+    </h2>
+    <div class="modal-tabs">
+      <button class="tab tab-active">
+        Все отклики <span class="num">(24)</span>
+      </button>
+      <button class="tab">Новые <span class="num">(2)</span></button>
+    </div>
+    <div class="tabs-result">
+      <div class="tab-item">
+        <div class="cart-table madal-cart">
+          <div class="ct-modal-item">
+            <div class="ct-header">
+              <div class="modal-cart-ava">
+                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+              </div>
+              <div class="cart-element">
+                <h1 class="fake-h3 modal-cart-name">Иван Иванов</h1>
+                <div class="catalog-rating stars-5">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-      <p class="persone-rating-subtitle">0.0 <small>(0 оценок)</small></p>
-    </div>
-  </header>
-  <hr />
-  <nav class="persone-links-important">
-    <a href="#" class="pli-link pli-active check">
-      <span class="pli-text">Мои запросы</span>
-    </a>
-    <a href="#" class="pli-link check">
-      <span class="pli-text">Новые запросы</span>
-    </a>
-    <a href="#" class="pli-link">
-      <span class="pli-text">Запросы в работе</span>
-    </a>
-    <a href="#" class="pli-link">
-      <span class="pli-text">Выполненные запросы</span>
-    </a>
-  </nav>
-  <hr />
-  <nav class="persone-links-important">
-    <a href="#" class="pli-link">
-      <span class="pli-text">Сообщения</span>
-    </a>
-    <a href="#" class="pli-link">
-      <span class="pli-text">Уведомления</span>
-    </a>
-  </nav>
-  <hr />
-  <nav class="persone-links-important">
-    <a href="#" class="pli-link">
-      <span class="pli-text">Избранные исполнители (13)</span>
-    </a>
-  </nav>
-  <hr />
-  <nav class="persone-links-not-important">
-    <a href="#" class="pli-link">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M11 4H4C3.46957 4 2.96086 4.21071 2.58579 4.58579C2.21071 4.96086 2 5.46957 2 6V20C2 20.5304 2.21071 21.0391 2.58579 21.4142C2.96086 21.7893 3.46957 22 4 22H18C18.5304 22 19.0391 21.7893 19.4142 21.4142C19.7893 21.0391 20 20.5304 20 20V13" stroke="#4C4C4C" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M18.5 2.50023C18.8978 2.1024 19.4374 1.87891 20 1.87891C20.5626 1.87891 21.1022 2.1024 21.5 2.50023C21.8978 2.89805 22.1213 3.43762 22.1213 4.00023C22.1213 4.56284 21.8978 5.1024 21.5 5.50023L12 15.0002L8 16.0002L9 12.0002L18.5 2.50023Z" stroke="#4C4C4C" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    
-      <span class="pli-text">Редактирование профиля</span>
-    </a>
-    <a href="#" class="pli-link">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M19 11H5C3.89543 11 3 11.8954 3 13V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V13C21 11.8954 20.1046 11 19 11Z" stroke="#4C4C4C" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M7 11V7C7 5.67392 7.52678 4.40215 8.46447 3.46447C9.40215 2.52678 10.6739 2 12 2C13.3261 2 14.5979 2.52678 15.5355 3.46447C16.4732 4.40215 17 5.67392 17 7V11" stroke="#4C4C4C" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>    
-      <span class="pli-text">Сменить пароль</span>
-    </a>
-    <a href="#" class="pli-link">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M3.6665 2.64307V21.5359" stroke="#4C4C4C" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M20.6869 12.8536C20.8821 12.6583 20.8821 12.3417 20.6869 12.1464L17.5049 8.96447C17.3096 8.7692 16.9931 8.7692 16.7978 8.96447C16.6025 9.15973 16.6025 9.47631 16.7978 9.67157L19.6262 12.5L16.7978 15.3284C16.6025 15.5237 16.6025 15.8403 16.7978 16.0355C16.9931 16.2308 17.3096 16.2308 17.5049 16.0355L20.6869 12.8536ZM7 13L20.3333 13V12L7 12V13Z" fill="#4C4C4C"/>
-</svg>    
-      <span class="pli-text">Выйти из профиля</span>
-    </a>
-  </nav>
-  <hr />
-  <nav class="persone-links-important element-end">
-    <a href="#" class="pli-link">
-      <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    fill-rule="evenodd"
-    clip-rule="evenodd"
-    d="M17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8ZM18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8ZM19.2148 17.0229C20.6888 18.0279 21.5706 19.2544 21.8771 20.5H2.12287C2.42943 19.2544 3.31121 18.0279 4.78516 17.0229C6.65547 15.7477 9.24887 15 12 15C14.7511 15 17.3445 15.7477 19.2148 17.0229ZM19.7782 16.1967C21.4923 17.3654 22.5822 18.8801 22.9018 20.5C22.9669 20.8297 23 21.1637 23 21.5H1C1 21.1637 1.03313 20.8297 1.09817 20.5C1.41777 18.8801 2.50774 17.3654 4.22183 16.1967C6.28473 14.7902 9.08262 14 12 14C14.9174 14 17.7153 14.7902 19.7782 16.1967Z"
-    fill="#C3C3C3"
-  />
-</svg>
-
-      <span class="pli-text">Профиль исполнителя</span>
-    </a>
-    <a href="#" class="pli-link">
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <circle cx="12" cy="12" r="10.5" stroke="#4C4C4C"/>
-    <path d="M11.3602 14.0001C11.3602 13.7975 11.3709 13.6108 11.3922 13.4401C11.4242 13.2588 11.4829 13.0828 11.5682 12.9121C11.6642 12.7308 11.7922 12.5441 11.9522 12.3521C12.1229 12.1601 12.3469 11.9468 12.6242 11.7121C13.0722 11.3281 13.4135 10.9815 13.6482 10.6721C13.8829 10.3628 14.0002 10.0321 14.0002 9.68014C14.0002 9.16814 13.8295 8.7468 13.4882 8.41614C13.1469 8.08547 12.6775 7.92014 12.0802 7.92014C11.4829 7.92014 11.0135 8.08547 10.6722 8.41614C10.3309 8.7468 10.1602 9.16814 10.1602 9.68014H8.72021C8.72021 9.2428 8.79488 8.8428 8.94421 8.48014C9.10421 8.1068 9.32821 7.7868 9.61621 7.52014C9.91488 7.2428 10.2722 7.02947 10.6882 6.88014C11.1042 6.72014 11.5682 6.64014 12.0802 6.64014C12.5922 6.64014 13.0562 6.72014 13.4722 6.88014C13.8882 7.02947 14.2402 7.2428 14.5282 7.52014C14.8269 7.7868 15.0509 8.1068 15.2002 8.48014C15.3602 8.8428 15.4402 9.2428 15.4402 9.68014C15.4402 9.9788 15.3922 10.2615 15.2962 10.5281C15.2002 10.7948 15.0669 11.0508 14.8962 11.2961C14.7362 11.5308 14.5495 11.7601 14.3362 11.9841C14.1229 12.1975 13.9042 12.4001 13.6802 12.5921C13.4989 12.7415 13.3495 12.8855 13.2322 13.0241C13.1149 13.1521 13.0189 13.2801 12.9442 13.4081C12.8802 13.5255 12.8322 13.6481 12.8002 13.7761C12.7789 13.8935 12.7682 14.0215 12.7682 14.1601V14.4801H11.3602V14.0001ZM12.0802 18.1601C11.7709 18.1601 11.5042 18.0535 11.2802 17.8401C11.0669 17.6161 10.9602 17.3495 10.9602 17.0401C10.9602 16.7201 11.0669 16.4535 11.2802 16.2401C11.5042 16.0268 11.7709 15.9201 12.0802 15.9201C12.3895 15.9201 12.6509 16.0268 12.8642 16.2401C13.0882 16.4535 13.2002 16.7201 13.2002 17.0401C13.2002 17.3495 13.0882 17.6161 12.8642 17.8401C12.6509 18.0535 12.3895 18.1601 12.0802 18.1601Z" fill="#4C4C4C"/>
-</svg>    
-      <span class="pli-text">Справка</span>
-    </a>
-  </nav>
-</aside>
-<div class="tablet">
-  <div class="all-content cart">
-    <div class="mess-header">
-      <h1 class="fake-h2 mess-title">
-        Мои отклики <span class="grey-50">(2)</span>
-      </h1>
-      <form action="" class="form-filter" method="get">
-        <div class="form-search">
-          <input
-            type="text"
-            class="search"
-            placeholder="Поиск по ключевым словам"
-            required
-          />
-          <button type="submit" class="btn-filter">
-            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-</svg>
-          </button>
-        </div>
-      </form>
-    </div>
-    <div class="result-fillter">
-      <ol class="fake-table-title-list">
-        <li class="response-n1">Название проекта:</li>
-        <li class="response-n2">Заказчик:</li>
-        <li class="response-n3">Сроки:</li>
-        <li class="response-n4">Стоимость:</li>
-      </ol>
-      <div class="cart response-grid">
-        <div class="response-header">
-          <a href="#" target="_blank" class="fake-h5 response-link response-n1"
-            >Аудит отдела газификации и электроснабжения Ростовкой области в
-            селе Новокуйбышкво</a
-          >
-          <a
-            href="#"
-            target="_blank"
-            class="response-link-cart response-link response-n2"
-          >
-            <span class="ava"><picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture></span>
-            ПАО «Газпром»
-          </a>
-          <time class="response-time response-n3"
-            >22.01.2020 — <br />22.01.2025</time
-          >
-          <p class="response-cost response-n4">от 1.999 до 2.345.222</p>
-        </div>
-        <div class="response-info">
-          <div class="stat-cart-grey">
-            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8.07407 15.3335L12.4198 15.3335M14 15.3335L12.4198 15.3335M12.4198 15.3335L12.4198 12.4816V12.4816C11.9412 8.53358 5.7931 8.03954 4.59025 4.24885C4.54171 4.09587 4.51852 3.98308 4.51852 3.92609C4.51852 3.60016 4.51852 1.61745 4.51852 0.666829M4.51852 0.666829L3.33333 0.666829M4.51852 0.666829L8.07407 0.666829" stroke="#888888"/>
-    <path d="M8.59243 15.3335L4.24675 15.3335M2.6665 15.3335L4.24675 15.3335M4.24675 15.3335L4.24675 12.4816V12.4816C4.7253 8.53358 10.8734 8.03955 12.0763 4.24885C12.1248 4.09587 12.148 3.98308 12.148 3.92609C12.148 3.60016 12.148 1.61745 12.148 0.66683M12.148 0.66683L13.3332 0.66683M12.148 0.66683L7.80231 0.66683" stroke="#888888"/>
-</svg>     Отклик на рассмотрении
-          </div>
-          <div class="js-stat-date ml">
-            <p class="fake-table-title">Отклик отправлен:</p>
-            <time class="response-time time-stat">16.01.2021<br />19:30</time>
-          </div>
-        </div>
-        <div class="cart-btns">
-          <a href="#" class="btn-cart" target="_blank">
-            <svg
+                  <p class="catalog-rating-subtitle">
+                    <small>(0 оценок)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="preview-mess">
+              <p class="pm-txt hide-text">
+                Добрый день! Откликнулся на ваш запрос не случайно - у меня
+                огромный опыт в выполнении зданий такого толка. Я доктор нау в
+                интересующей сфере компе
+              </p>
+            </div>
+            <a href="#" class="btn-cart" target="_blank">
+              <svg
   width="28"
   height="26"
   viewBox="0 0 28 26"
@@ -381,58 +640,258 @@
     stroke="#C3C3C3"
   />
 </svg>
- Чат с заказчиком
-          </a>
-          <button class="btn-cart show-remove-the-request">
-            <svg
+ Чат с исполнителем
+              <span class="color-main">(1)</span>
+            </a>
+          </div>
+          <div class="ct-modal-item">
+            <p class="fake-table-title">Сферы компетенции:</p>
+            <div class="tags-knows">
+              <p class="tag-item">Правовая экспертиза</p>
+              <p class="tag-item">Налоговая практика</p>
+              <p class="tag-item">Строительство</p>
+              <p class="tag-item">ГЧП</p>
+            </div>
+            <div class="grid-2 modal-table-grid-2">
+              <div>
+                <p class="fake-table-title name">Город:</p>
+                <p class="value">Санкт-Петербург</p>
+              </div>
+              <div>
+                <p class="fake-table-title name">Основное образование:</p>
+                <p class="value">БГТУ «ВОЕНМЕХ»</p>
+              </div>
+            </div>
+            <div class="element-end modal-cart-btn">
+              <button class="btn btn-24">
+                <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
-  <path d="M4 4L12 12M20 20L12 12M12 12L20 4M12 12L4 20" stroke="#C3C3C3" />
+  <path d="M6 11.4286L10.6957 16L18 8" stroke="white" />
+  <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
 </svg>
- Отменить отклик
-          </button>
+Принять отклик
+              </button>
+              <button class="btn-24">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.6665 4.6665L7.99984 7.99984M11.3332 11.3332L7.99984 7.99984M7.99984 7.99984L11.3332 4.6665M7.99984 7.99984L4.6665 11.3332" stroke="#921A1D"/>
+    <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#921A1D"/>
+</svg>    Отклонить отклик
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-table madal-cart">
+          <div class="ct-modal-item">
+            <div class="ct-header">
+              <div class="modal-cart-ava">
+                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+              </div>
+              <div class="cart-element">
+                <h1 class="fake-h3 modal-cart-name">Иван Иванов</h1>
+                <div class="catalog-rating stars-5">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+                  <p class="catalog-rating-subtitle">
+                    <small>(0 оценок)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="preview-mess">
+              <p class="pm-txt hide-text">
+                Добрый день! Откликнулся на ваш запрос не случайно - у меня
+                огромный опыт в выполнении зданий такого толка. Я доктор нау в
+                интересующей сфере компе
+              </p>
+            </div>
+            <a href="#" class="btn-cart" target="_blank">
+              <svg
+  width="28"
+  height="26"
+  viewBox="0 0 28 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
+    stroke="#C3C3C3"
+  />
+</svg>
+ Чат с исполнителем
+              <span class="color-main">(1)</span>
+            </a>
+          </div>
+          <div class="ct-modal-item">
+            <p class="fake-table-title">Сферы компетенции:</p>
+            <div class="tags-knows">
+              <p class="tag-item">Правовая экспертиза</p>
+              <p class="tag-item">Налоговая практика</p>
+              <p class="tag-item">Строительство</p>
+              <p class="tag-item">ГЧП</p>
+            </div>
+            <div class="grid-2 modal-table-grid-2">
+              <div>
+                <p class="fake-table-title name">Город:</p>
+                <p class="value">Санкт-Петербург</p>
+              </div>
+              <div>
+                <p class="fake-table-title name">Основное образование:</p>
+                <p class="value">БГТУ «ВОЕНМЕХ»</p>
+              </div>
+            </div>
+            <div class="element-end modal-cart-btn">
+              <button class="btn btn-24">
+                <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M6 11.4286L10.6957 16L18 8" stroke="white" />
+  <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
+</svg>
+Принять отклик
+              </button>
+              <button class="btn-24">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.6665 4.6665L7.99984 7.99984M11.3332 11.3332L7.99984 7.99984M7.99984 7.99984L11.3332 4.6665M7.99984 7.99984L4.6665 11.3332" stroke="#921A1D"/>
+    <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#921A1D"/>
+</svg>    Отклонить отклик
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-table madal-cart">
+          <div class="ct-modal-item">
+            <div class="ct-header">
+              <div class="modal-cart-ava">
+                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+              </div>
+              <div class="cart-element">
+                <h1 class="fake-h3 modal-cart-name">Иван Иванов</h1>
+                <div class="catalog-rating stars-5">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+                  <p class="catalog-rating-subtitle">
+                    <small>(0 оценок)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="preview-mess">
+              <p class="pm-txt hide-text">
+                Добрый день! Откликнулся на ваш запрос не случайно - у меня
+                огромный опыт в выполнении зданий такого толка. Я доктор нау в
+                интересующей сфере компе
+              </p>
+            </div>
+            <a href="#" class="btn-cart" target="_blank">
+              <svg
+  width="28"
+  height="26"
+  viewBox="0 0 28 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
+    stroke="#C3C3C3"
+  />
+</svg>
+ Чат с исполнителем
+              <span class="color-main">(1)</span>
+            </a>
+          </div>
+          <div class="ct-modal-item">
+            <p class="fake-table-title">Сферы компетенции:</p>
+            <div class="tags-knows">
+              <p class="tag-item">Правовая экспертиза</p>
+              <p class="tag-item">Налоговая практика</p>
+              <p class="tag-item">Строительство</p>
+              <p class="tag-item">ГЧП</p>
+            </div>
+            <div class="grid-2 modal-table-grid-2">
+              <div>
+                <p class="fake-table-title name">Город:</p>
+                <p class="value">Санкт-Петербург</p>
+              </div>
+              <div>
+                <p class="fake-table-title name">Основное образование:</p>
+                <p class="value">БГТУ «ВОЕНМЕХ»</p>
+              </div>
+            </div>
+            <div class="element-end modal-cart-btn">
+              <button class="btn btn-24">
+                <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M6 11.4286L10.6957 16L18 8" stroke="white" />
+  <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
+</svg>
+Принять отклик
+              </button>
+              <button class="btn-24">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.6665 4.6665L7.99984 7.99984M11.3332 11.3332L7.99984 7.99984M7.99984 7.99984L11.3332 4.6665M7.99984 7.99984L4.6665 11.3332" stroke="#921A1D"/>
+    <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#921A1D"/>
+</svg>    Отклонить отклик
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="cart response-grid">
-        <div class="response-header">
-          <a href="#" target="_blank" class="fake-h5 response-link response-n1"
-            >Аудит отдела газификации и электроснабжения Ростовкой области в
-            селе Новокуйбышкво</a
-          >
-          <a
-            href="#"
-            target="_blank"
-            class="response-link-cart response-link response-n2"
-          >
-            <span class="ava"><picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture></span>
-            ПАО «Газпром»
-          </a>
-          <time class="response-time response-n3"
-            >22.01.2020 — <br />22.01.2025</time
-          >
-          <p class="response-cost response-n4">от 1.999 до 2.345.222</p>
-        </div>
-        <div class="response-info">
-          <div class="cart info-res">
-            <p class="ir-title">
-              Вам пришёл <span class="color-main">отказ</span>:
-            </p>
-            <p class="ir-txt">
-              Приносим свои извинения, уже нашли исполнителя. Хорошего дня.
-            </p>
-          </div>
-          <div class="js-stat-date ml">
-            <p class="fake-table-title">Отклик отправлен:</p>
-            <time class="response-time time-stat">16.01.2021<br />19:30</time>
-          </div>
-        </div>
-        <div class="cart-btns">
-          <a href="#" class="btn-cart" target="_blank">
-            <svg
+      <div class="tab-item hide">
+        <div class="cart-table madal-cart">
+          <div class="ct-modal-item">
+            <div class="ct-header">
+              <div class="modal-cart-ava">
+                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+              </div>
+              <div class="cart-element">
+                <h1 class="fake-h3 modal-cart-name">Иван Иванов</h1>
+                <div class="catalog-rating stars-5">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+                  <p class="catalog-rating-subtitle">
+                    <small>(0 оценок)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="preview-mess">
+              <p class="pm-txt hide-text">
+                Добрый день! Откликнулся на ваш запрос не случайно - у меня
+                огромный опыт в выполнении зданий такого толка. Я доктор нау в
+                интересующей сфере компе
+              </p>
+            </div>
+            <a href="#" class="btn-cart" target="_blank">
+              <svg
   width="28"
   height="26"
   viewBox="0 0 28 26"
@@ -444,13 +903,142 @@
     stroke="#C3C3C3"
   />
 </svg>
- Чат с заказчиком
-          </a>
+ Чат с исполнителем
+              <span class="color-main">(1)</span>
+            </a>
+          </div>
+          <div class="ct-modal-item">
+            <p class="fake-table-title">Сферы компетенции:</p>
+            <div class="tags-knows">
+              <p class="tag-item">Правовая экспертиза</p>
+              <p class="tag-item">Налоговая практика</p>
+              <p class="tag-item">Строительство</p>
+              <p class="tag-item">ГЧП</p>
+            </div>
+            <div class="grid-2 modal-table-grid-2">
+              <div>
+                <p class="fake-table-title name">Город:</p>
+                <p class="value">Санкт-Петербург</p>
+              </div>
+              <div>
+                <p class="fake-table-title name">Основное образование:</p>
+                <p class="value">БГТУ «ВОЕНМЕХ»</p>
+              </div>
+            </div>
+            <div class="element-end modal-cart-btn">
+              <button class="btn btn-24">
+                <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M6 11.4286L10.6957 16L18 8" stroke="white" />
+  <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
+</svg>
+Принять отклик
+              </button>
+              <button class="btn-24">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.6665 4.6665L7.99984 7.99984M11.3332 11.3332L7.99984 7.99984M7.99984 7.99984L11.3332 4.6665M7.99984 7.99984L4.6665 11.3332" stroke="#921A1D"/>
+    <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#921A1D"/>
+</svg>    Отклонить отклик
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="cart-table madal-cart">
+          <div class="ct-modal-item">
+            <div class="ct-header">
+              <div class="modal-cart-ava">
+                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+              </div>
+              <div class="cart-element">
+                <h1 class="fake-h3 modal-cart-name">Иван Иванов</h1>
+                <div class="catalog-rating stars-5">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+                  <p class="catalog-rating-subtitle">
+                    <small>(0 оценок)</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="preview-mess">
+              <p class="pm-txt hide-text">
+                Добрый день! Откликнулся на ваш запрос не случайно - у меня
+                огромный опыт в выполнении зданий такого толка. Я доктор нау в
+                интересующей сфере компе
+              </p>
+            </div>
+            <a href="#" class="btn-cart" target="_blank">
+              <svg
+  width="28"
+  height="26"
+  viewBox="0 0 28 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
+    stroke="#C3C3C3"
+  />
+</svg>
+ Чат с исполнителем
+              <span class="color-main">(1)</span>
+            </a>
+          </div>
+          <div class="ct-modal-item">
+            <p class="fake-table-title">Сферы компетенции:</p>
+            <div class="tags-knows">
+              <p class="tag-item">Правовая экспертиза</p>
+              <p class="tag-item">Налоговая практика</p>
+              <p class="tag-item">Строительство</p>
+              <p class="tag-item">ГЧП</p>
+            </div>
+            <div class="grid-2 modal-table-grid-2">
+              <div>
+                <p class="fake-table-title name">Город:</p>
+                <p class="value">Санкт-Петербург</p>
+              </div>
+              <div>
+                <p class="fake-table-title name">Основное образование:</p>
+                <p class="value">БГТУ «ВОЕНМЕХ»</p>
+              </div>
+            </div>
+            <div class="element-end modal-cart-btn">
+              <button class="btn btn-24">
+                <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path d="M6 11.4286L10.6957 16L18 8" stroke="white" />
+  <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
+</svg>
+Принять отклик
+              </button>
+              <button class="btn-24">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M4.6665 4.6665L7.99984 7.99984M11.3332 11.3332L7.99984 7.99984M7.99984 7.99984L11.3332 4.6665M7.99984 7.99984L4.6665 11.3332" stroke="#921A1D"/>
+    <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#921A1D"/>
+</svg>    Отклонить отклик
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </div>
-</div>
+</dialog>
 
 	</main>
 	<footer class="main-footer">
@@ -641,13 +1229,11 @@
 					<legend>Или заполните ваши данные</legend>
 						<label>
 							<input
-							type="text"
+							type="email"
 							name="name"
 							placeholder=" "
-							autocorrect="off"
-							autocomplete="username"
 							/>
-							<span class="placeholder">Имя:</span>
+							<span class="placeholder">Email:</span>
 						</label>
 						<label>
 						<input
@@ -677,12 +1263,13 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20221006151027"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20221021134730"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
+			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20221006151027"></script>
+	<script src="./assets/js/app.min.js?ver=20221021134730"></script>
 </body>
 </html>
