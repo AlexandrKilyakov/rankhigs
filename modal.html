@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тут собранны модалки</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221024141830" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221118154929" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221118154929" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221118154929" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221118154929" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -508,6 +508,40 @@
     <button class="btn" title="Добавить сотрудников (1)">
       Добавить сотрудников (1)
     </button>
+  </div>
+</dialog>
+
+<!-- Тут модалка "Принять работу" -->
+<dialog id="accept-job" class="modal accept-job textarea-disabled">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Принять работу</p>
+    <p class="modal-text text-center">Оставьте отзыв исполнителю</p>
+    <form action="" class="reg-from" method="post">
+      <p class="fake-h5 accept-title important">Оцените исполнителя</p>
+      <div class="rating-area">
+        <input type="radio" id="s-5" name="rating" value="5" />
+        <label for="s-5" title="Оценка «5»"></label>
+        <input type="radio" id="s-4" name="rating" value="4" />
+        <label for="s-4" title="Оценка «4»"></label>
+        <input type="radio" id="s-3" name="rating" value="3" />
+        <label for="s-3" title="Оценка «3»"></label>
+        <input type="radio" id="s-2" name="rating" value="2" />
+        <label for="s-2" title="Оценка «2»"></label>
+        <input type="radio" id="s-1" name="rating" value="1" />
+        <label for="s-1" title="Оценка «1»"></label>
+      </div>
+      <p class="fake-h5 accept-title important">Добавьте комментарий</p>
+      <label>
+        <textarea name="text" cols="30" rows="10" placeholder=" "></textarea>
+        <span class="placeholder"
+          >Напишите здесь пару слов о проделанной работе</span
+        >
+      </label>
+      <button class="btn btn-submit" title="Принять работу" disabled>
+        Принять работу
+      </button>
+    </form>
   </div>
 </dialog>
 
@@ -1274,13 +1308,13 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20221024141830"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20221118154929"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20221024141830"></script>
+	<script src="./assets/js/app.min.js?ver=20221118154929"></script>
 </body>
 </html>
