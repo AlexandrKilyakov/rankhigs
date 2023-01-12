@@ -1,0 +1,134 @@
+.error {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  min-height: inherit;
+  padding: 4rem 0;
+  background-color: var(--light);
+}
+
+.error .arc-left,
+.error .arc-hidden {
+  height: 16.926rem;
+}
+
+.error .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.25rem;
+}
+
+.error-info {
+  display: -ms-grid;
+  display: grid;
+  width: 30.5rem;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  gap: 2rem;
+}
+
+.error-info .error-text,
+.error-info .error-title {
+  margin: 0;
+}
+
+.error-text {
+  line-height: 120%;
+}
+
+.error-icons {
+  max-width: 44vw;
+  width: 100%;
+}
+
+@media (max-width: 1167px) {
+  .error {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 867px) {
+  .error-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 100%;
+    -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+
+  .error-info {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 100%;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    background-color: var(--light);
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    -webkit-box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+            box-shadow: 0 0.25rem 1.25rem rgba(0, 0, 0, 0.15);
+    gap: 1.5rem;
+    z-index: 1;
+  }
+
+  .error-info .error-text,
+  .error-info .error-title {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .error-info {
+    gap: 1rem;
+  }
+
+  .error {
+    padding: 2rem 0;
+  }
+
+  .error .arc-hidden,
+  .error .arc-left,
+  .error .arc-right {
+    height: 8rem;
+  }
+}
+
+@media (max-width: 467px) {
+  .error-info {
+    padding: 1rem;
+  }
+}
