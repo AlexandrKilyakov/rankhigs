@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация нового пользователя</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221024141830" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230124105415" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <!-- <header class="main-header hide">
+    <header class="main-header hide">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -101,10 +101,10 @@
         <span class="line"></span>
         <span class="line"></span>
       </button>
-    </header> -->
+    </header>
 
     <!-- Для зареганых -->
-    <header class="main-header header-for-login">
+    <header class="main-header header-for-login ">
       <a href="/" class="mh-logo stop-hover-link"
         ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
@@ -131,7 +131,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9319 2.21837e-07C59.7309 9.93197e-08 62 2.27217 62 5.07503L62 31.0423L52.3907 31.0423C53.1191 31.9752 53.5531 33.1497 53.5531 34.4257C53.5531 37.4621 51.095 39.9236 48.0627 39.9236C45.0304 39.9236 42.5722 37.4621 42.5722 34.4257C42.5722 33.1497 43.0063 31.9752 43.7346 31.0423L31 31.0423L31 18.2228C31.9448 18.9927 33.1502 19.4543 34.4632 19.4543C37.4955 19.4543 39.9537 16.9928 39.9537 13.9563C39.9537 10.9199 37.4955 8.45839 34.4632 8.45839C33.1502 8.45839 31.9448 8.91995 31 9.68987L31 1.3569e-06L56.9319 2.21837e-07Z" fill="#921A1D" fill-opacity="0.5"/>
 </svg>    </a
       >
-      
+
       <nav class="mh-nav">
         <a href="#" class="mh-link link-color" title="Исполнители"
           >Исполнители</a
@@ -148,10 +148,10 @@
       <div class="login-options">
         <!-- TODO: Добавь этот бургер -->
         <button class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
         <a href="#" class="lp-link" title="Открыть избранное"
           ><svg
   width="26"
@@ -169,6 +169,11 @@
 </svg>
 </a
         >
+        <button class="menu-bar-trigger">
+          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    
+        </button>
         <a href="#" class="lp-link" title="Открыть уведомления"
           ><svg
   width="24"
@@ -1285,13 +1290,13 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20221024141830"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230124105415"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20221024141830"></script>
+	<script src="./assets/js/app.min.js?ver=20230124105415"></script>
 </body>
 </html>

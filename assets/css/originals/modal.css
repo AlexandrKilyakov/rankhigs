@@ -1,0 +1,324 @@
+.send-request-artist .modal-body > .btn,
+.add-employee .modal-body > .btn {
+  margin: var(--i16) auto 0;
+}
+
+.send-request-artist .modal-body,
+.add-employee .modal-body,
+.send-artistes .modal-body {
+  background-color: var(--grey-5);
+  max-width: 58.75rem;
+}
+
+.send-request-artist .search,
+.add-employee .search,
+.send-artistes .search {
+  background-color: transparent;
+}
+
+.send-request-artist .search:focus-visible,
+.add-employee .search:focus-visible,
+.send-artistes .search:focus-visible {
+  background-color: var(--light);
+  border-color: var(--main);
+}
+
+.send-request-artist .modal-name,
+.add-employee .modal-name,
+.send-artistes .modal-name {
+  margin-bottom: var(--i8);
+  text-align: start;
+}
+
+.send-request-artist .modal-descr,
+.add-employee .modal-descr,
+.send-artistes .modal-descr {
+  margin-bottom: var(--i32);
+}
+
+.send-request-artist .modal-result .zapros-sends,
+.add-employee .modal-result .zapros-sends,
+.send-artistes .modal-result .zapros-sends {
+  background-color: var(--grey-5) !important;
+}
+
+.send-request-artist .modal-result .zapros-sends .checktext,
+.add-employee .modal-result .zapros-sends .checktext,
+.send-artistes .modal-result .zapros-sends .checktext {
+  color: var(--grey-50);
+}
+
+.send-request-artist .modal-result .zapros-sends .checktext::before,
+.add-employee .modal-result .zapros-sends .checktext::before,
+.send-artistes .modal-result .zapros-sends .checktext::before {
+  background-image: url("../svg/art/check-grey.svg");
+}
+
+.send-request-artist .modal-result .checkbox,
+.add-employee .modal-result .checkbox,
+.send-artistes .modal-result .checkbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  background-color: var(--light);
+  margin: 0;
+  padding: var(--i10);
+  cursor: pointer;
+  -webkit-transition: 0.1s all linear;
+  -o-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+  overflow: hidden;
+}
+
+.send-request-artist .modal-result .checkbox:hover:not(.zapros-sends),
+.add-employee .modal-result .checkbox:hover:not(.zapros-sends),
+.send-artistes .modal-result .checkbox:hover:not(.zapros-sends) {
+  background-color: var(--grey-25);
+}
+
+.send-request-artist .modal-result .checkbox:not(.zapros-sends) input[type=checkbox]:checked + .checktext::after,
+.add-employee .modal-result .checkbox:not(.zapros-sends) input[type=checkbox]:checked + .checktext::after,
+.send-artistes .modal-result .checkbox:not(.zapros-sends) input[type=checkbox]:checked + .checktext::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--grey-25);
+  z-index: -1;
+}
+
+.send-request-artist .modal-result .checkbox .checktext,
+.add-employee .modal-result .checkbox .checktext,
+.send-artistes .modal-result .checkbox .checktext {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  gap: var(--i10);
+  z-index: 1;
+}
+
+.send-request-artist .modal-result .checkbox .checktext::before,
+.add-employee .modal-result .checkbox .checktext::before,
+.send-artistes .modal-result .checkbox .checktext::before {
+  position: initial;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.modal-result {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 16rem;
+  padding: var(--i24);
+  border-radius: var(--i4);
+  margin-top: var(--i16);
+  background-color: var(--light);
+  overflow: hidden;
+}
+
+.modal-result .mr-content {
+  overflow: hidden;
+  overflow-y: auto;
+  padding-right: inherit;
+}
+
+.modal-result .void {
+  max-width: 28rem;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: auto;
+  font-weight: 600;
+  font-size: var(--f18);
+  line-height: 120%;
+  text-align: center;
+  color: var(--grey-75);
+}
+
+.status-wait,
+.status-close {
+  margin-left: auto;
+}
+
+.status-close {
+  color: var(--main);
+}
+
+.add-employee .employee-box .ava img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.send-artistes .modal-body > .btn {
+  margin-top: var(--i16);
+}
+
+.add-employee .employee-box,
+.send-artistes .employee-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: var(--i10);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.add-employee .employee-box .ava,
+.send-artistes .employee-box .ava {
+  min-width: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
+  overflow: hidden;
+}
+
+.add-employee .modal-result,
+.send-artistes .modal-result {
+  padding: var(--i16);
+}
+
+.add-employee .modal-result .mr-content,
+.send-artistes .modal-result .mr-content {
+  padding-right: var(--i8);
+}
+
+.result-items-empl {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: var(--i10);
+  margin-top: var(--i16);
+}
+
+.rie-cart {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  gap: var(--i12);
+  background: var(--light);
+  border: var(--line-grey);
+  border-radius: var(--i4);
+  padding: var(--i10);
+  -webkit-transition: 0.1s all linear;
+  -o-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+
+.rie-cart:hover {
+  border-color: var(--main);
+}
+
+.rie-cart:hover .name {
+  color: var(--main);
+}
+
+.rie-cart .rie-cart-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.rie-cart .rie-cart-link:after {
+  display: none;
+}
+
+.rie-cart .btn-close {
+  width: var(--i10);
+  position: relative;
+  z-index: 1;
+}
+
+.rie-cart .name {
+  font-size: var(--f12);
+  line-height: 120%;
+  -webkit-transition: 0.1s color linear;
+  -o-transition: 0.1s color linear;
+  transition: 0.1s color linear;
+}
+
+.rie-cart .rie-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: var(--i10);
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.rie-cart .rie-info .ava {
+  min-width: 0.875rem;
+  width: 0.875rem;
+  height: 0.875rem;
+  border-radius: 0.875rem;
+  overflow: hidden;
+}
+
+.rie-cart .rie-info .ava img {
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.accept-job .modal-body {
+  width: 49.6875rem;
+  max-width: initial;
+}
+
+.accept-job .modal-body .rating-area {
+  margin: 0;
+}
+
+.accept-job .modal-body .accept-title {
+  margin-bottom: var(--i16);
+}
+
+.accept-job .modal-body .accept-title:not(:first-of-type) {
+  margin-top: var(--i24);
+}
+
+.accept-job .modal-body label {
+  margin-top: 0;
+}
+
+.accept-job .modal-body .btn-submit {
+  margin: var(--i24) auto 0;
+}
+
+.accept-job .modal-body .modal-name {
+  margin-bottom: var(--i16);
+}

@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Страница запроса исполнителя</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221024141830" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230124105415" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <!-- <header class="main-header hide">
+    <header class="main-header hide">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -101,10 +101,10 @@
         <span class="line"></span>
         <span class="line"></span>
       </button>
-    </header> -->
+    </header>
 
     <!-- Для зареганых -->
-    <header class="main-header header-for-login">
+    <header class="main-header header-for-login ">
       <a href="/" class="mh-logo stop-hover-link"
         ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
@@ -131,7 +131,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9319 2.21837e-07C59.7309 9.93197e-08 62 2.27217 62 5.07503L62 31.0423L52.3907 31.0423C53.1191 31.9752 53.5531 33.1497 53.5531 34.4257C53.5531 37.4621 51.095 39.9236 48.0627 39.9236C45.0304 39.9236 42.5722 37.4621 42.5722 34.4257C42.5722 33.1497 43.0063 31.9752 43.7346 31.0423L31 31.0423L31 18.2228C31.9448 18.9927 33.1502 19.4543 34.4632 19.4543C37.4955 19.4543 39.9537 16.9928 39.9537 13.9563C39.9537 10.9199 37.4955 8.45839 34.4632 8.45839C33.1502 8.45839 31.9448 8.91995 31 9.68987L31 1.3569e-06L56.9319 2.21837e-07Z" fill="#921A1D" fill-opacity="0.5"/>
 </svg>    </a
       >
-      
+
       <nav class="mh-nav">
         <a href="#" class="mh-link link-color" title="Исполнители"
           >Исполнители</a
@@ -148,10 +148,10 @@
       <div class="login-options">
         <!-- TODO: Добавь этот бургер -->
         <button class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
         <a href="#" class="lp-link" title="Открыть избранное"
           ><svg
   width="26"
@@ -169,6 +169,11 @@
 </svg>
 </a
         >
+        <button class="menu-bar-trigger">
+          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    
+        </button>
         <a href="#" class="lp-link" title="Открыть уведомления"
           ><svg
   width="24"
@@ -254,54 +259,55 @@
     </header>
     <main role="main">
 
-<aside class="menu-bar">
-  <div class="element-bar">
-    <a href="/link" class="back-page" title="Каталог запросов">
-      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="lk">
+  <aside class="menu-bar">
+    <div class="element-bar">
+      <a href="/link" class="back-page" title="Каталог запросов">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>    
-      <span>Каталог запросов</span>
-    </a>
-  </div>
-</aside>
-<div class="tablet">
-  <div class="tablet-container">
-    <div class="all-content page-back">
-      <!-- Так выглядит блок, если исполнитель сам нашел этот запрос (скрыл блок классом "hide") -->
-      <header class="content-header zapros-cart cart hide">
-        <div class="zc-item">
-          <h1 class="zc-title">
-            Обработка поверхности муфт без травления/обезжиривания
-          </h1>
-          <div class="zc-items">
-            <div class="zci-item">
-              <p class="fake-table-title">Сфера компетенции:</p>
-              <a href="#" class="tag-std">Юридическая экспертиза</a>
-            </div>
-            <div class="zci-item">
-              <p class="fake-table-title">Заказчик:</p>
-              <a href="#" class="zc-link fake-h5"
-                >БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</a
-              >
-            </div>
-            <div class="zci-item">
-              <p class="fake-table-title">Дата публикации запроса:</p>
-              <time class="zc-value">22.11.2000</time>
+        <span>Каталог запросов</span>
+      </a>
+    </div>
+  </aside>
+  <div class="tablet">
+    <div class="tablet-container">
+      <div class="all-content page-back">
+        <!-- Так выглядит блок, если исполнитель сам нашел этот запрос (скрыл блок классом "hide") -->
+        <header class="content-header zapros-cart cart hide">
+          <div class="zc-item">
+            <h1 class="zc-title">
+              Обработка поверхности муфт без травления/обезжиривания
+            </h1>
+            <div class="zc-items">
+              <div class="zci-item">
+                <p class="fake-table-title">Сфера компетенции:</p>
+                <a href="#" class="tag-std">Юридическая экспертиза</a>
+              </div>
+              <div class="zci-item">
+                <p class="fake-table-title">Заказчик:</p>
+                <a href="#" class="zc-link fake-h5"
+                  >БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</a
+                >
+              </div>
+              <div class="zci-item">
+                <p class="fake-table-title">Дата публикации запроса:</p>
+                <time class="zc-value">22.11.2000</time>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="end-item">
-          <div class="tag-cost">
-            <p class="tc-text">от 1.000</p>
-            <p class="tc-text">до 2.000.000 руб.</p>
-          </div>
-          <button class="btn btn-respond" title="Откликнуться">
-            Откликнуться
-          </button>
+          <div class="end-item">
+            <div class="tag-cost">
+              <p class="tc-text">от 1.000</p>
+              <p class="tc-text">до 2.000.000 руб.</p>
+            </div>
+            <button class="btn btn-respond" title="Откликнуться">
+              Откликнуться
+            </button>
 
-          <div class="zapros-btns">
-            <button class="btn-cart">
-              <svg
+            <div class="zapros-btns">
+              <button class="btn-cart">
+                <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -339,10 +345,11 @@
     stroke-linejoin="round"
   />
 </svg>
- Поделиться ссылкой на запрос
-            </button>
-            <button class="btn-cart">
-              <svg
+ Поделиться ссылкой на
+                запрос
+              </button>
+              <button class="btn-cart">
+                <svg
   width="26"
   height="24"
   viewBox="0 0 26 24"
@@ -357,57 +364,57 @@
   />
 </svg>
  Добавить запрос в избранное
-            </button>
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
+        </header>
 
-      <!-- Так выглядит блок, если исполнителю прислали запрос -->
-      <header class="content-header zapros-cart cart">
-        <div class="zc-item">
-          <h1 class="zc-title">
-            Обработка поверхности муфт без травления/обезжиривания
-          </h1>
-          <div class="zc-items">
-            <div class="zci-item">
-              <p class="fake-table-title">Сфера компетенции:</p>
-              <a href="#" class="tag-std">Юридическая экспертиза</a>
-            </div>
-            <div class="zci-item">
-              <p class="fake-table-title">Заказчик:</p>
-              <a href="#" class="zc-link fake-h5"
-                >БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</a
-              >
-            </div>
-            <!-- Запрос пришел -->
-            <div class="zci-item grid-2">
-              <div>
+        <!-- Так выглядит блок, если исполнителю прислали запрос -->
+        <header class="content-header zapros-cart cart">
+          <div class="zc-item">
+            <h1 class="zc-title">
+              Обработка поверхности муфт без травления/обезжиривания
+            </h1>
+            <div class="zc-items">
+              <div class="zci-item">
+                <p class="fake-table-title">Сфера компетенции:</p>
+                <a href="#" class="tag-std">Юридическая экспертиза</a>
+              </div>
+              <div class="zci-item">
+                <p class="fake-table-title">Заказчик:</p>
+                <a href="#" class="zc-link fake-h5"
+                  >БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</a
+                >
+              </div>
+              <!-- Запрос пришел -->
+              <div class="zci-item grid-2">
+                <div>
+                  <p class="fake-table-title">Дата публикации запроса:</p>
+                  <time class="zc-value">22.11.2000</time>
+                </div>
+                <div>
+                  <p class="fake-table-title">Приглашение прислано:</p>
+                  <time class="zc-value">22.01.2021</time>
+                </div>
+              </div>
+              <!-- Остольные случаи -->
+              <div class="zci-item hide">
                 <p class="fake-table-title">Дата публикации запроса:</p>
                 <time class="zc-value">22.11.2000</time>
               </div>
-              <div>
-                <p class="fake-table-title">Приглашение прислано:</p>
-                <time class="zc-value">22.01.2021</time>
-              </div>
-            </div>
-            <!-- Остольные случаи -->
-            <div class="zci-item hide">
-              <p class="fake-table-title">Дата публикации запроса:</p>
-              <time class="zc-value">22.11.2000</time>
             </div>
           </div>
-        </div>
-        <div class="end-item">
-          <div class="tag-cost">
-            <p class="tc-text">от 1.000</p>
-            <p class="tc-text">до 2.000.000 руб.</p>
-          </div>
+          <div class="end-item">
+            <div class="tag-cost">
+              <p class="tc-text">от 1.000</p>
+              <p class="tc-text">до 2.000.000 руб.</p>
+            </div>
 
-          <!-- Запрос пришел -->
-          <div class="zapros-btns">
-            <div class="zapros-options">
-              <button class="btn btn-24">
-                <svg
+            <!-- Запрос пришел -->
+            <div class="zapros-btns">
+              <div class="zapros-options">
+                <button class="btn btn-24">
+                  <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -418,16 +425,16 @@
   <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
 </svg>
 Принять
-              </button>
-              <button class="btn-24">
-                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </button>
+                <button class="btn-24">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M4.6665 4.6665L7.99984 7.99984M11.3332 11.3332L7.99984 7.99984M7.99984 7.99984L11.3332 4.6665M7.99984 7.99984L4.6665 11.3332" stroke="#921A1D"/>
     <rect x="0.5" y="0.5" width="15" height="15" rx="7.5" stroke="#921A1D"/>
 </svg>    Отклонить
-              </button>
-            </div>
-            <button class="btn-cart">
-              <svg
+                </button>
+              </div>
+              <button class="btn-cart">
+                <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -465,10 +472,11 @@
     stroke-linejoin="round"
   />
 </svg>
- Поделиться ссылкой на запрос
-            </button>
-            <button class="btn-cart">
-              <svg
+ Поделиться ссылкой на
+                запрос
+              </button>
+              <button class="btn-cart">
+                <svg
   width="26"
   height="24"
   viewBox="0 0 26 24"
@@ -483,12 +491,12 @@
   />
 </svg>
  Добавить запрос в избранное
-            </button>
-          </div>
-          <!-- Запрос принят -->
-          <div class="zapros-btns zapros-isp-ok hide">
-            <button class="btn-cart">
-              <svg
+              </button>
+            </div>
+            <!-- Запрос принят -->
+            <div class="zapros-btns zapros-isp-ok hide">
+              <button class="btn-cart">
+                <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -526,10 +534,11 @@
     stroke-linejoin="round"
   />
 </svg>
- Поделиться ссылкой на запрос
-            </button>
-            <button class="btn-cart">
-              <svg
+ Поделиться ссылкой на
+                запрос
+              </button>
+              <button class="btn-cart">
+                <svg
   width="18"
   height="22"
   viewBox="0 0 18 22"
@@ -550,16 +559,16 @@
   />
 </svg>
  Скопировать запрос
-            </button>
-          </div>
-          <div class="zapros-asp hide">
-            <p class="fake-table-title">Исполнитель:</p>
-            <div class="cart-persone">
-              <a href="#" class="link-cart-persone" target="_blank"></a>
-              <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
-              <p class="name">Егор Егоров</p>
-              <a href="/chat" class="link-persone-mess" target="_blank">
-                <svg
+              </button>
+            </div>
+            <div class="zapros-asp hide">
+              <p class="fake-table-title">Исполнитель:</p>
+              <div class="cart-persone">
+                <a href="#" class="link-cart-persone" target="_blank"></a>
+                <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
+                <p class="name">Егор Егоров</p>
+                <a href="/chat" class="link-persone-mess" target="_blank">
+                  <svg
   width="28"
   height="26"
   viewBox="0 0 28 26"
@@ -572,21 +581,21 @@
   />
 </svg>
 </a
-              >
+                >
+              </div>
             </div>
-          </div>
 
-          <!-- Запрос откланен -->
-          <div class="zapros-close hide">
-            <button class="btn btn-respond" title="Откликнуться">
-              Откликнуться
-            </button>
-            <p class="status-responded">Запрос отклонен 22.11.2021</p>
-          </div>
+            <!-- Запрос откланен -->
+            <div class="zapros-close hide">
+              <button class="btn btn-respond" title="Откликнуться">
+                Откликнуться
+              </button>
+              <p class="status-responded">Запрос отклонен 22.11.2021</p>
+            </div>
 
-          <div class="zapros-btns hide">
-            <button class="btn-cart">
-              <svg
+            <div class="zapros-btns hide">
+              <button class="btn-cart">
+                <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -624,10 +633,11 @@
     stroke-linejoin="round"
   />
 </svg>
- Поделиться ссылкой на запрос
-            </button>
-            <button class="btn-cart">
-              <svg
+ Поделиться ссылкой на
+                запрос
+              </button>
+              <button class="btn-cart">
+                <svg
   width="26"
   height="24"
   viewBox="0 0 26 24"
@@ -642,122 +652,124 @@
   />
 </svg>
  Добавить запрос в избранное
-            </button>
+              </button>
+            </div>
           </div>
-        </div>
-      </header>
-      <section class="cart about-me">
-        <h2 class="fake-h3 about-title">Описание проекта</h2>
-        <div class="about-grid-5 grid-5">
-          <div>
-            <p class="fake-table-title">Сроки выполнения:</p>
-            <p class="value">22.11.2000 — 22.11.2022</p>
+        </header>
+        <section class="cart about-me">
+          <h2 class="fake-h3 about-title">Описание проекта</h2>
+          <div class="about-grid-5 grid-5">
+            <div>
+              <p class="fake-table-title">Сроки выполнения:</p>
+              <p class="value">22.11.2000 — 22.11.2022</p>
+            </div>
+            <div>
+              <p class="fake-table-title">Тип проекта:</p>
+              <p class="value">новый</p>
+            </div>
+            <div>
+              <p class="fake-table-title">Формат работы:</p>
+              <p class="value">онлайн</p>
+            </div>
+            <div>
+              <p class="fake-table-title">Количество исполнителей:</p>
+              <p class="value">команда</p>
+            </div>
+            <div>
+              <p class="fake-table-title">Порядок оплаты:</p>
+              <p class="value">предоплата 50%</p>
+            </div>
           </div>
-          <div>
-            <p class="fake-table-title">Тип проекта:</p>
-            <p class="value">новый</p>
-          </div>
-          <div>
-            <p class="fake-table-title">Формат работы:</p>
-            <p class="value">онлайн</p>
-          </div>
-          <div>
-            <p class="fake-table-title">Количество исполнителей:</p>
-            <p class="value">команда</p>
-          </div>
-          <div>
-            <p class="fake-table-title">Порядок оплаты:</p>
-            <p class="value">предоплата 50%</p>
-          </div>
-        </div>
-        <div class="zapros-description-about">
-          <div class="zda-text">
-            <p class="fake-table-title">Цели проекта:</p>
+          <div class="zapros-description-about">
+            <div class="zda-text">
+              <p class="fake-table-title">Цели проекта:</p>
 
-            <p>
-              Нанесение противоизносного фосфатного покрытия на муфты проводится
-              с использованием травильного отделения путем обработки погружением
-              в ванны с растворами. Минусом данных технологий является
-              негативное влияние на окружающую среду в виде выбросов вредных
-              веществ в воздух рабочей зоны и в атмосферу.
-            </p>
-            <p>
-              Необходимо предложить технологии нанесения противоизносных
-              покрытий, исключающие использование травильного отделения (взамен
-              фосфатирования).
-            </p>
-            <p>
-              Основные требования к технологическому процессу и оборудованию:
-            </p>
-            <ol class="list-start">
-              <li>
-                Необходима технология и оборудование для нанесения
-                функциональных покрытий на поверхность резьбы муфт и ниппельных
-                концов труб.
-              </li>
-              <li>
-                Технология нанесения покрытия должна предусматривать:
-                <ul>
-                  <li>применение быстропереналаживаемого оборудования;</li>
-                  <li>
-                    возможность управления равномерностью и толщиной покрытия;
-                  </li>
-                  <li>
-                    возможность ремонта покрытия в случае брака при нанесении
-                    либо после эксплуатации;
-                  </li>
-                  <li>возможность реализации в условиях Заказчика;</li>
-                  <li>
-                    высокую производительность нанесения функциональных
-                    покрытий;
-                  </li>
-                  <li>
-                    применение материалов отечественного и зарубежного
-                    производства.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                Технология нанесения покрытия не должна приводить к изменению
-                геометрических параметров резьбы.
-              </li>
-              <li>
-                Технология нанесения покрытия не должна приводить к изменению
-                микроструктуры металла и его механических свойств.
-              </li>
-              <li>
-                Предлагаемая технология нанесения покрытия и применяемое
-                оборудование должно иметь возможность изменения (регулировки)
-                режимов обработки с целью обеспечения качества покрытия на
-                различных типах резьб и типоразмерах муфт и труб.
-              </li>
-              <li>
-                Предлагаемая технология должна исключать или минимизировать
-                использование химических растворов, органических растворителей и
-                соответствовать экологическим требованиям и промышленным нормам
-                безопасности.
-              </li>
-            </ol>
-          </div>
-          <div class="zda-text">
-            <p class="fake-table-title">
-              Дополнительные требования к исполнителям:
-            </p>
-            <p>
-              Нанесение противоизносного фосфатного покрытия на муфты проводится
-              с использованием травильного отделения путем обработки погружением
-              в ванны с растворами. Минусом данных технологий является
-              негативное влияние на окружающую среду в виде выбросов вредных
-              веществ в воздух рабочей зоны и в атмосферу.
-            </p>
-            <p>
-              Необходимо предложить технологии нанесения противоизносных
-              покрытий, исключающие использование травильного отделения (взамен
-              фосфатирования).
-            </p>
-          </div>
-          <button class="btn-download">
-            <svg
+              <p>
+                Нанесение противоизносного фосфатного покрытия на муфты
+                проводится с использованием травильного отделения путем
+                обработки погружением в ванны с растворами. Минусом данных
+                технологий является негативное влияние на окружающую среду в
+                виде выбросов вредных веществ в воздух рабочей зоны и в
+                атмосферу.
+              </p>
+              <p>
+                Необходимо предложить технологии нанесения противоизносных
+                покрытий, исключающие использование травильного отделения
+                (взамен фосфатирования).
+              </p>
+              <p>
+                Основные требования к технологическому процессу и оборудованию:
+              </p>
+              <ol class="list-start">
+                <li>
+                  Необходима технология и оборудование для нанесения
+                  функциональных покрытий на поверхность резьбы муфт и
+                  ниппельных концов труб.
+                </li>
+                <li>
+                  Технология нанесения покрытия должна предусматривать:
+                  <ul>
+                    <li>применение быстропереналаживаемого оборудования;</li>
+                    <li>
+                      возможность управления равномерностью и толщиной покрытия;
+                    </li>
+                    <li>
+                      возможность ремонта покрытия в случае брака при нанесении
+                      либо после эксплуатации;
+                    </li>
+                    <li>возможность реализации в условиях Заказчика;</li>
+                    <li>
+                      высокую производительность нанесения функциональных
+                      покрытий;
+                    </li>
+                    <li>
+                      применение материалов отечественного и зарубежного
+                      производства.
+                    </li>
+                  </ul>
+                </li>
+                <li>
+                  Технология нанесения покрытия не должна приводить к изменению
+                  геометрических параметров резьбы.
+                </li>
+                <li>
+                  Технология нанесения покрытия не должна приводить к изменению
+                  микроструктуры металла и его механических свойств.
+                </li>
+                <li>
+                  Предлагаемая технология нанесения покрытия и применяемое
+                  оборудование должно иметь возможность изменения (регулировки)
+                  режимов обработки с целью обеспечения качества покрытия на
+                  различных типах резьб и типоразмерах муфт и труб.
+                </li>
+                <li>
+                  Предлагаемая технология должна исключать или минимизировать
+                  использование химических растворов, органических растворителей
+                  и соответствовать экологическим требованиям и промышленным
+                  нормам безопасности.
+                </li>
+              </ol>
+            </div>
+            <div class="zda-text">
+              <p class="fake-table-title">
+                Дополнительные требования к исполнителям:
+              </p>
+              <p>
+                Нанесение противоизносного фосфатного покрытия на муфты
+                проводится с использованием травильного отделения путем
+                обработки погружением в ванны с растворами. Минусом данных
+                технологий является негативное влияние на окружающую среду в
+                виде выбросов вредных веществ в воздух рабочей зоны и в
+                атмосферу.
+              </p>
+              <p>
+                Необходимо предложить технологии нанесения противоизносных
+                покрытий, исключающие использование травильного отделения
+                (взамен фосфатирования).
+              </p>
+            </div>
+            <button class="btn-download">
+              <svg
   width="17"
   height="15"
   viewBox="0 0 17 15"
@@ -775,265 +787,266 @@
     fill="#C3C3C3"
   />
 </svg>
- Скачать техническое задание
-            (doc.)
-          </button>
-        </div>
-      </section>
-      <section class="project-me">
-        <h2 class="fake-h3 project-title">Похожие запросы</h2>
-        <div class="cart grid-4-auto zapros-fake-table">
-          <div class="zft-item">
-            <p class="fake-table-title">Название:</p>
-            <a href="#" class="fake-h5 zft-title link-color"
-              >ПО для дистанционного электронного корпоративного голосования
-              (включая мобильное приложение)</a
-            >
+ Скачать техническое
+              задание (doc.)
+            </button>
           </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Заказчик:</p>
-            <a href="#" class="link-main zft-link"
-              >Фонд поддержки научной, научно-технической "Энергия без
-              границ"</a
-            >
+        </section>
+        <section class="project-me">
+          <h2 class="fake-h3 project-title">Похожие запросы</h2>
+          <div class="cart grid-4-auto zapros-fake-table">
+            <div class="zft-item">
+              <p class="fake-table-title">Название:</p>
+              <a href="#" class="fake-h5 zft-title link-color"
+                >ПО для дистанционного электронного корпоративного голосования
+                (включая мобильное приложение)</a
+              >
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Заказчик:</p>
+              <a href="#" class="link-main zft-link"
+                >Фонд поддержки научной, научно-технической "Энергия без
+                границ"</a
+              >
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Срок реализации:</p>
+              <time class="zft-time">22.01.2020 —<br />22.01.2025</time>
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Стоимость работы:</p>
+              <p class="zft-cost">от 1.000<br />до 2.000.000</p>
+            </div>
           </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Срок реализации:</p>
-            <time class="zft-time">22.01.2020 —<br />22.01.2025</time>
+          <div class="cart grid-4-auto zapros-fake-table">
+            <div class="zft-item">
+              <p class="fake-table-title">Название:</p>
+              <a href="#" class="fake-h5 zft-title link-color"
+                >ПО для дистанционного электронного корпоративного голосования
+                (включая мобильное приложение)</a
+              >
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Заказчик:</p>
+              <a href="#" class="link-main zft-link"
+                >Фонд поддержки научной, научно-технической "Энергия без
+                границ"</a
+              >
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Срок реализации:</p>
+              <time class="zft-time">22.01.2020 —<br />22.01.2025</time>
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Стоимость работы:</p>
+              <p class="zft-cost">от 1.000<br />до 2.000.000</p>
+            </div>
           </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Стоимость работы:</p>
-            <p class="zft-cost">от 1.000<br />до 2.000.000</p>
+          <div class="cart grid-4-auto zapros-fake-table">
+            <div class="zft-item">
+              <p class="fake-table-title">Название:</p>
+              <a href="#" class="fake-h5 zft-title link-color"
+                >ПО для дистанционного электронного корпоративного голосования
+                (включая мобильное приложение)</a
+              >
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Заказчик:</p>
+              <a href="#" class="link-main zft-link"
+                >Фонд поддержки научной, научно-технической "Энергия без
+                границ"</a
+              >
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Срок реализации:</p>
+              <time class="zft-time">22.01.2020 —<br />22.01.2025</time>
+            </div>
+            <div class="zft-item">
+              <p class="fake-table-title">Стоимость работы:</p>
+              <p class="zft-cost">от 1.000<br />до 2.000.000</p>
+            </div>
           </div>
-        </div>
-        <div class="cart grid-4-auto zapros-fake-table">
-          <div class="zft-item">
-            <p class="fake-table-title">Название:</p>
-            <a href="#" class="fake-h5 zft-title link-color"
-              >ПО для дистанционного электронного корпоративного голосования
-              (включая мобильное приложение)</a
-            >
+        </section>
+        <div class="singly singly-box-end">
+          <div class="sngl-header">
+            <h2 class="sngl-title fake-h3">Похожие заказчики</h2>
           </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Заказчик:</p>
-            <a href="#" class="link-main zft-link"
-              >Фонд поддержки научной, научно-технической "Энергия без
-              границ"</a
-            >
-          </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Срок реализации:</p>
-            <time class="zft-time">22.01.2020 —<br />22.01.2025</time>
-          </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Стоимость работы:</p>
-            <p class="zft-cost">от 1.000<br />до 2.000.000</p>
-          </div>
-        </div>
-        <div class="cart grid-4-auto zapros-fake-table">
-          <div class="zft-item">
-            <p class="fake-table-title">Название:</p>
-            <a href="#" class="fake-h5 zft-title link-color"
-              >ПО для дистанционного электронного корпоративного голосования
-              (включая мобильное приложение)</a
-            >
-          </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Заказчик:</p>
-            <a href="#" class="link-main zft-link"
-              >Фонд поддержки научной, научно-технической "Энергия без
-              границ"</a
-            >
-          </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Срок реализации:</p>
-            <time class="zft-time">22.01.2020 —<br />22.01.2025</time>
-          </div>
-          <div class="zft-item">
-            <p class="fake-table-title">Стоимость работы:</p>
-            <p class="zft-cost">от 1.000<br />до 2.000.000</p>
-          </div>
-        </div>
-      </section>
-      <div class="singly singly-box-end">
-        <div class="sngl-header">
-          <h2 class="sngl-title fake-h3">Похожие заказчики</h2>
-        </div>
-        <div class="slider">
-          <section class="sngl-articles slider-track">
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
-                </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <div class="slider">
+            <section class="sngl-articles slider-track">
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
                 </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
                 </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
                 </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
                 </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
                 </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
                 </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end third-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <div class="sngl-logo">
-                  <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
                 </div>
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end third-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <div class="sngl-logo">
+                    <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
+                  </div>
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                Фонд поддержки научной, научно-технической и инновационной
-                деятельности "Энергия без границ"
-              </h3>
-              <p class="sngl-txt">Поставленых задач: <b>129</b></p>
-            </article>
-          </section>
-          <meter value="0.1"></meter>
-          <div class="slider-nav">
-            <button class="slider-btn btn-left">
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                </div>
+                <h3 class="fake-h5 sngl-name">
+                  Фонд поддержки научной, научно-технической и инновационной
+                  деятельности "Энергия без границ"
+                </h3>
+                <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+              </article>
+            </section>
+            <meter value="0.1"></meter>
+            <div class="slider-nav">
+              <button class="slider-btn btn-left">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>    
-            </button>
-            <button class="slider-btn btn-right">
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </button>
+              <button class="slider-btn btn-right">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>    
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1264,13 +1277,13 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20221024141830"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230124105415"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20221024141830"></script>
+	<script src="./assets/js/app.min.js?ver=20230124105415"></script>
 </body>
 </html>

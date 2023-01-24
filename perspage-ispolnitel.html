@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог исполнителей</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20221024141830" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20221024141830" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230124105415" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <!-- <header class="main-header hide">
+    <header class="main-header hide">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -101,10 +101,10 @@
         <span class="line"></span>
         <span class="line"></span>
       </button>
-    </header> -->
+    </header>
 
     <!-- Для зареганых -->
-    <header class="main-header header-for-login">
+    <header class="main-header header-for-login ">
       <a href="/" class="mh-logo stop-hover-link"
         ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
@@ -131,7 +131,7 @@
     <path fill-rule="evenodd" clip-rule="evenodd" d="M56.9319 2.21837e-07C59.7309 9.93197e-08 62 2.27217 62 5.07503L62 31.0423L52.3907 31.0423C53.1191 31.9752 53.5531 33.1497 53.5531 34.4257C53.5531 37.4621 51.095 39.9236 48.0627 39.9236C45.0304 39.9236 42.5722 37.4621 42.5722 34.4257C42.5722 33.1497 43.0063 31.9752 43.7346 31.0423L31 31.0423L31 18.2228C31.9448 18.9927 33.1502 19.4543 34.4632 19.4543C37.4955 19.4543 39.9537 16.9928 39.9537 13.9563C39.9537 10.9199 37.4955 8.45839 34.4632 8.45839C33.1502 8.45839 31.9448 8.91995 31 9.68987L31 1.3569e-06L56.9319 2.21837e-07Z" fill="#921A1D" fill-opacity="0.5"/>
 </svg>    </a
       >
-      
+
       <nav class="mh-nav">
         <a href="#" class="mh-link link-color" title="Исполнители"
           >Исполнители</a
@@ -148,10 +148,10 @@
       <div class="login-options">
         <!-- TODO: Добавь этот бургер -->
         <button class="burger">
-        <span class="line"></span>
-        <span class="line"></span>
-        <span class="line"></span>
-      </button>
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </button>
         <a href="#" class="lp-link" title="Открыть избранное"
           ><svg
   width="26"
@@ -169,6 +169,11 @@
 </svg>
 </a
         >
+        <button class="menu-bar-trigger">
+          <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    
+        </button>
         <a href="#" class="lp-link" title="Открыть уведомления"
           ><svg
   width="24"
@@ -254,21 +259,22 @@
     </header>
     <main role="main">
 
-<aside class="menu-bar">
-  <div class="element-bar">
-    <a href="/link" class="back-page" title="Каталог заказчиков">
-      <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+<div class="lk">
+  <aside class="menu-bar">
+    <div class="element-bar">
+      <a href="/link" class="back-page" title="Каталог заказчиков">
+        <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>    
-      <span>Каталог исполнителей</span>
-    </a>
-  </div>
-  <div class="element-bar">
-    <button class="btn" title="Заказать услугу">Заказать услугу</button>
-  </div>
-  <nav class="persone-links-not-important">
-    <a href="#" class="pli-link">
-      <svg
+        <span>Каталог исполнителей</span>
+      </a>
+    </div>
+    <div class="element-bar">
+      <button class="btn" title="Заказать услугу">Заказать услугу</button>
+    </div>
+    <nav class="persone-links-not-important">
+      <a href="#" class="pli-link">
+        <svg
   width="26"
   height="24"
   viewBox="0 0 26 24"
@@ -283,10 +289,10 @@
   />
 </svg>
 
-      <span class="pli-text">Добавить в избранное</span>
-    </a>
-    <a href="#" class="pli-link">
-      <svg
+        <span class="pli-text">Добавить в избранное</span>
+      </a>
+      <a href="#" class="pli-link">
+        <svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -325,757 +331,786 @@
   />
 </svg>
 
-      <span class="pli-text">Поделиться профилем</span>
-    </a>
-  </nav>
-  <hr />
-  <nav class="persone-links-important">
-    <a
-      href="#"
-      class="pli-link pli-active check-point-1"
-      title="Об исполнителе"
-    >
-      <span class="pli-text">Об исполнителе</span>
-    </a>
-    <a
-      href="#"
-      class="pli-link check-point-2"
-      title="Дополнительная информация"
-    >
-      <span class="pli-text">Дополнительная информация</span>
-    </a>
-    <a href="#" class="pli-link check-point-3" title="Выполненные проекты">
-      <span class="pli-text">Выполненные проекты</span>
-    </a>
-    <a href="#" class="pli-link check-point-4" title="Похожие исполнители">
-      <span class="pli-text">Похожие исполнители</span>
-    </a>
-  </nav>
-</aside>
-<div class="tablet">
-  <div class="tablet-container">
-    <div class="all-content page-back">
-      <header class="content-header flex-start save-point-1">
-        <div class="cart flex-start introduction">
-          <div class="page-ava">
-            <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-          </div>
-          <div class="cart-element">
-            <h1 class="fake-h2 page-title">Андрей Иванов</h1>
-            <p class="knowledge">юриспруденция</p>
-            <div class="catalog-rating stars-5">
-              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <span class="pli-text">Поделиться профилем</span>
+      </a>
+    </nav>
+    <hr />
+    <nav class="persone-links-important">
+      <a
+        href="#"
+        class="pli-link pli-active check-point-1"
+        title="Об исполнителе"
+      >
+        <span class="pli-text">Об исполнителе</span>
+      </a>
+      <a
+        href="#"
+        class="pli-link check-point-2"
+        title="Дополнительная информация"
+      >
+        <span class="pli-text">Дополнительная информация</span>
+      </a>
+      <a href="#" class="pli-link check-point-3" title="Выполненные проекты">
+        <span class="pli-text">Выполненные проекты</span>
+      </a>
+      <a href="#" class="pli-link check-point-4" title="Похожие исполнители">
+        <span class="pli-text">Похожие исполнители</span>
+      </a>
+    </nav>
+  </aside>
+  <div class="tablet">
+    <div class="tablet-container">
+      <div class="all-content page-back">
+        <header class="content-header flex-start save-point-1">
+          <div class="cart flex-start introduction">
+            <div class="page-ava">
+              <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+            </div>
+            <div class="cart-element">
+              <h1 class="fake-h2 page-title">Андрей Иванов</h1>
+              <p class="knowledge">юриспруденция</p>
+              <div class="catalog-rating stars-5">
+                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-              <p class="catalog-rating-subtitle">
-                0.0 <small>(0 оценок)</small>
-              </p>
+                <p class="catalog-rating-subtitle">
+                  0.0 <small>(0 оценок)</small>
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <section class="cart show-cart-stat">
-          <div class="grid-2">
-            <div class="element-stat">
-              <p class="num">7</p>
-              <p class="text">проектов</p>
+          <section class="cart show-cart-stat">
+            <div class="grid-2">
+              <div class="element-stat">
+                <p class="num">7</p>
+                <p class="text">проектов</p>
+              </div>
+              <div class="element-stat">
+                <p class="num">5</p>
+                <p class="text">активных проекта</p>
+              </div>
             </div>
-            <div class="element-stat">
-              <p class="num">5</p>
-              <p class="text">активных проекта</p>
-            </div>
+            <table class="fake-table-stat">
+              <tr class="fts-item">
+                <th class="name">Проекты вне платформы:</th>
+                <td class="value">2</td>
+              </tr>
+              <tr class="fts-item">
+                <th class="name">Проекты на платформе:</th>
+                <td class="value">24</td>
+              </tr>
+            </table>
+          </section>
+        </header>
+        <section class="flex-start typical-block">
+          <div class="cart education-block typical-cart">
+            <h2 class="fake-h3 typical-title">Образование</h2>
+            <p class="education-value">БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</p>
+            <p class="education-name">Специальность:</p>
+            <p class="education-value">Юриспруденция</p>
+            <p class="education-name">Год окончания:</p>
+            <p class="education-value">2002</p>
           </div>
-          <table class="fake-table-stat">
-            <tr class="fts-item">
-              <th class="name">Проекты вне платформы:</th>
-              <td class="value">2</td>
-            </tr>
-            <tr class="fts-item">
-              <th class="name">Проекты на платформе:</th>
-              <td class="value">24</td>
-            </tr>
-          </table>
-        </section>
-      </header>
-      <section class="flex-start typical-block">
-        <div class="cart education-block typical-cart">
-          <h2 class="fake-h3 typical-title">Образование</h2>
-          <p class="education-value">БГТУ «ВОЕНМЕХ» им. Д.Ф. Устинова</p>
-          <p class="education-name">Специальность:</p>
-          <p class="education-value">Юриспруденция</p>
-          <p class="education-name">Год окончания:</p>
-          <p class="education-value">2002</p>
-        </div>
-        <div class="cart typical-cart">
-          <p class="typical-subtitle">Стаж работы: <b>5 лет 10 месяцев</b></p>
-          <h2 class="fake-h3 typical-title typical-mb-16">Сферы компетенции</h2>
-          <div class="tags-knows">
-            <p class="tag-item">Правовая экспертиза</p>
-            <p class="tag-item">Налоговая практика</p>
-            <p class="tag-item">Строительство</p>
-            <p class="tag-item">ГЧП</p>
-            <button class="btn-tag-more">+13 компетенций</button>
-            <span class="tag-more hide">
+          <div class="cart typical-cart">
+            <p class="typical-subtitle">Стаж работы: <b>5 лет 10 месяцев</b></p>
+            <h2 class="fake-h3 typical-title typical-mb-16">
+              Сферы компетенции
+            </h2>
+            <div class="tags-knows">
+              <p class="tag-item">Правовая экспертиза</p>
               <p class="tag-item">Налоговая практика</p>
               <p class="tag-item">Строительство</p>
               <p class="tag-item">ГЧП</p>
-            </span>
+              <button class="btn-tag-more">+13 компетенций</button>
+              <span class="tag-more hide">
+                <p class="tag-item">Налоговая практика</p>
+                <p class="tag-item">Строительство</p>
+                <p class="tag-item">ГЧП</p>
+              </span>
+            </div>
           </div>
-        </div>
-      </section>
-      <section class="cart about-me">
-        <h2 class="fake-h3 about-title">О себе</h2>
-        <table class="fake-table-stat table-gap-g-32">
-          <thead>
-            <tr>
-              <th>Город:</th>
-              <th>Возраст:</th>
-              <th>Родной язык:</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>Санкт-Петербург</td>
-              <td>35 лет</td>
-              <td>Русский</td>
-            </tr>
-          </tbody>
-        </table>
-        <p class="about-text">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam phasellus
-          enim aliquet commodo urna ultrices et orci enim. Placerat et viverra
-          convallis eget tellus ut feugiat accumsan. Sed et pretium enim vitae,
-          morbi pharetra. Urna, vitae, lacus, viverra sit tincidunt arcu. Vitae
-          eget vivamus tortor id nisl tortor nisi egestas risus. Sed eget
-          rhoncus condimentum dictumst nec.
-        </p>
-      </section>
-      <section class="cart typical-cart additional-information save-point-2">
-        <h2 class="fake-h3 title-mb-24">Дополнительная информация</h2>
-        <p class="additional-name">Иностранные языки</p>
-        <div class="grid-4 additional-items">
-          <div class="additional-item">
-            <p class="fake-table-title">Язык:</p>
-            <p class="additional-value">Английский</p>
+        </section>
+        <section class="cart about-me">
+          <h2 class="fake-h3 about-title">О себе</h2>
+          <table class="fake-table-stat table-gap-g-32">
+            <thead>
+              <tr>
+                <th>Город:</th>
+                <th>Возраст:</th>
+                <th>Родной язык:</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Санкт-Петербург</td>
+                <td>35 лет</td>
+                <td>Русский</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="about-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam
+            phasellus enim aliquet commodo urna ultrices et orci enim. Placerat
+            et viverra convallis eget tellus ut feugiat accumsan. Sed et pretium
+            enim vitae, morbi pharetra. Urna, vitae, lacus, viverra sit
+            tincidunt arcu. Vitae eget vivamus tortor id nisl tortor nisi
+            egestas risus. Sed eget rhoncus condimentum dictumst nec.
+          </p>
+        </section>
+        <section class="cart typical-cart additional-information save-point-2">
+          <h2 class="fake-h3 title-mb-24">Дополнительная информация</h2>
+          <p class="additional-name">Иностранные языки</p>
+          <div class="grid-4 additional-items">
+            <div class="additional-item">
+              <p class="fake-table-title">Язык:</p>
+              <p class="additional-value">Английский</p>
+            </div>
+            <div class="additional-item">
+              <p class="fake-table-title">
+                Уровень владения иностранным языком
+              </p>
+              <p class="additional-value">intermediate</p>
+            </div>
           </div>
-          <div class="additional-item">
-            <p class="fake-table-title">Уровень владения иностранным языком</p>
-            <p class="additional-value">intermediate</p>
+          <hr />
+          <p class="additional-name">Дополнительное образование</p>
+          <div class="grid-4 additional-items">
+            <div class="additional-item">
+              <p class="fake-table-title">Название курса:</p>
+              <p class="additional-value">Повышение квалификации</p>
+            </div>
+            <div class="additional-item">
+              <p class="fake-table-title">Учебное заведение:</p>
+              <p class="additional-value">БГТУ «ВОЕНМЕХ»</p>
+            </div>
+            <div class="additional-item">
+              <p class="fake-table-title">Количество часов:</p>
+              <p class="additional-value">156</p>
+            </div>
           </div>
-        </div>
-        <hr />
-        <p class="additional-name">Дополнительное образование</p>
-        <div class="grid-4 additional-items">
-          <div class="additional-item">
-            <p class="fake-table-title">Название курса:</p>
-            <p class="additional-value">Повышение квалификации</p>
+          <hr />
+          <p class="additional-name">Награды, звания, сертификаты и т.д.</p>
+          <ul class="overflow-x list-reward">
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+            <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
+          </ul>
+        </section>
+        <section class="project-me save-point-3">
+          <h2 class="fake-h3 project-title">Проекты с участием исполнителя</h2>
+          <div class="tabs-std">
+            <button class="tab tab-active">
+              Выполненные на платформе <span class="num">(24)</span>
+            </button>
+            <button class="tab">Активные <span class="num">(2)</span></button>
+            <button class="tab">
+              Выполненные вне платформы <span class="num">(2)</span>
+            </button>
           </div>
-          <div class="additional-item">
-            <p class="fake-table-title">Учебное заведение:</p>
-            <p class="additional-value">БГТУ «ВОЕНМЕХ»</p>
-          </div>
-          <div class="additional-item">
-            <p class="fake-table-title">Количество часов:</p>
-            <p class="additional-value">156</p>
-          </div>
-        </div>
-        <hr />
-        <p class="additional-name">Награды, звания, сертификаты и т.д.</p>
-        <ul class="overflow-x list-reward">
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-          <li><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></li>
-        </ul>
-      </section>
-      <section class="project-me save-point-3">
-        <h2 class="fake-h3 project-title">Проекты с участием исполнителя</h2>
-        <div class="tabs-std">
-          <button class="tab tab-active">
-            Выполненные на платформе <span class="num">(24)</span>
-          </button>
-          <button class="tab">Активные <span class="num">(2)</span></button>
-          <button class="tab">
-            Выполненные вне платформы <span class="num">(2)</span>
-          </button>
-        </div>
-        <div class="tabs-result">
-          <div class="tab-item">
-            <div class="cart-table">
-              <div class="flex-start flex-cart-pers">
-                <div class="fake-title-first">
-                  <p class="fake-table-title">Название:</p>
-                  <a href="#" target="_blank" class="link-persone fake-h5 name">
-                    ПО для дистанционного электронного корпоративного
-                    голосования (включая мобильное приложение)
-                  </a>
-                </div>
-                <div>
-                  <p class="fake-table-title">Заказчик:</p>
-                  <div class="flex-start customer-link-cart">
-                    <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
-                    <a href="#" target="_blank"
-                      >Фонд поддержки научной, научно-технической и
-                      инновационной деятельности "Энергия без границ"</a
+          <div class="tabs-result">
+            <div class="tab-item">
+              <div class="cart-table">
+                <div class="flex-start flex-cart-pers">
+                  <div class="fake-title-first">
+                    <p class="fake-table-title">Название:</p>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="link-persone fake-h5 name"
                     >
+                      ПО для дистанционного электронного корпоративного
+                      голосования (включая мобильное приложение)
+                    </a>
                   </div>
-                </div>
-                <div class="mw-ft">
-                  <p class="fake-table-title">Срок реализации:</p>
-                  <time>22.01.2020 — <br />22.01.2025</time>
-                </div>
-                <div>
-                  <p class="fake-table-title">Роль в проекте:</p>
-                  <p class="value">Главный исследователь и консультант</p>
-                </div>
-              </div>
-              <div class="accordion">
-                <div class="flex-col-end persone-mini-help">
-                  <div class="item">
-                    <p class="fake-table-title">Оценка заказчика:</p>
-                    <div class="catalog-rating stars-5">
-                      <p class="catalog-rating-subtitle">0.0</p>
-                      <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
-    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
-    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
-    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
-    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
-</svg>    
+                  <div>
+                    <p class="fake-table-title">Заказчик:</p>
+                    <div class="flex-start customer-link-cart">
+                      <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
+                      <a href="#" target="_blank"
+                        >Фонд поддержки научной, научно-технической и
+                        инновационной деятельности "Энергия без границ"</a
+                      >
                     </div>
                   </div>
-                  <div class="accordion-name accordion-right">
-                    <p class="name">Отзыв заказчика</p>
-                    <button class="accordion-arrow accordion-btn-arrow">
-                      <span class="arrow-std">
-                        <span class="arrow-left"></span>
-                        <span class="arrow-right"></span>
-                      </span>
-                    </button>
+                  <div class="mw-ft">
+                    <p class="fake-table-title">Срок реализации:</p>
+                    <time>22.01.2020 — <br />22.01.2025</time>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Роль в проекте:</p>
+                    <p class="value">Главный исследователь и консультант</p>
                   </div>
                 </div>
-                <div class="accordion-child">
-                  <div class="rew-text">
-                    <p class="fake-table-title">Отзыв заказчика:</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ultricies aliquet dui ac in pulvinar arcu et, non at.
-                      Pellentesque viverra amet nunc orci risus tellus, tempor
-                      hac tincidunt. Risus convallis libero neque ac risus. Eu
-                      diam enim nisl scelerisque est nulla etiam. Orci ipsum
-                      mauris massa rhoncus. Facilisis viverra ac ut sed.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="cart-table">
-              <div class="flex-start flex-cart-pers">
-                <div class="fake-title-first">
-                  <p class="fake-table-title">Название:</p>
-                  <a href="#" target="_blank" class="link-persone fake-h5 name">
-                    ПО для дистанционного электронного корпоративного
-                    голосования (включая мобильное приложение)
-                  </a>
-                </div>
-                <div>
-                  <p class="fake-table-title">Заказчик:</p>
-                  <div class="flex-start customer-link-cart">
-                    <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
-                    <a href="#" target="_blank"
-                      >Фонд поддержки научной, научно-технической и
-                      инновационной деятельности "Энергия без границ"</a
-                    >
-                  </div>
-                </div>
-                <div class="mw-ft">
-                  <p class="fake-table-title">Срок реализации:</p>
-                  <time>22.01.2020 — <br />22.01.2025</time>
-                </div>
-                <div>
-                  <p class="fake-table-title">Роль в проекте:</p>
-                  <p class="value">Главный исследователь и консультант</p>
-                </div>
-              </div>
-              <div class="accordion">
-                <div class="flex-col-end persone-mini-help">
-                  <div class="item">
-                    <p class="fake-table-title">Оценка заказчика:</p>
-                    <div class="catalog-rating stars-5">
-                      <p class="catalog-rating-subtitle">0.0</p>
-                      <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="accordion">
+                  <div class="flex-col-end persone-mini-help">
+                    <div class="item">
+                      <p class="fake-table-title">Оценка заказчика:</p>
+                      <div class="catalog-rating stars-5">
+                        <p class="catalog-rating-subtitle">0.0</p>
+                        <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+                      </div>
+                    </div>
+                    <div class="accordion-name accordion-right">
+                      <p class="name">Отзыв заказчика</p>
+                      <button class="accordion-arrow accordion-btn-arrow">
+                        <span class="arrow-std">
+                          <span class="arrow-left"></span>
+                          <span class="arrow-right"></span>
+                        </span>
+                      </button>
                     </div>
                   </div>
-                  <div class="accordion-name accordion-right">
-                    <p class="name">Отзыв заказчика</p>
-                    <button class="accordion-arrow accordion-btn-arrow">
-                      <span class="arrow-std">
-                        <span class="arrow-left"></span>
-                        <span class="arrow-right"></span>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div class="accordion-child">
-                  <div class="rew-text">
-                    <p class="fake-table-title">Отзыв заказчика:</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ultricies aliquet dui ac in pulvinar arcu et, non at.
-                      Pellentesque viverra amet nunc orci risus tellus, tempor
-                      hac tincidunt. Risus convallis libero neque ac risus. Eu
-                      diam enim nisl scelerisque est nulla etiam. Orci ipsum
-                      mauris massa rhoncus. Facilisis viverra ac ut sed.
-                    </p>
+                  <div class="accordion-child">
+                    <div class="rew-text">
+                      <p class="fake-table-title">Отзыв заказчика:</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ultricies aliquet dui ac in pulvinar arcu et, non at.
+                        Pellentesque viverra amet nunc orci risus tellus, tempor
+                        hac tincidunt. Risus convallis libero neque ac risus. Eu
+                        diam enim nisl scelerisque est nulla etiam. Orci ipsum
+                        mauris massa rhoncus. Facilisis viverra ac ut sed.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="cart-table">
-              <div class="flex-start flex-cart-pers">
-                <div class="fake-title-first">
-                  <p class="fake-table-title">Название:</p>
-                  <a href="#" target="_blank" class="link-persone fake-h5 name">
-                    ПО для дистанционного электронного корпоративного
-                    голосования (включая мобильное приложение)
-                  </a>
-                </div>
-                <div>
-                  <p class="fake-table-title">Заказчик:</p>
-                  <div class="flex-start customer-link-cart">
-                    <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
-                    <a href="#" target="_blank"
-                      >Фонд поддержки научной, научно-технической и
-                      инновационной деятельности "Энергия без границ"</a
+              <div class="cart-table">
+                <div class="flex-start flex-cart-pers">
+                  <div class="fake-title-first">
+                    <p class="fake-table-title">Название:</p>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="link-persone fake-h5 name"
                     >
+                      ПО для дистанционного электронного корпоративного
+                      голосования (включая мобильное приложение)
+                    </a>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Заказчик:</p>
+                    <div class="flex-start customer-link-cart">
+                      <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
+                      <a href="#" target="_blank"
+                        >Фонд поддержки научной, научно-технической и
+                        инновационной деятельности "Энергия без границ"</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mw-ft">
+                    <p class="fake-table-title">Срок реализации:</p>
+                    <time>22.01.2020 — <br />22.01.2025</time>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Роль в проекте:</p>
+                    <p class="value">Главный исследователь и консультант</p>
                   </div>
                 </div>
-                <div class="mw-ft">
-                  <p class="fake-table-title">Срок реализации:</p>
-                  <time>22.01.2020 — <br />22.01.2025</time>
-                </div>
-                <div>
-                  <p class="fake-table-title">Роль в проекте:</p>
-                  <p class="value">Главный исследователь и консультант</p>
-                </div>
-              </div>
-              <div class="accordion">
-                <div class="flex-col-end persone-mini-help">
-                  <div class="item">
-                    <p class="fake-table-title">Оценка заказчика:</p>
-                    <div class="catalog-rating stars-5">
-                      <p class="catalog-rating-subtitle">0.0</p>
-                      <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="accordion">
+                  <div class="flex-col-end persone-mini-help">
+                    <div class="item">
+                      <p class="fake-table-title">Оценка заказчика:</p>
+                      <div class="catalog-rating stars-5">
+                        <p class="catalog-rating-subtitle">0.0</p>
+                        <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+                      </div>
+                    </div>
+                    <div class="accordion-name accordion-right">
+                      <p class="name">Отзыв заказчика</p>
+                      <button class="accordion-arrow accordion-btn-arrow">
+                        <span class="arrow-std">
+                          <span class="arrow-left"></span>
+                          <span class="arrow-right"></span>
+                        </span>
+                      </button>
                     </div>
                   </div>
-                  <div class="accordion-name accordion-right">
-                    <p class="name">Отзыв заказчика</p>
-                    <button class="accordion-arrow accordion-btn-arrow">
-                      <span class="arrow-std">
-                        <span class="arrow-left"></span>
-                        <span class="arrow-right"></span>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div class="accordion-child">
-                  <div class="rew-text">
-                    <p class="fake-table-title">Отзыв заказчика:</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ultricies aliquet dui ac in pulvinar arcu et, non at.
-                      Pellentesque viverra amet nunc orci risus tellus, tempor
-                      hac tincidunt. Risus convallis libero neque ac risus. Eu
-                      diam enim nisl scelerisque est nulla etiam. Orci ipsum
-                      mauris massa rhoncus. Facilisis viverra ac ut sed.
-                    </p>
+                  <div class="accordion-child">
+                    <div class="rew-text">
+                      <p class="fake-table-title">Отзыв заказчика:</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ultricies aliquet dui ac in pulvinar arcu et, non at.
+                        Pellentesque viverra amet nunc orci risus tellus, tempor
+                        hac tincidunt. Risus convallis libero neque ac risus. Eu
+                        diam enim nisl scelerisque est nulla etiam. Orci ipsum
+                        mauris massa rhoncus. Facilisis viverra ac ut sed.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="cart-table">
-              <div class="flex-start flex-cart-pers">
-                <div class="fake-title-first">
-                  <p class="fake-table-title">Название:</p>
-                  <a href="#" target="_blank" class="link-persone fake-h5 name">
-                    ПО для дистанционного электронного корпоративного
-                    голосования (включая мобильное приложение)
-                  </a>
-                </div>
-                <div>
-                  <p class="fake-table-title">Заказчик:</p>
-                  <div class="flex-start customer-link-cart">
-                    <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
-                    <a href="#" target="_blank"
-                      >Фонд поддержки научной, научно-технической и
-                      инновационной деятельности "Энергия без границ"</a
+              <div class="cart-table">
+                <div class="flex-start flex-cart-pers">
+                  <div class="fake-title-first">
+                    <p class="fake-table-title">Название:</p>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="link-persone fake-h5 name"
                     >
+                      ПО для дистанционного электронного корпоративного
+                      голосования (включая мобильное приложение)
+                    </a>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Заказчик:</p>
+                    <div class="flex-start customer-link-cart">
+                      <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
+                      <a href="#" target="_blank"
+                        >Фонд поддержки научной, научно-технической и
+                        инновационной деятельности "Энергия без границ"</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mw-ft">
+                    <p class="fake-table-title">Срок реализации:</p>
+                    <time>22.01.2020 — <br />22.01.2025</time>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Роль в проекте:</p>
+                    <p class="value">Главный исследователь и консультант</p>
                   </div>
                 </div>
-                <div class="mw-ft">
-                  <p class="fake-table-title">Срок реализации:</p>
-                  <time>22.01.2020 — <br />22.01.2025</time>
-                </div>
-                <div>
-                  <p class="fake-table-title">Роль в проекте:</p>
-                  <p class="value">Главный исследователь и консультант</p>
-                </div>
-              </div>
-              <div class="accordion">
-                <div class="flex-col-end persone-mini-help">
-                  <div class="item">
-                    <p class="fake-table-title">Оценка заказчика:</p>
-                    <div class="catalog-rating stars-5">
-                      <p class="catalog-rating-subtitle">0.0</p>
-                      <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="accordion">
+                  <div class="flex-col-end persone-mini-help">
+                    <div class="item">
+                      <p class="fake-table-title">Оценка заказчика:</p>
+                      <div class="catalog-rating stars-5">
+                        <p class="catalog-rating-subtitle">0.0</p>
+                        <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+                      </div>
+                    </div>
+                    <div class="accordion-name accordion-right">
+                      <p class="name">Отзыв заказчика</p>
+                      <button class="accordion-arrow accordion-btn-arrow">
+                        <span class="arrow-std">
+                          <span class="arrow-left"></span>
+                          <span class="arrow-right"></span>
+                        </span>
+                      </button>
                     </div>
                   </div>
-                  <div class="accordion-name accordion-right">
-                    <p class="name">Отзыв заказчика</p>
-                    <button class="accordion-arrow accordion-btn-arrow">
-                      <span class="arrow-std">
-                        <span class="arrow-left"></span>
-                        <span class="arrow-right"></span>
-                      </span>
-                    </button>
-                  </div>
-                </div>
-                <div class="accordion-child">
-                  <div class="rew-text">
-                    <p class="fake-table-title">Отзыв заказчика:</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ultricies aliquet dui ac in pulvinar arcu et, non at.
-                      Pellentesque viverra amet nunc orci risus tellus, tempor
-                      hac tincidunt. Risus convallis libero neque ac risus. Eu
-                      diam enim nisl scelerisque est nulla etiam. Orci ipsum
-                      mauris massa rhoncus. Facilisis viverra ac ut sed.
-                    </p>
+                  <div class="accordion-child">
+                    <div class="rew-text">
+                      <p class="fake-table-title">Отзыв заказчика:</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ultricies aliquet dui ac in pulvinar arcu et, non at.
+                        Pellentesque viverra amet nunc orci risus tellus, tempor
+                        hac tincidunt. Risus convallis libero neque ac risus. Eu
+                        diam enim nisl scelerisque est nulla etiam. Orci ipsum
+                        mauris massa rhoncus. Facilisis viverra ac ut sed.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <div class="cart-table">
-              <div class="flex-start flex-cart-pers">
-                <div class="fake-title-first">
-                  <p class="fake-table-title">Название:</p>
-                  <a href="#" target="_blank" class="link-persone fake-h5 name">
-                    ПО для дистанционного электронного корпоративного
-                    голосования (включая мобильное приложение)
-                  </a>
-                </div>
-                <div>
-                  <p class="fake-table-title">Заказчик:</p>
-                  <div class="flex-start customer-link-cart">
-                    <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
-                    <a href="#" target="_blank"
-                      >Фонд поддержки научной, научно-технической и
-                      инновационной деятельности "Энергия без границ"</a
+              <div class="cart-table">
+                <div class="flex-start flex-cart-pers">
+                  <div class="fake-title-first">
+                    <p class="fake-table-title">Название:</p>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="link-persone fake-h5 name"
                     >
+                      ПО для дистанционного электронного корпоративного
+                      голосования (включая мобильное приложение)
+                    </a>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Заказчик:</p>
+                    <div class="flex-start customer-link-cart">
+                      <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
+                      <a href="#" target="_blank"
+                        >Фонд поддержки научной, научно-технической и
+                        инновационной деятельности "Энергия без границ"</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mw-ft">
+                    <p class="fake-table-title">Срок реализации:</p>
+                    <time>22.01.2020 — <br />22.01.2025</time>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Роль в проекте:</p>
+                    <p class="value">Главный исследователь и консультант</p>
                   </div>
                 </div>
-                <div class="mw-ft">
-                  <p class="fake-table-title">Срок реализации:</p>
-                  <time>22.01.2020 — <br />22.01.2025</time>
-                </div>
-                <div>
-                  <p class="fake-table-title">Роль в проекте:</p>
-                  <p class="value">Главный исследователь и консультант</p>
-                </div>
-              </div>
-              <div class="accordion">
-                <div class="flex-col-end persone-mini-help">
-                  <div class="item">
-                    <p class="fake-table-title">Оценка заказчика:</p>
-                    <div class="catalog-rating stars-5">
-                      <p class="catalog-rating-subtitle">0.0</p>
-                      <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <div class="accordion">
+                  <div class="flex-col-end persone-mini-help">
+                    <div class="item">
+                      <p class="fake-table-title">Оценка заказчика:</p>
+                      <div class="catalog-rating stars-5">
+                        <p class="catalog-rating-subtitle">0.0</p>
+                        <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+                      </div>
+                    </div>
+                    <div class="accordion-name accordion-right">
+                      <p class="name">Отзыв заказчика</p>
+                      <button class="accordion-arrow accordion-btn-arrow">
+                        <span class="arrow-std">
+                          <span class="arrow-left"></span>
+                          <span class="arrow-right"></span>
+                        </span>
+                      </button>
                     </div>
                   </div>
-                  <div class="accordion-name accordion-right">
-                    <p class="name">Отзыв заказчика</p>
-                    <button class="accordion-arrow accordion-btn-arrow">
-                      <span class="arrow-std">
-                        <span class="arrow-left"></span>
-                        <span class="arrow-right"></span>
-                      </span>
-                    </button>
+                  <div class="accordion-child">
+                    <div class="rew-text">
+                      <p class="fake-table-title">Отзыв заказчика:</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ultricies aliquet dui ac in pulvinar arcu et, non at.
+                        Pellentesque viverra amet nunc orci risus tellus, tempor
+                        hac tincidunt. Risus convallis libero neque ac risus. Eu
+                        diam enim nisl scelerisque est nulla etiam. Orci ipsum
+                        mauris massa rhoncus. Facilisis viverra ac ut sed.
+                      </p>
+                    </div>
                   </div>
                 </div>
-                <div class="accordion-child">
-                  <div class="rew-text">
-                    <p class="fake-table-title">Отзыв заказчика:</p>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Ultricies aliquet dui ac in pulvinar arcu et, non at.
-                      Pellentesque viverra amet nunc orci risus tellus, tempor
-                      hac tincidunt. Risus convallis libero neque ac risus. Eu
-                      diam enim nisl scelerisque est nulla etiam. Orci ipsum
-                      mauris massa rhoncus. Facilisis viverra ac ut sed.
+              </div>
+              <div class="cart-table">
+                <div class="flex-start flex-cart-pers">
+                  <div class="fake-title-first">
+                    <p class="fake-table-title">Название:</p>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="link-persone fake-h5 name"
+                    >
+                      ПО для дистанционного электронного корпоративного
+                      голосования (включая мобильное приложение)
+                    </a>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Заказчик:</p>
+                    <div class="flex-start customer-link-cart">
+                      <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
+                      <a href="#" target="_blank"
+                        >Фонд поддержки научной, научно-технической и
+                        инновационной деятельности "Энергия без границ"</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mw-ft">
+                    <p class="fake-table-title">Срок реализации:</p>
+                    <time>22.01.2020 — <br />22.01.2025</time>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Роль в проекте:</p>
+                    <p class="value">Главный исследователь и консультант</p>
+                  </div>
+                </div>
+                <div class="accordion">
+                  <div class="flex-col-end persone-mini-help">
+                    <div class="item">
+                      <p class="fake-table-title">Оценка заказчика:</p>
+                      <div class="catalog-rating stars-5">
+                        <p class="catalog-rating-subtitle">0.0</p>
+                        <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+                      </div>
+                    </div>
+                    <div class="accordion-name accordion-right">
+                      <p class="name">Отзыв заказчика</p>
+                      <button class="accordion-arrow accordion-btn-arrow">
+                        <span class="arrow-std">
+                          <span class="arrow-left"></span>
+                          <span class="arrow-right"></span>
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                  <div class="accordion-child">
+                    <div class="rew-text">
+                      <p class="fake-table-title">Отзыв заказчика:</p>
+                      <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Ultricies aliquet dui ac in pulvinar arcu et, non at.
+                        Pellentesque viverra amet nunc orci risus tellus, tempor
+                        hac tincidunt. Risus convallis libero neque ac risus. Eu
+                        diam enim nisl scelerisque est nulla etiam. Orci ipsum
+                        mauris massa rhoncus. Facilisis viverra ac ut sed.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item hide">
+              <div class="cart-table">
+                <div class="flex-start flex-cart-pers">
+                  <div class="fake-title-first">
+                    <p class="fake-table-title">Название:</p>
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="link-persone fake-h5 name"
+                    >
+                      ПО для дистанционного электронного корпоративного
+                      голосования (включая мобильное приложение)
+                    </a>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Заказчик:</p>
+                    <div class="flex-start customer-link-cart">
+                      <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
+                      <a href="#" target="_blank"
+                        >Фонд поддержки научной, научно-технической и
+                        инновационной деятельности "Энергия без границ"</a
+                      >
+                    </div>
+                  </div>
+                  <div class="mw-ft">
+                    <p class="fake-table-title">Срок реализации:</p>
+                    <time>22.01.2020 — <br />22.01.2025</time>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Роль в проекте:</p>
+                    <p class="value">Главный исследователь и консультант</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="tab-item hide">
+              <div class="cart-table">
+                <div class="flex-start flex-cart-pers">
+                  <div class="fake-title-first">
+                    <p class="fake-table-title">Название:</p>
+                    <p class="fake-h5 value">
+                      ПО для дистанционного электронного корпоративного
+                      голосования (включая мобильное приложение)
                     </p>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Заказчик:</p>
+                    <p class="flex-start customer-link-cart">
+                      Фонд поддержки научной, научно-технической и инновационной
+                      деятельности "Энергия без границ"
+                    </p>
+                  </div>
+                  <div class="mw-ft">
+                    <p class="fake-table-title">Срок реализации:</p>
+                    <time>22.01.2020 — <br />22.01.2025</time>
+                  </div>
+                  <div>
+                    <p class="fake-table-title">Роль в проекте:</p>
+                    <p class="value">Главный исследователь и консультант</p>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="tab-item hide">
-            <div class="cart-table">
-              <div class="flex-start flex-cart-pers">
-                <div class="fake-title-first">
-                  <p class="fake-table-title">Название:</p>
-                  <a href="#" target="_blank" class="link-persone fake-h5 name">
-                    ПО для дистанционного электронного корпоративного
-                    голосования (включая мобильное приложение)
-                  </a>
-                </div>
-                <div>
-                  <p class="fake-table-title">Заказчик:</p>
-                  <div class="flex-start customer-link-cart">
-                    <div class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></div>
-                    <a href="#" target="_blank"
-                      >Фонд поддержки научной, научно-технической и
-                      инновационной деятельности "Энергия без границ"</a
-                    >
-                  </div>
-                </div>
-                <div class="mw-ft">
-                  <p class="fake-table-title">Срок реализации:</p>
-                  <time>22.01.2020 — <br />22.01.2025</time>
-                </div>
-                <div>
-                  <p class="fake-table-title">Роль в проекте:</p>
-                  <p class="value">Главный исследователь и консультант</p>
-                </div>
-              </div>
-            </div>
+        </section>
+        <div class="singly singly-box-end save-point-4">
+          <div class="sngl-header">
+            <h2 class="sngl-title fake-h3">Похожие исполнители</h2>
           </div>
-          <div class="tab-item hide">
-            <div class="cart-table">
-              <div class="flex-start flex-cart-pers">
-                <div class="fake-title-first">
-                  <p class="fake-table-title">Название:</p>
-                  <p class="fake-h5 value">
-                    ПО для дистанционного электронного корпоративного
-                    голосования (включая мобильное приложение)
-                  </p>
+          <div class="slider">
+            <section class="sngl-articles slider-track tabs-posts">
+              <article class="sngl-item push-end-to-end fourth-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-5">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+                  <p class="sngl-subtitle">(Оценок: 126)</p>
                 </div>
-                <div>
-                  <p class="fake-table-title">Заказчик:</p>
-                  <p class="value">
-                    Фонд поддержки научной, научно-технической и инновационной
-                    деятельности "Энергия без границ"
-                  </p>
+                <div class="sngl-ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
                 </div>
-                <div class="mw-ft">
-                  <p class="fake-table-title">Срок реализации:</p>
-                  <time>22.01.2020 — <br />22.01.2025</time>
+                <h3 class="fake-h5 sngl-name">Иван Иванов</h3>
+                <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end fourth-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-4">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
+    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
+    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
+    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
+    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
+</svg>    
+                  <p class="sngl-subtitle">(Оценок: 126)</p>
                 </div>
-                <div>
-                  <p class="fake-table-title">Роль в проекте:</p>
-                  <p class="value">Главный исследователь и консультант</p>
+                <div class="sngl-ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
                 </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div class="singly singly-box-end save-point-4">
-        <div class="sngl-header">
-          <h2 class="sngl-title fake-h3">Похожие исполнители</h2>
-        </div>
-        <div class="slider">
-          <section class="sngl-articles slider-track tabs-posts">
-            <article class="sngl-item push-end-to-end fourth-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-5">
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <h3 class="fake-h5 sngl-name">
+                  ООО "Газпромнефть Научно-Технический Центр"
+                </h3>
+                <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end fourth-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-3">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-                <p class="sngl-subtitle">(Оценок: 126)</p>
-              </div>
-              <div class="sngl-ava">
-                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-              </div>
-              <h3 class="fake-h5 sngl-name">Иван Иванов</h3>
-              <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end fourth-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-4">
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <p class="sngl-subtitle">(Оценок: 126)</p>
+                </div>
+                <div class="sngl-ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+                </div>
+                <h3 class="fake-h5 sngl-name">
+                  ООО "Научно-технический центр ТМК"
+                </h3>
+                <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end fourth-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-2">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-                <p class="sngl-subtitle">(Оценок: 126)</p>
-              </div>
-              <div class="sngl-ava">
-                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                ООО "Газпромнефть Научно-Технический Центр"
-              </h3>
-              <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end fourth-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-3">
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <p class="sngl-subtitle">(Оценок: 126)</p>
+                </div>
+                <div class="sngl-ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+                </div>
+                <h3 class="fake-h5 sngl-name">Мария Мариева</h3>
+                <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end fourth-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-4">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-                <p class="sngl-subtitle">(Оценок: 126)</p>
-              </div>
-              <div class="sngl-ava">
-                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                ООО "Научно-технический центр ТМК"
-              </h3>
-              <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end fourth-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-2">
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <p class="sngl-subtitle">(Оценок: 126)</p>
+                </div>
+                <div class="sngl-ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+                </div>
+                <h3 class="fake-h5 sngl-name">
+                  ООО "Газпромнефть Научно-Технический Центр"
+                </h3>
+                <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end fourth-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-3">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-                <p class="sngl-subtitle">(Оценок: 126)</p>
-              </div>
-              <div class="sngl-ava">
-                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-              </div>
-              <h3 class="fake-h5 sngl-name">Мария Мариева</h3>
-              <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end fourth-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-4">
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <p class="sngl-subtitle">(Оценок: 126)</p>
+                </div>
+                <div class="sngl-ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+                </div>
+                <h3 class="fake-h5 sngl-name">
+                  ООО "Научно-технический центр ТМК"
+                </h3>
+                <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
+              </article>
+              <article class="sngl-item push-end-to-end fourth-item cart">
+                <a href="\link" class="block-link"></a>
+                <div class="user-rating stars-2">
+                  <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
-                <p class="sngl-subtitle">(Оценок: 126)</p>
-              </div>
-              <div class="sngl-ava">
-                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                ООО "Газпромнефть Научно-Технический Центр"
-              </h3>
-              <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end fourth-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-3">
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
-    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
-    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
-    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
-    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
-</svg>    
-                <p class="sngl-subtitle">(Оценок: 126)</p>
-              </div>
-              <div class="sngl-ava">
-                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-              </div>
-              <h3 class="fake-h5 sngl-name">
-                ООО "Научно-технический центр ТМК"
-              </h3>
-              <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
-            </article>
-            <article class="sngl-item push-end-to-end fourth-item cart">
-              <a href="\link" class="block-link"></a>
-              <div class="user-rating stars-2">
-                <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
-    <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
-    <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
-    <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
-    <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
-</svg>    
-                <p class="sngl-subtitle">(Оценок: 126)</p>
-              </div>
-              <div class="sngl-ava">
-                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
-              </div>
-              <h3 class="fake-h5 sngl-name">Мария Мариева</h3>
-              <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
-            </article>
-          </section>
-          <meter value="0.1"></meter>
-          <div class="slider-nav">
-            <button class="slider-btn btn-left">
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <p class="sngl-subtitle">(Оценок: 126)</p>
+                </div>
+                <div class="sngl-ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+                </div>
+                <h3 class="fake-h5 sngl-name">Мария Мариева</h3>
+                <p class="sngl-txt">Выполненные проекты:<br /><b>129</b></p>
+              </article>
+            </section>
+            <meter value="0.1"></meter>
+            <div class="slider-nav">
+              <button class="slider-btn btn-left">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>    
-            </button>
-            <button class="slider-btn btn-right">
-              <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+              </button>
+              <button class="slider-btn btn-right">
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>    
-            </button>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -1306,13 +1341,13 @@
 		</dialog>
 	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20221024141830"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230124105415"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20221024141830"></script>
+	<script src="./assets/js/app.min.js?ver=20230124105415"></script>
 </body>
 </html>
