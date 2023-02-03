@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тут собранны модалки</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230124105415" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230124105415" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230124105415" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230124105415" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230203165424" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230203165424" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230203165424" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230203165424" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -269,9 +269,99 @@
   }
 </style>
 
+<!-- Тут модалка входа -->
+<div class="modal modal-login">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h3 modal-name">Войдите или зарегистрируйтесь</p>
+    <p class="modal-subtitle">
+      Только зарегистрированные пользователи могут использовать личный кабинет и
+      списки избранных.
+    </p>
+    <div class="reg-help">
+      <p class="reg-name">Войдите с помощью:</p>
+      <div class="reg-options">
+        <a href="#" class="reg-link">
+          <img src="./assets/svg/art/rankhigs.svg" alt="" />
+        </a>
+        <a href="#" class="reg-link">
+          <img src="./assets/svg/art/public-services.svg" alt="" />
+        </a>
+        <a href="#" class="reg-link">
+          <img src="./assets/svg/art/yandex.svg" alt="" />
+        </a>
+        <a href="#" class="reg-link">
+          <img src="./assets/svg/art/mail.svg" alt="" />
+        </a>
+        <a href="#" class="reg-link">
+          <img src="./assets/svg/art/vk.svg" alt="" />
+        </a>
+      </div>
+    </div>
+    <form action="" class="reg-from" method="post">
+      <fieldset class="border-top">
+        <legend>Или заполните ваши данные</legend>
+        <label>
+          <input type="email" name="name" placeholder=" " />
+          <span class="placeholder">Email:</span>
+        </label>
+        <label>
+          <input
+            type="password"
+            name="password"
+            placeholder=" "
+            autocorrect="off"
+            autocapitalize="off"
+            autocomplete="new-password"
+            required
+          />
+          <span class="placeholder">Пароль:</span>
+        </label>
+        <button class="btn btn-submit" title="Вход">Вход</button>
+        <div class="list-link">
+          <a href="#" class="modal-link link-color" title="Забыли пароль?"
+            >Забыли пароль?</a
+          >
+          <a href="#" class="modal-link link-color" title="Регистрация"
+            >Регистрация</a
+          >
+        </div>
+      </fieldset>
+    </form>
+  </div>
+</div>
+
+<!-- Тут модалка о внесении изменений в профиль -->
+<div class="modal modal-edit">
+  <div class="cart modal-body">
+    <h2 class="modal-name">Хотите внести изменения в профиль?</h2>
+    <p class="modal-text">
+      После изменений ваша анкета будет отправлена на повторную модерацию,
+      проверка занимает 1-3 дня.
+    </p>
+    <div class="modal-btns">
+      <button class="btn">Сохранить и отправить на модерацию</button>
+      <button class="close-modal">Отменить изменения</button>
+    </div>
+  </div>
+</div>
+
+<!-- Тут модалка о удалении профиля -->
+<div class="modal modal-delete">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <h2 class="modal-name">Хотите удалить профиль?</h2>
+    <p class="modal-text">Ваша анкета будет переведена в статус “Черновик”.</p>
+    <div class="modal-btns">
+      <button class="btn">Удалить профиль</button>
+      <button class="close-modal">Не удалять</button>
+    </div>
+  </div>
+</div>
+
 <!-- Тут модалка "Отправить запрос исполнителю" - состояние НЕ активное -->
 <!-- Такая модалка вылетает, если у заказчика нет ни одного запроса -->
-<dialog id="send-request-artist" class="modal send-request-artist">
+<div id="send-request-artist" class="modal send-request-artist">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Отправить запрос исполнителю</p>
@@ -304,10 +394,10 @@
 
     <button class="btn" title="Добавить запрос">Добавить запрос</button>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка "Отправить запрос исполнителю" - состояние активное -->
-<dialog id="send-request-artist" class="modal send-request-artist">
+<div id="send-request-artist" class="modal send-request-artist">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Отправить запрос исполнителю</p>
@@ -362,10 +452,10 @@
 
     <button class="btn" title="Отправить запрос">Отправить запрос</button>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка "Отправить запрос исполнителям" -->
-<dialog id="send-artistes" class="modal send-artistes">
+<div id="send-artistes" class="modal send-artistes">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Отправить запрос исполнителям</p>
@@ -441,10 +531,10 @@
       Добавить сотрудников (1)
     </button>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка "Добавить сотрудника" -->
-<dialog id="add-employee" class="modal add-employee">
+<div id="add-employee" class="modal add-employee">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Добавить сотрудника</p>
@@ -514,10 +604,10 @@
       Добавить сотрудников (1)
     </button>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка "Принять работу" -->
-<dialog id="accept-job" class="modal accept-job textarea-disabled">
+<div id="accept-job" class="modal accept-job textarea-disabled">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Принять работу</p>
@@ -548,10 +638,10 @@
       </button>
     </form>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка "Отклик на запрос" -->
-<dialog id="modal-respond" class="modal modal-respond">
+<div id="modal-respond" class="modal modal-respond">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Отклик на запрос</p>
@@ -572,10 +662,10 @@
       </button>
     </form>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка "Оспорить отзыв" -->
-<dialog id="dispute-review" class="modal dispute-review">
+<div id="dispute-review" class="modal dispute-review">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Оспорить отзыв</p>
@@ -587,10 +677,10 @@
       <button class="btn btn-submit" title="Оспорить" disabled>Оспорить</button>
     </form>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка для откликов (для кнопки "Снять запрос с публикации") - вызов работает -->
-<dialog id="remove-the-request" class="modal">
+<div id="remove-the-request" class="modal">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <div class="modal-header">
@@ -631,10 +721,10 @@
       <button class="close-modal">Отмена</button>
     </div>
   </div>
-</dialog>
+</div>
 
 <!-- Тут модалка для откликов (для кнопки "Отклики на запрос") -->
-<dialog id="responses-to-the-request" class="modal modal-responses-request">
+<div id="responses-to-the-request" class="modal modal-responses-request">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <h2 class="modal-name mrr-title">
@@ -1088,7 +1178,7 @@
       </div>
     </div>
   </div>
-</dialog>
+</div>
 
 	</main>
 	<footer class="main-footer">
@@ -1247,79 +1337,14 @@
 			</div>
 		</div>
     </footer>
-	<template class="template-enter">
-		<dialog class="modal">
-			<div class="cart modal-body">
-				<button type="button" class="btn-close btn-close-modal">
-					&#10006;
-				</button>
-				<p class="fake-h2 modal-name">Вход</p>
-				<div class="reg-help">
-				<p class="reg-name">Войдите с помощью:</p>
-				<div class="reg-options">
-					<a href="#" class="reg-link">
-					<img src="./assets/svg/art/rankhigs.svg" alt="" />
-					</a>
-					<a href="#" class="reg-link">
-					<img src="./assets/svg/art/public-services.svg" alt="" />
-					</a>
-					<a href="#" class="reg-link">
-					<img src="./assets/svg/art/yandex.svg" alt="" />
-					</a>
-					<a href="#" class="reg-link">
-					<img src="./assets/svg/art/mail.svg" alt="" />
-					</a>
-					<a href="#" class="reg-link">
-					<img src="./assets/svg/art/vk.svg" alt="" />
-					</a>
-				</div>
-				</div>
-				<form action="" class="reg-from" method="post">
-				<fieldset class="border-top">
-					<legend>Или заполните ваши данные</legend>
-						<label>
-							<input
-							type="email"
-							name="name"
-							placeholder=" "
-							/>
-							<span class="placeholder">Email:</span>
-						</label>
-						<label>
-						<input
-							type="password"
-							name="password"
-							placeholder=" "
-							autocorrect="off"
-							autocapitalize="off"
-							autocomplete="new-password"
-							required
-						/>
-						<span class="placeholder">Пароль:</span>
-						</label>
-					<button
-						class="btn btn-submit"
-						title="Вход"
-					>
-						Вход
-					</button>
-					<div class="list-link">
-						<a href="#" class="modal-link link-color" title="Забыли пароль?">Забыли пароль?</a>
-						<a href="#" class="modal-link link-color" title="Регистрация">Регистрация</a>
-					</div>
-				</fieldset>
-				</form>
-			</div>
-		</dialog>
-	</template>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230124105415"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230203165424"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230124105415"></script>
+	<script src="./assets/js/app.min.js?ver=20230203165424"></script>
 </body>
 </html>

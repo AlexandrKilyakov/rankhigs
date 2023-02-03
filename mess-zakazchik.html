@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Личный кабинет исполнителя</title>
+    <title>Личный кабинет заказчика</title>
     <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230203165424" />
     <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230203165424" />
     <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230203165424" />
@@ -259,6 +259,8 @@
     </header>
     <main role="main">
 
+<!-- Эта страница не нужна, так как есть страница mess.html -->
+
 <div class="lk">
   <aside class="menu-bar">
     <header class="mb-header">
@@ -283,16 +285,16 @@
     <hr />
     <nav class="persone-links-important">
       <a href="#" class="pli-link pli-active check">
-        <span class="pli-text">Мои отклики</span>
+        <span class="pli-text">Мои запросы</span>
       </a>
       <a href="#" class="pli-link check">
-        <span class="pli-text">Приглашения</span>
+        <span class="pli-text">Новые запросы</span>
       </a>
       <a href="#" class="pli-link">
-        <span class="pli-text">Текущие проекты</span>
+        <span class="pli-text">Запросы в работе</span>
       </a>
       <a href="#" class="pli-link">
-        <span class="pli-text">Выполненные проекты</span>
+        <span class="pli-text">Выполненные запросы</span>
       </a>
     </nav>
     <hr />
@@ -307,10 +309,7 @@
     <hr />
     <nav class="persone-links-important">
       <a href="#" class="pli-link">
-        <span class="pli-text">Избранные заказчики (13)</span>
-      </a>
-      <a href="#" class="pli-link">
-        <span class="pli-text">Избранные запросы (12)</span>
+        <span class="pli-text">Избранные исполнители (13)</span>
       </a>
     </nav>
     <hr />
@@ -348,21 +347,14 @@
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M1.5 8C1.5 7.17157 2.17157 6.5 3 6.5H21C21.8284 6.5 22.5 7.17157 22.5 8V11.5H1.5V8Z"
-    stroke="#4C4C4C"
-  />
-  <rect x="2.5" y="11.5" width="19" height="9" stroke="#4C4C4C" />
-  <path
-    d="M10.5 11.5H13.5V13C13.5 13.8284 12.8284 14.5 12 14.5C11.1716 14.5 10.5 13.8284 10.5 13V11.5Z"
-    stroke="#4C4C4C"
-  />
-  <path
-    d="M7.5 5C7.5 4.17157 8.17157 3.5 9 3.5H15C15.8284 3.5 16.5 4.17157 16.5 5V6.5H7.5V5Z"
-    stroke="#4C4C4C"
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M17 8C17 10.7614 14.7614 13 12 13C9.23858 13 7 10.7614 7 8C7 5.23858 9.23858 3 12 3C14.7614 3 17 5.23858 17 8ZM18 8C18 11.3137 15.3137 14 12 14C8.68629 14 6 11.3137 6 8C6 4.68629 8.68629 2 12 2C15.3137 2 18 4.68629 18 8ZM19.2148 17.0229C20.6888 18.0279 21.5706 19.2544 21.8771 20.5H2.12287C2.42943 19.2544 3.31121 18.0279 4.78516 17.0229C6.65547 15.7477 9.24887 15 12 15C14.7511 15 17.3445 15.7477 19.2148 17.0229ZM19.7782 16.1967C21.4923 17.3654 22.5822 18.8801 22.9018 20.5C22.9669 20.8297 23 21.1637 23 21.5H1C1 21.1637 1.03313 20.8297 1.09817 20.5C1.41777 18.8801 2.50774 17.3654 4.22183 16.1967C6.28473 14.7902 9.08262 14 12 14C14.9174 14 17.7153 14.7902 19.7782 16.1967Z"
+    fill="#C3C3C3"
   />
 </svg>
 
-        <span class="pli-text">Профиль заказчика</span>
+        <span class="pli-text">Профиль исполнителя</span>
       </a>
       <a href="#" class="pli-link">
         <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -376,9 +368,7 @@
   <div class="tablet">
     <div class="all-content cart">
       <div class="mess-header">
-        <h1 class="fake-h2 mess-title">
-          Мои отклики <span class="grey-50">(2)</span>
-        </h1>
+        <h1 class="fake-h2 mess-title">Сообщения</h1>
         <form action="" class="form-filter" method="get">
           <div class="form-search">
             <input
@@ -396,137 +386,47 @@
           </div>
         </form>
       </div>
-      <div class="result-fillter">
-        <ol class="fake-table-title-list">
-          <li class="response-n1">Название проекта:</li>
-          <li class="response-n2">Заказчик:</li>
-          <li class="response-n3">Сроки:</li>
-          <li class="response-n4">Стоимость:</li>
-        </ol>
-        <div class="void hide">
-          <h2 class="void-title">У вас пока нет откликов</h2>
-          <p class="void-text">
-            Для поиска запросов перейдите в раздел
-            <a href="#" class="link-main">открытые запросы</a>
-          </p>
-          <a href="#" class="btn void-link">Открытые запросы</a>
-        </div>
-        <div class="cart response-grid">
-          <div class="response-header">
-            <a
-              href="#"
-              target="_blank"
-              class="fake-h5 response-link response-n1"
-              >Аудит отдела газификации и электроснабжения Ростовкой области в
-              селе Новокуйбышкво</a
-            >
-            <a
-              href="#"
-              target="_blank"
-              class="response-link-cart response-link response-n2"
-            >
-              <span class="ava"><picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture></span>
-              ПАО «Газпром»
+      <div class="canvas-result">
+        <div class="cart mess-grid">
+          <div class="mg-header">
+            <a href="#" class="link-persone" target="_blank">
+              <span class="ava"> <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></span>
+              <span class="name">Егор Егоров</span>
             </a>
-            <time class="response-time response-n3"
-              >22.01.2020 — <br />22.01.2025</time
-            >
-            <p class="response-cost response-n4">от 1.999 до 2.345.222</p>
+            <div class="mess-stat mess-have">1 сообщение</div>
           </div>
-          <div class="response-info">
-            <div class="stat-cart-grey">
-              <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <path d="M8.07407 15.3335L12.4198 15.3335M14 15.3335L12.4198 15.3335M12.4198 15.3335L12.4198 12.4816V12.4816C11.9412 8.53358 5.7931 8.03954 4.59025 4.24885C4.54171 4.09587 4.51852 3.98308 4.51852 3.92609C4.51852 3.60016 4.51852 1.61745 4.51852 0.666829M4.51852 0.666829L3.33333 0.666829M4.51852 0.666829L8.07407 0.666829" stroke="#888888"/>
-    <path d="M8.59243 15.3335L4.24675 15.3335M2.6665 15.3335L4.24675 15.3335M4.24675 15.3335L4.24675 12.4816V12.4816C4.7253 8.53358 10.8734 8.03955 12.0763 4.24885C12.1248 4.09587 12.148 3.98308 12.148 3.92609C12.148 3.60016 12.148 1.61745 12.148 0.66683M12.148 0.66683L13.3332 0.66683M12.148 0.66683L7.80231 0.66683" stroke="#888888"/>
-</svg>     Отклик на рассмотрении
-            </div>
-            <div class="js-stat-date">
-              <p class="fake-table-title">Отклик отправлен:</p>
-              <time class="response-time time-stat">16.01.2021<br />19:30</time>
-            </div>
+          <div class="mg-message-preview">
+            <p class="mmp-title">
+              Отклик на:
+              <a href="#" class="mmp-link"
+                >ПО для дистанционного электронного корпоративнного портал...</a
+              >
+            </p>
+            <p class="mmp-value">
+              Добрый день! Откликнулся на ваш запрос не случайно - у меня
+              огромный опыт в выполнении заданий такого толка. Я доктор наук в
+              интересующей сфере компетенций. Назначьте меня, пожалуйста.
+            </p>
           </div>
-          <div class="cart-btns">
-            <a href="#" class="btn-cart" target="_blank">
-              <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
-  />
-</svg>
- Чат с заказчиком
-            </a>
-            <button class="btn-cart show-remove-the-request">
-              <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path d="M4 4L12 12M20 20L12 12M12 12L20 4M12 12L4 20" stroke="#C3C3C3" />
-</svg>
- Отменить отклик
-            </button>
+          <div class="mg-date">
+            <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
           </div>
         </div>
-        <div class="cart response-grid hide">
-          <div class="response-header">
-            <a
-              href="#"
-              target="_blank"
-              class="fake-h5 response-link response-n1"
-              >Аудит отдела газификации и электроснабжения Ростовкой области в
-              селе Новокуйбышкво</a
-            >
-            <a
-              href="#"
-              target="_blank"
-              class="response-link-cart response-link response-n2"
-            >
-              <span class="ava"><picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture></span>
-              ПАО «Газпром»
+        <div class="cart mess-grid">
+          <div class="mg-header">
+            <a href="#" class="link-persone" target="_blank">
+              <span class="ava"> <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></span>
+              <span class="name">Егор Егоров</span>
             </a>
-            <time class="response-time response-n3"
-              >22.01.2020 — <br />22.01.2025</time
-            >
-            <p class="response-cost response-n4">от 1.999 до 2.345.222</p>
+            <div class="mess-stat">нет новых сообщений</div>
           </div>
-          <div class="response-info">
-            <div class="cart info-res">
-              <p class="ir-title">
-                Вам пришёл <span class="color-main">отказ</span>:
-              </p>
-              <p class="ir-txt">
-                Приносим свои извинения, уже нашли исполнителя. Хорошего дня.
-              </p>
-            </div>
-            <div class="js-stat-date">
-              <p class="fake-table-title">Отклик отправлен:</p>
-              <time class="response-time time-stat">16.01.2021<br />19:30</time>
-            </div>
+          <div class="mg-message-preview">
+            <p class="mmp-value">
+              Отправил вам исходный код, проверьте, пожалуйста.
+            </p>
           </div>
-          <div class="cart-btns">
-            <a href="#" class="btn-cart" target="_blank">
-              <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
-  />
-</svg>
- Чат с заказчиком
-            </a>
+          <div class="mg-date">
+            <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
           </div>
         </div>
       </div>
