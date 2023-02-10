@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Главная</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230203165424" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230210144747" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230210144747" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230210144747" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230210144747" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <header class="main-header hide">
+    <header class="main-header ">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -104,7 +104,7 @@
     </header>
 
     <!-- Для зареганых -->
-    <header class="main-header header-for-login ">
+    <header class="main-header header-for-login hide">
       <a href="/" class="mh-logo stop-hover-link"
         ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
@@ -2065,165 +2065,196 @@
     </header>
     <div class="slider">
       <section class="sngl-articles slider-track">
-        <article class="sngl-item push-end-to-end third-item cart">
+        <!-- Ниже новый шаблон для слайдеров "Лучшие заказчики", и других, если они выглядели как этот -->
+        <!-- 
+          Из нового:
+          - Звездачки теперь находятся глубже (блок "rating") и имеют подпись "rating-subtitle"
+          - Блок "sngl-item", добавил ещё 1 класс "posted"
+          - В блоке "sngl-txt" новая надпись
+         -->
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
-        <article class="sngl-item push-end-to-end third-item cart">
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
-        <article class="sngl-item push-end-to-end third-item cart">
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
-        <article class="sngl-item push-end-to-end third-item cart">
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
-        <article class="sngl-item push-end-to-end third-item cart">
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
-        <article class="sngl-item push-end-to-end third-item cart">
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
-        <article class="sngl-item push-end-to-end third-item cart">
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
-        <article class="sngl-item push-end-to-end third-item cart">
+        <article class="sngl-item posted push-end-to-end third-item cart">
           <a href="\link" class="block-link"></a>
           <div class="user-rating stars-5">
             <div class="sngl-logo">
               <picture><source srcset="./assets/img/rjd.webp" type="image/webp"><img src="./assets/img/rjd.png" alt="" /></picture>
             </div>
-            <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <div class="rating">
+              <svg width="136" height="24" viewBox="0 0 136 24" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M12 0L15.5267 7.1459L23.4127 8.2918L17.7063 13.8541L19.0534 21.7082L12 18L4.94658 21.7082L6.29366 13.8541L0.587322 8.2918L8.47329 7.1459L12 0Z" fill="#E8E8E8"/>
     <path d="M40 0L43.5267 7.1459L51.4127 8.2918L45.7063 13.8541L47.0534 21.7082L40 18L32.9466 21.7082L34.2937 13.8541L28.5873 8.2918L36.4733 7.1459L40 0Z" fill="#E8E8E8"/>
     <path d="M68 0L71.5267 7.1459L79.4127 8.2918L73.7063 13.8541L75.0534 21.7082L68 18L60.9466 21.7082L62.2937 13.8541L56.5873 8.2918L64.4733 7.1459L68 0Z" fill="#E8E8E8"/>
     <path d="M96 0L99.5267 7.1459L107.413 8.2918L101.706 13.8541L103.053 21.7082L96 18L88.9466 21.7082L90.2937 13.8541L84.5873 8.2918L92.4733 7.1459L96 0Z" fill="#E8E8E8"/>
     <path d="M124 0L127.527 7.1459L135.413 8.2918L129.706 13.8541L131.053 21.7082L124 18L116.947 21.7082L118.294 13.8541L112.587 8.2918L120.473 7.1459L124 0Z" fill="#E8E8E8"/>
 </svg>    
+              <p class="rating-subtitle">5 <small>(35 оценок)</small></p>
+            </div>
           </div>
           <h3 class="fake-h5 sngl-name">
             Фонд поддержки научной, научно-технической и инновационной
             деятельности "Энергия без границ"
           </h3>
-          <p class="sngl-txt">Поставленых задач: <b>129</b></p>
+          <p class="sngl-txt">Размещенных проектов: <b>129</b></p>
         </article>
       </section>
       <div class="meter"></div>
@@ -2401,13 +2432,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230203165424"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230210144747"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230203165424"></script>
+	<script src="./assets/js/app.min.js?ver=20230210144747"></script>
 </body>
 </html>
