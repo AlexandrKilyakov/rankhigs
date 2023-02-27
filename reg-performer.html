@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Регистрация нового пользователя</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230203165424" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230227153841" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230227153841" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230227153841" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230227153841" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <header class="main-header hide">
+    <header class="main-header ">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -104,7 +104,7 @@
     </header>
 
     <!-- Для зареганых -->
-    <header class="main-header header-for-login ">
+    <header class="main-header header-for-login hide">
       <a href="/" class="mh-logo stop-hover-link"
         ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
@@ -264,7 +264,7 @@
     <h1 class="rr-title">Профиль исполнителя</h1>
     <div class="reg-content">
       <form action="" class="reg-from reg-from-details" method="post">
-        <details class="number-list cart details-cart" open>
+        <details class="number-list cart details-cart hide">
           <summary class="numlist-title">
             <h2 class="fake-h4 rr-summary">
               <span class="rr-num">01</span>Общая информация
@@ -312,14 +312,14 @@
               <span class="placeholder">Город:</span>
             </label>
             <div class="additional-info">
-              <div class="addinfo">
+              <button type="button" class="addinfo" data-info="clue">
                 <p class="add-text">
-                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                  Facilis omnis perferendis suscipit obcaecati asperiores! Animi
-                  illum magnam architecto eligendi ex eum, quos atque ipsa
-                  commodi dicta dolorem quaerat quo qui?
+                  <a href="/">Lorem</a> ipsum dolor, sit amet consectetur
+                  adipisicing elit. Facilis omnis perferendis suscipit obcaecati
+                  asperiores! Animi illum magnam architecto eligendi ex eum,
+                  quos atque ipsa commodi dicta dolorem quaerat quo qui?
                 </p>
-              </div>
+              </button>
               <label>
                 <input
                   type="email"
@@ -369,7 +369,7 @@
               <span class="placeholder">Дата рождения:</span>
             </label>
             <div class="additional-info">
-              <div class="addinfo">
+              <div class="addinfo" data-info="clue">
                 <p class="add-text">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Facilis omnis perferendis suscipit obcaecati asperiores! Animi
@@ -610,7 +610,7 @@
             </label>
           </section>
         </details>
-        <details class="number-list cart details-cart hide">
+        <details class="number-list cart details-cart" open>
           <summary class="numlist-title">
             <h2 class="fake-h4 rr-summary">
               <span class="rr-num">03</span>Профессиональная деятельность
@@ -634,7 +634,7 @@
               <span class="placeholder">Сфера компетенции</span>
             </label>
             <div class="additional-info flow-root">
-              <div class="addinfo">
+              <div class="addinfo" data-info="clue">
                 <p class="add-text">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Facilis omnis perferendis suscipit obcaecati asperiores! Animi
@@ -696,16 +696,92 @@
                   <span class="checktext">Текущее место работы</span>
                 </label>
               </div>
-              <label>
-                <input
-                  type="text"
-                  name="specialization"
-                  placeholder=" "
-                  autocorrect="off"
-                  autocomplete="specialization"
-                />
-                <span class="placeholder">Организация:</span>
-              </label>
+              <!-- new: Если есть класс "select-open", тогда блок "list-options" виден -->
+              <div class="select-head select-open">
+                <p class="select-current">Введите название организации</p>
+                <p class="placeholder important">Организация:</p>
+              </div>
+              <div class="list-options br">
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000185c731e62b736d8eb7067ee4a3c2/square_83);
+                    "
+                  ></div>
+                  <p class="name">БГТУ ВОЕНМЕХ</p>
+                </div>
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000184c06afde4367542e2132daba44f/square_83);
+                    "
+                  ></div>
+                  <p class="name">СПБГУ</p>
+                </div>
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/4775767/2a00000184c00b24a82c7e5c715140649230/square_83);
+                    "
+                  ></div>
+                  <p class="name">ООО «Ромашка»</p>
+                </div>
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000185c731e62b736d8eb7067ee4a3c2/square_83);
+                    "
+                  ></div>
+                  <p class="name">БГТУ ВОЕНМЕХ</p>
+                </div>
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000184c06afde4367542e2132daba44f/square_83);
+                    "
+                  ></div>
+                  <p class="name">СПБГУ</p>
+                </div>
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/4775767/2a00000184c00b24a82c7e5c715140649230/square_83);
+                    "
+                  ></div>
+                  <p class="name">ООО «Ромашка»</p>
+                </div>
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000185c731e62b736d8eb7067ee4a3c2/square_83);
+                    "
+                  ></div>
+                  <p class="name">БГТУ ВОЕНМЕХ</p>
+                </div>
+                <div class="lo-item">
+                  <div
+                    class="ava"
+                    style="
+                      background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000184c06afde4367542e2132daba44f/square_83);
+                    "
+                  ></div>
+                  <p class="name">СПБГУ</p>
+                </div>
+                <div class="lo-item add-lo-item">
+                  <div class="ava"><svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg></div>
+                  <p class="name">Моей организации нет на портале</p>
+                </div>
+              </div>
               <label>
                 <input
                   type="text"
@@ -717,16 +793,33 @@
                 <span class="placeholder">Должность:</span>
               </label>
             </fieldset>
-            <button
-              type="button"
-              class="add-more"
-              title="Добавить место работы"
-            >
+            <button type="button" class="add-more">
               <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
 <rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
 </svg> Добавить место работы
             </button>
+            <!-- new: -->
+            <div class="additional-info br this-label">
+              <div class="addinfo" data-info="clue">
+                <p class="add-text">
+                  Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                  Facilis omnis perferendis suscipit obcaecati asperiores! Animi
+                  illum magnam architecto eligendi ex eum, quos atque ipsa
+                  commodi dicta dolorem quaerat quo qui?
+                </p>
+              </div>
+              <label class="checkbox"
+                ><input
+                  type="checkbox"
+                  name="agreement"
+                  required=""
+                  value="1"
+                /><span class="checktext bold"
+                  >Принимать запросы только через работодателя</span
+                ></label
+              >
+            </div>
           </section>
         </details>
         <details class="number-list cart details-cart hide">
@@ -1032,7 +1125,7 @@
               проектов вне платформы
             </button>
             <div class="additional-info textarea-info">
-              <div class="addinfo">
+              <div class="addinfo" data-info="clue">
                 <p class="add-text">
                   Lorem ipsum dolor, sit amet consectetur adipisicing elit.
                   Facilis omnis perferendis suscipit obcaecati asperiores! Animi
@@ -1225,13 +1318,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230203165424"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230227153841"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230203165424"></script>
+	<script src="./assets/js/app.min.js?ver=20230227153841"></script>
 </body>
 </html>
