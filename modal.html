@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тут собранны модалки</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230203165424" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230227162218" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230227162218" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230227162218" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230227162218" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <header class="main-header hide">
+    <header class="main-header ">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -104,7 +104,7 @@
     </header>
 
     <!-- Для зареганых -->
-    <header class="main-header header-for-login ">
+    <header class="main-header header-for-login hide">
       <a href="/" class="mh-logo stop-hover-link"
         ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
@@ -361,6 +361,7 @@
 
 <!-- Тут модалка "Отправить запрос исполнителю" - состояние НЕ активное -->
 <!-- Такая модалка вылетает, если у заказчика нет ни одного запроса -->
+<!-- new: -->
 <div id="send-request-artist" class="modal send-request-artist">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
@@ -392,18 +393,24 @@
       </p>
     </div>
 
-    <button class="btn" title="Добавить запрос">Добавить запрос</button>
+    <button class="add-more m-auto">
+      <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Добавить новый запрос
+    </button>
   </div>
 </div>
 
 <!-- Тут модалка "Отправить запрос исполнителю" - состояние активное -->
+<!-- new: -->
 <div id="send-request-artist" class="modal send-request-artist">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Отправить запрос исполнителю</p>
     <p class="modal-descr">
-      Выберите из списка запрос, который выхотите отправить
-      <a href="#" class="link-main" target="_blank">Андрею Иванову</a>
+      Вы отправляете запрос <b>Андрею Иванову</b>, как индивидуальному
+      исполнителю.
     </p>
 
     <form class="form-search">
@@ -424,7 +431,7 @@
     <div class="modal-result">
       <div class="mr-content">
         <label class="checkbox">
-          <input type="checkbox" name="agreement" />
+          <input type="checkbox" name="agreement" checked />
           <span class="checktext">Промышленная подготовка угля к погрузке</span>
         </label>
         <label class="checkbox">
@@ -450,7 +457,131 @@
       </div>
     </div>
 
-    <button class="btn" title="Отправить запрос">Отправить запрос</button>
+    <div class="modal-btns mt16">
+      <button class="add-more">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Добавить новый запрос
+      </button>
+      <button class="btn">Отправить запрос (1)</button>
+    </div>
+  </div>
+</div>
+
+<!-- new: -->
+<div id="send-request-artist" class="modal send-request-artist">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Отправить запрос исполнителю</p>
+    <p class="modal-descr">
+      Вы отправляете запрос <b>Андрею Иванову</b>, как индивидуальному
+      исполнителю.
+    </p>
+    <p class="modal-descr">
+      Чтобы отправить запрос его работодателю, перейдите на страницу
+      компании-исполнителя: <a href="/" class="link-main"><b>РАНХиГС</b></a>
+    </p>
+
+    <form class="form-search">
+      <input
+        type="text"
+        class="search"
+        placeholder="Название запроса"
+        required
+      />
+      <button type="submit" class="btn-filter">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </form>
+    <!-- Эта модалка появляется если есть хотя бы один запрос без назначенного исполнителя. Мультиселект. -->
+    <div class="modal-result">
+      <div class="mr-content">
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" checked />
+          <span class="checktext">Промышленная подготовка угля к погрузке</span>
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" name="agreement" />
+          <span class="checktext">Промышленная подготовка угля к погрузке</span>
+        </label>
+        <!-- Так выглядит строчка если запрос отправлен, но еще нет ответа. -->
+        <label class="checkbox zapros-sends">
+          <input type="checkbox" name="agreement" disabled />
+          <span class="checktext"
+            >Промышленная подготовка угля к погрузке
+            <span class="status-wait">Запрос отправлен 22.11.2021</span>
+          </span>
+        </label>
+        <!-- Так, если запрос отклонён исполнителем -->
+        <label class="checkbox zapros-sends">
+          <input type="checkbox" name="agreement" disabled />
+          <span class="checktext"
+            >Промышленная подготовка угля к погрузке
+            <span class="status-close">Запрос отклонён 22.11.2021</span>
+          </span>
+        </label>
+      </div>
+    </div>
+
+    <div class="modal-btns mt16">
+      <button class="add-more">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Добавить новый запрос
+      </button>
+      <button class="btn">Отправить запрос (1)</button>
+    </div>
+  </div>
+</div>
+
+<!-- new: -->
+<div class="modal choose-org">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Исполнитель ограничил отправку запросов</p>
+    <p class="modal-descr">
+      Вы не можете отправить запрос <b>Андрею Иванову</b>, как индивидуальному
+      исполнителю. Чтобы отправить запрос его работодателю, перейдите на
+      страницу компании-исполнителя:
+    </p>
+
+    <div class="list-org">
+      <a class="link-item">
+        <div
+          class="ava"
+          style="
+            background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000185c731e62b736d8eb7067ee4a3c2/square_83);
+          "
+        ></div>
+        <p class="name">
+          Российская академия народного хозяйства и государственной службы при
+          президенте Российской Федерации (РАНХиГС)
+        </p>
+      </a>
+      <a class="link-item">
+        <div
+          class="ava"
+          style="
+            background-image: url(https://avatars.mds.yandex.net/get-socsnippets/5233957/2a00000184c06afde4367542e2132daba44f/square_83);
+          "
+        ></div>
+        <p class="name">ПАО «ГАЗПРОМ»</p>
+      </a>
+      <a class="link-item">
+        <div
+          class="ava"
+          style="
+            background-image: url(https://avatars.mds.yandex.net/get-socsnippets/4775767/2a00000184c00b24a82c7e5c715140649230/square_83);
+          "
+        ></div>
+        <p class="name">ООО «ПромСнабПодшипник»</p>
+      </a>
+    </div>
   </div>
 </div>
 
@@ -603,6 +734,102 @@
     <button class="btn" title="Добавить сотрудников (1)">
       Добавить сотрудников (1)
     </button>
+  </div>
+</div>
+
+<!-- new: Тут выглядит модалка "Добавить сотрудника", если нет сотрудников, но добавить нужно -->
+<div id="add-employee" class="modal add-employee">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Добавить сотрудника</p>
+    <p class="modal-descr">
+      Введите имя исполителя и добавьте его в список сотрудников своей компании.
+    </p>
+
+    <form class="form-search">
+      <input type="text" class="search" placeholder="Имя сотрудника" required />
+      <button type="submit" class="btn-filter">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </form>
+    <div class="modal-result">
+      <p class="void">
+        У вас нет избранных сотрудников, воспользуйтесь поиском
+      </p>
+    </div>
+    <button class="btn" title="Добавить сотрудников (1)">
+      Добавить сотрудника
+    </button>
+  </div>
+</div>
+
+<!-- new: Тут выглядит модалка "Добавить сотрудника", если нет сотрудников, но добавить нужно -->
+<div id="add-new-employee" class="modal add-new-employee">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Добавление<br />нового сотрудника</p>
+    <form action="" class="reg-from" method="post">
+      <label>
+        <input
+          type="text"
+          name="name"
+          placeholder=" "
+          autocorrect="off"
+          autocomplete="username"
+          required
+        />
+        <span class="placeholder">Имя:</span>
+      </label>
+      <label>
+        <input
+          type="text"
+          name="surname"
+          placeholder=" "
+          autocorrect="off"
+          autocomplete="family-name"
+          required
+        />
+        <span class="placeholder">Фамилия:</span>
+      </label>
+      <label>
+        <select name="city" required class="select2-std">
+          <option value="" selected disabled></option>
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="opel">Opel</option>
+          <option value="audi">Audi</option>
+        </select>
+        <span class="placeholder">Город</span>
+      </label>
+      <label>
+        <!-- TODO: Если нужно показать ошибку, тогда добавь класс "error-placeholder" -->
+        <span class="error-hide"
+          >Введите корректный e-mail Введите корректный e-mail</span
+        >
+        <input
+          type="email"
+          name="email"
+          placeholder=" "
+          autocorrect="off"
+          autocapitalize="off"
+          autocomplete="email"
+          required
+        />
+        <span class="placeholder">E-mail</span>
+      </label>
+      <label>
+        <input type="text" name="job" placeholder=" " />
+        <span class="placeholder">Должность</span>
+      </label>
+      <p class="form-txt">
+        На введенный вами адрес электронной почты будет отправлено письмо с
+        приглашением зарегистрироваться на портале
+      </p>
+      <button class="btn btn-submit">Добавить сотрудника</button>
+    </form>
   </div>
 </div>
 
@@ -1338,13 +1565,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230203165424"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230227162218"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230203165424"></script>
+	<script src="./assets/js/app.min.js?ver=20230227162218"></script>
 </body>
 </html>
