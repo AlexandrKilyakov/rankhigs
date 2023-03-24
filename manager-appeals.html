@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Обращения</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230314121337" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230314121337" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230314121337" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230314121337" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230324100833" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230324100833" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230324100833" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230324100833" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -353,66 +353,34 @@
           <div class="posts-std">
             <div class="tab-item">
               <div class="appeals">
-                <header class="appeals--header">
-                  <a href="#" class="link-persone" target="_blank">
-                    <span class="ava">
-                      <img src="./assets/img/art.jpg" alt=""
-                    /></span>
-                    <span class="name">ПАО «ГАЗПРОМ»</span>
-                  </a>
-                  <a href="#" class="link-persone" target="_blank">
-                    <span class="ava">
-                      <img src="./assets/svg/art/pazle.svg" alt=""
-                    /></span>
-                    <span class="appeals--name">-</span>
-                  </a>
-                  <button class="btn">Назначить менеджера</button>
-                  <a href="#" class="btn-cart" target="_blank">
-                    <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
-  />
-</svg>
- Открыть чат (1
-                    сообщение)
-                  </a>
-                </header>
-                <div class="messages">
-                  <div class="message check">
-                    <a href="#" class="ava" target="_blank"
-                      ><img src="./assets/img/art.jpg" alt=""
-                    /></a>
-                    <p class="mess-content">
-                      Помогите, не понимаю как выставить заявку.
-                    </p>
-                  </div>
-                </div>
-                <div class="mg-date">
-                  <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
-                </div>
-              </div>
-              <div class="appeals">
-                <header class="appeals--header">
+                <div class="appeals--content">
                   <a href="#" class="link-persone" target="_blank">
                     <span class="ava">
                       <img src="./assets/img/art.jpg" alt=""
                     /></span>
                     <span class="name">Промснаб Подшипник</span>
                   </a>
-                  <a href="#" class="link-persone" target="_blank">
-                    <span class="ava">
-                      <img src="./assets/svg/art/pazle.svg" alt=""
-                    /></span>
-                    <span class="appeals--name">Иван Андреев</span>
-                  </a>
-                  <button>Сменить менеджера</button>
+                  <div class="message">
+                    <div class="mess-content">
+                      <p>
+                        <span class="clr-main pointer">@manager</span> типовой
+                        договор на работы
+                      </p>
+                    </div>
+                    <div class="check"></div>
+
+                    <div class="mess-date">
+                      <time datetime="21.01.2021 19:00"
+                        >21.01.2021<br />19:00</time
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="appeals--ability">
+                  <div class="btns">
+                    <button>Назначить менеджера</button>
+                    <button class="btn">Ответить</button>
+                  </div>
                   <a href="#" class="btn-cart" target="_blank">
                     <svg
   width="28"
@@ -429,40 +397,55 @@
  Открыть чат (1
                     сообщение)
                   </a>
-                </header>
-                <div class="messages">
-                  <div class="message message--me">
-                    <a href="#" class="ava" target="_blank"
-                      ><img src="./assets/svg/art/pazle.svg" alt=""
-                    /></a>
-                    <p class="mess-content">Починили, всё в порядке</p>
-                  </div>
-                  <div class="message">
-                    <a href="#" class="ava" target="_blank"
-                      ><img src="./assets/img/art.jpg" alt=""
-                    /></a>
-                    <p class="mess-content">Что-то пошло не так</p>
-                  </div>
-                </div>
-                <div class="mg-date">
-                  <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
                 </div>
               </div>
               <div class="appeals">
-                <header class="appeals--header">
+                <div class="appeals--content">
                   <a href="#" class="link-persone" target="_blank">
-                    <span class="ava">
-                      <img src="./assets/img/art.jpg" alt=""
-                    /></span>
-                    <span class="name">Балтийский Изоляционный Завод</span>
+                    <span class="group--ava">
+                      <small class="num">+15</small>
+                      <span class="ava">
+                        <img src="./assets/img/art.jpg" alt=""
+                      /></span>
+                      <span class="ava">
+                        <img src="./assets/img/art.jpg" alt=""
+                      /></span>
+                      <span class="ava">
+                        <img src="./assets/img/art.jpg" alt=""
+                      /></span>
+                    </span>
+                    <span class="name">Елена Петровна Колчева</span>
                   </a>
-                  <a href="#" class="link-persone" target="_blank">
+                  <div class="message">
+                    <div class="mess-content">
+                      <p>
+                        <span class="clr-main pointer">@manager</span>
+                        Lorem ipsum dolor sit amet consectetur. A egestas
+                        bibendum varius adipiscing vitae velit aenean nec in.
+                        Gravida sit diam vel risus. Nibh libero enim fames risus
+                        senectus sapien dictumst dfm...
+                      </p>
+                    </div>
+                    <div class="check"></div>
+
+                    <div class="mess-date">
+                      <time datetime="21.01.2021 19:00"
+                        >21.01.2021<br />19:00</time
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="appeals--ability">
+                  <a href="#" class="cart-persone" target="_blank">
                     <span class="ava">
                       <img src="./assets/svg/art/pazle.svg" alt=""
                     /></span>
-                    <span class="appeals--name">Максим Николаев</span>
+                    <span class="name">Егор Егоров</span>
                   </a>
-                  <button>Сменить менеджера</button>
+                  <div class="btns">
+                    <button>Сменить менеджера</button>
+                    <button class="btn">Ответить</button>
+                  </div>
                   <a href="#" class="btn-cart" target="_blank">
                     <svg
   width="28"
@@ -479,23 +462,65 @@
  Открыть чат (1
                     сообщение)
                   </a>
-                </header>
-                <div class="messages">
-                  <div class="message message--me">
-                    <a href="#" class="ava" target="_blank"
-                      ><img src="./assets/svg/art/pazle.svg" alt=""
-                    /></a>
-                    <p class="mess-content">Починили, всё в порядке</p>
-                  </div>
+                </div>
+              </div>
+              <div class="appeals">
+                <div class="appeals--content">
+                  <a href="#" class="link-persone" target="_blank">
+                    <span class="group--ava">
+                      <span class="ava">
+                        <img src="./assets/img/art.jpg" alt=""
+                      /></span>
+                      <span class="ava">
+                        <img src="./assets/img/art.jpg" alt=""
+                      /></span>
+                    </span>
+                    <span class="name">Михаил Васильевич Сурикатов</span>
+                  </a>
                   <div class="message">
-                    <a href="#" class="ava" target="_blank"
-                      ><img src="./assets/img/art.jpg" alt=""
-                    /></a>
-                    <p class="mess-content">Спасибо, починилось</p>
+                    <div class="mess-content">
+                      <p>
+                        <span class="clr-main pointer">@manager</span>
+                        Lorem ipsum dolor sit amet consectetur. A egestas
+                        bibendum varius adipiscing vitae velit aenean nec in.
+                      </p>
+                    </div>
+                    <div class="check"></div>
+
+                    <div class="mess-date">
+                      <time datetime="21.01.2021 19:00"
+                        >21.01.2021<br />19:00</time
+                      >
+                    </div>
                   </div>
                 </div>
-                <div class="mg-date">
-                  <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
+                <div class="appeals--ability">
+                  <a href="#" class="cart-persone" target="_blank">
+                    <span class="ava">
+                      <img src="./assets/svg/art/pazle.svg" alt=""
+                    /></span>
+                    <span class="name">Я</span>
+                  </a>
+                  <div class="btns">
+                    <button>Сменить менеджера</button>
+                    <button class="btn">Ответить</button>
+                  </div>
+                  <a href="#" class="btn-cart" target="_blank">
+                    <svg
+  width="28"
+  height="26"
+  viewBox="0 0 28 26"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
+    stroke="#C3C3C3"
+  />
+</svg>
+ Открыть чат (1
+                    сообщение)
+                  </a>
                 </div>
               </div>
             </div>
@@ -664,13 +689,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230314121337"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230324100833"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230314121337"></script>
+	<script src="./assets/js/app.min.js?ver=20230324100833"></script>
 </body>
 </html>

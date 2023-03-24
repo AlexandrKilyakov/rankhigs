@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Сообщения</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230314121337" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230314121337" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230314121337" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230314121337" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230324100833" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230324100833" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230324100833" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230324100833" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -387,6 +387,23 @@
               /></a>
               <div class="mess-content">
                 <div class="mess-cart">
+                  <small class="clr-main mess-name">Андрей Иванов</small>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur. Viverra a ultricies.
+                  </p>
+                </div>
+              </div>
+
+              <div class="mess-date">
+                <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
+              </div>
+            </div>
+            <div class="message">
+              <a href="#" class="ava" target="_blank"
+                ><img src="./assets/img/art.jpg" alt="" class="ch-ava"
+              /></a>
+              <div class="mess-content">
+                <div class="mess-cart">
                   <small class="clr-main mess-name">Промснаб Подшипник</small>
                   <p>Lorem ipsum dolor sit</p>
                 </div>
@@ -396,23 +413,7 @@
                 <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
               </div>
             </div>
-            <div class="message message-me">
-              <a href="#" class="ava" target="_blank"
-                ><img src="./assets/img/art.jpg" alt="" class="ch-ava"
-              /></a>
-              <div class="mess-content">
-                <div class="mess-cart">
-                  <small class="clr-main mess-name">Андрей Иванов</small>
-                  <p>
-                    Lorem ipsum dolor sit amet consectetur. Viverra a ultricies.
-                  </p>
-                </div>
-              </div>
-              <div class="mess-date">
-                <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
-              </div>
-            </div>
-            <div class="message message--manager">
+            <div class="message message--manager message-me">
               <a href="#" class="ava" target="_blank"
                 ><img src="./assets/svg/art/pazle.svg" alt="" class="ch-ava"
               /></a>
@@ -433,13 +434,10 @@
               <div class="mess-content">
                 <div class="mess-cart">
                   <small class="clr-main mess-name">Промснаб Подшипник</small>
-                  <p class="mess-txt">
-                    <b
-                      >Вызвал менеджера:
-                      <a href="#">Подготовка документов</a></b
-                    >
+                  <p>
+                    <span class="clr-main pointer">@manager</span> типовой
+                    договор на работы
                   </p>
-                  <p>типовой договор на работы</p>
                 </div>
               </div>
 
@@ -447,9 +445,24 @@
                 <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
               </div>
             </div>
+            <div class="message message--manager message-me">
+              <a href="#" class="ava" target="_blank"
+                ><img src="./assets/svg/art/pazle.svg" alt="" class="ch-ava"
+              /></a>
+              <div class="mess-content">
+                <div class="mess-cart">
+                  <small class="clr-main mess-name">Иван Андреев</small>
+                  <p>Lorem ipsum dolor sit</p>
+                </div>
+              </div>
+              <div class="mess-date">
+                <time datetime="21.01.2021 19:00">21.01.2021<br />19:00</time>
+              </div>
+            </div>
           </div>
         </div>
-        <form class="chats-footer">
+        <!-- Если менеджер уже в чате -->
+        <!-- <form class="chats-footer">
           <textarea
             name="text"
             cols="30"
@@ -460,21 +473,15 @@
           <button class="btn btn-chat">
             Отправить <svg width="800px" height="800px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" id="send" class="icon glyph"><path d="M21.66,12a2,2,0,0,1-1.14,1.81L5.87,20.75A2.08,2.08,0,0,1,5,21a2,2,0,0,1-1.82-2.82L5.46,13H11a1,1,0,0,0,0-2H5.46L3.18,5.87A2,2,0,0,1,5.86,3.25h0l14.65,6.94A2,2,0,0,1,21.66,12Z" style="fill:#231f20"></path></svg>
           </button>
-          <!-- Эта кнопка только для менеджера -->
-          <button type="button" class="btn-inviz">
-            <svg
-  width="24"
-  height="24"
-  viewBox="0 0 24 24"
-  fill="none"
-  xmlns="http://www.w3.org/2000/svg"
->
-  <path d="M6 11.4286L10.6957 16L18 8" stroke="white" />
-  <rect x="0.5" y="0.5" width="23" height="23" rx="11.5" stroke="white" />
-</svg>
- Покинуть чат
-          </button>
-        </form>
+        </form> -->
+
+        <!-- Если менеджер ещё не добавился в чат -->
+        <footer class="chat-footer">
+          <p class="info">
+            Вы не можете писать сообщения, так как назначен другой менеджер
+          </p>
+          <button class="btn">Назначить себя менеджером</button>
+        </footer>
       </div>
     </div>
   </div>
@@ -638,13 +645,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230314121337"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230324100833"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230314121337"></script>
+	<script src="./assets/js/app.min.js?ver=20230324100833"></script>
 </body>
 </html>
