@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тут собранны модалки</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230310164105" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230310164105" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230310164105" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230310164105" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230327094858" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230327094858" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230327094858" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230327094858" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -193,15 +193,15 @@
         >
         <a href="#" class="lp-link active" title="Открыть сообщения"
           ><svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
+    d="M5.125 17.2759L3.875 21C5.375 21 7.41667 19.3448 8.25 18.5172C8.66667 18.7241 10.75 19.1379 12 19.1379C18.25 19.1379 22 16.0345 22 11.6897C22 7.96552 18.25 3 12 3C5.75 3 2 7.96552 2 11.6897C2 14.669 4.08333 16.6552 5.125 17.2759Z"
+    stroke="#888888"
   />
 </svg>
 </a
@@ -268,6 +268,227 @@
     position: initial;
   }
 </style>
+
+<!-- Тут модалка входа -->
+<div class="modal modal--poll">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Создать дискуссию</p>
+    <form action="" class="reg-from" method="get">
+      <div class="reg-tabs">
+        <div class="reg-tabs-link">
+          <button
+            type="button"
+            class="btn-std reg-tab reg-tab-active"
+            id="discussion"
+          >
+            Обсуждение <span class="subtitle">Текстовый чат с перепиской</span>
+          </button>
+          <button type="button" class="btn-std reg-tab" id="poll">
+            Опрос
+            <span class="subtitle">Текстовый чат с перепиской</span>
+          </button>
+        </div>
+        <input
+          type="hidden"
+          class="hide"
+          name="face"
+          value="discussions"
+          id="js-face"
+        />
+        <div class="for-discussion">
+          <label>
+            <input
+              type="text"
+              name="inn"
+              placeholder=" "
+              required
+              minlength="3"
+            />
+            <span class="placeholder">Заголовок дискуссии</span>
+          </label>
+          <label>
+            <textarea
+              name="text"
+              placeholder=" "
+              required
+              minlength="10"
+            ></textarea>
+            <span class="placeholder">Описание дискуссии</span>
+          </label>
+          <label class="label-group">
+            <input
+              type="url"
+              name="social-1"
+              placeholder=" "
+              autocorrect="off"
+              autocapitalize="off"
+              pattern="https://.*"
+            />
+            <span class="placeholder"
+              >Ссылка на материал портала (методика, запрос и т.д)</span
+            >
+          </label>
+          <button type="button" class="add-more" data-click="more">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Добавить ссылку
+          </button>
+          <section class="list-files">
+            <div class="lf-item">
+              <button type="button" class="btn-close">&#10006;</button>
+              <p class="lf-name">document.doc</p>
+            </div>
+          </section>
+          <div class="error-reg">
+            <div class="er-ava"><svg width="25" height="24" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1244 1L0 22H24.2487L12.1244 1ZM12.1244 3L1.73205 21H22.5167L12.1244 3Z" fill="#921A1D"/>
+    <path d="M11.3714 9H12.6286V15.7606H11.3714V9ZM12 19C11.7238 19 11.4857 18.9061 11.2857 18.7183C11.0952 18.5211 11 18.2864 11 18.0141C11 17.7324 11.0952 17.4977 11.2857 17.3099C11.4857 17.1221 11.7238 17.0282 12 17.0282C12.2762 17.0282 12.5095 17.1221 12.7 17.3099C12.9 17.4977 13 17.7324 13 18.0141C13 18.2864 12.9 18.5211 12.7 18.7183C12.5095 18.9061 12.2762 19 12 19Z" fill="#921A1D"/>
+</svg>    </div>
+            <p class="er-txt">
+              <small
+                >Дискуссия по поводу этого запроса уже существует на сайте:
+                <a href="/">ссылка на дискуссию</a></small
+              >
+            </p>
+          </div>
+          <div class="file-box">
+            <span class="fake-table-title">Дополнительный документ:</span>
+            <label>
+              <input type="file" />
+              <button type="button" title="Выбрать файл" class="btn-file">
+                <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="M21.7798 10.5001L21.7798 4.11304L2.88693 4.11304L2.88693 10.5001"
+    stroke="#888888"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <path
+    d="M11.5693 21.1334C11.7646 21.3287 12.0811 21.3287 12.2764 21.1334L15.4584 17.9514C15.6536 17.7562 15.6536 17.4396 15.4584 17.2443C15.2631 17.0491 14.9465 17.0491 14.7513 17.2443L11.9229 20.0728L9.09442 17.2443C8.89916 17.0491 8.58258 17.0491 8.38732 17.2443C8.19206 17.4396 8.19206 17.7562 8.38732 17.9514L11.5693 21.1334ZM11.4229 7.44653L11.4229 20.7799L12.4229 20.7799L12.4229 7.44653L11.4229 7.44653Z"
+    fill="#888888"
+  />
+</svg>
+ Выбрать файл
+              </button>
+            </label>
+            <span class="subtitle"
+              >Возможные форматы: рисунки (jpeg, png, tiff), документы (pdf,
+              doc). Не более 10 Мб</span
+            >
+          </div>
+
+          <button class="btn btn-submit" data-click="reform" disabled>
+            Создать дискуссию
+          </button>
+        </div>
+
+        <div class="for-poll create-option hide">
+          <div class="radios grid-2">
+            <p class="name cg-1">Вариант ответов:</p>
+            <label class="radio radio-btn">
+              <input
+                type="radio"
+                name="agreement"
+                value="radio"
+                data-click="var-answer"
+              />
+              <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g clip-path="url(#clip0_1225_65912)">
+    <circle cx="12" cy="12" r="11.5" stroke="#C3C3C3" />
+    <circle cx="12" cy="12" r="4.5" fill="#C3C3C3" stroke="#C3C3C3" />
+  </g>
+  <defs>
+    <clipPath id="clip0_1225_65912">
+      <rect width="24" height="24" fill="white" />
+    </clipPath>
+  </defs>
+</svg>
+
+              <span class="name">Один из списка</span>
+            </label>
+            <label class="radio radio-btn">
+              <input
+                type="radio"
+                name="agreement"
+                value="checkbox"
+                data-click="var-answer"
+              />
+              <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" fill="white" />
+  <path
+    d="M4 11.2L10.5 18L20 6"
+    stroke="#C3C3C3"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <rect x="0.5" y="0.5" width="23" height="23" rx="3.5" stroke="#C3C3C3" />
+</svg>
+
+              <span class="name">Несколько из списка</span>
+            </label>
+          </div>
+          <label>
+            <input
+              type="text"
+              name="inn"
+              placeholder=" "
+              required
+              minlength="3"
+            />
+            <span class="placeholder">Заголовок опроса</span>
+          </label>
+          <label>
+            <textarea
+              name="text"
+              placeholder=" "
+              required
+              minlength="10"
+            ></textarea>
+            <span class="placeholder">Описание опроса</span>
+          </label>
+          <label class="radio var-answer">
+            <input type="radio" name="agreement" />
+            <span class="checktext">Вариант ответа 1</span>
+            <button class="btn-close btn-close-group"></button>
+          </label>
+          <label class="label-group">
+            <input type="text" placeholder=" " required minlength="2" />
+            <span class="placeholder">Текст варианта ответа</span>
+          </label>
+          <button type="button" class="add-more" data-click="answer">
+            <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Добавить вариант
+          </button>
+          <button class="btn btn-submit" data-click="reform" disabled>
+            Создать опрос
+          </button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
 
 <!-- Тут модалка входа -->
 <div class="modal modal-login">
@@ -1008,15 +1229,15 @@
             </div>
             <a href="#" class="btn-cart" target="_blank">
               <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
+    d="M5.125 17.2759L3.875 21C5.375 21 7.41667 19.3448 8.25 18.5172C8.66667 18.7241 10.75 19.1379 12 19.1379C18.25 19.1379 22 16.0345 22 11.6897C22 7.96552 18.25 3 12 3C5.75 3 2 7.96552 2 11.6897C2 14.669 4.08333 16.6552 5.125 17.2759Z"
+    stroke="#888888"
   />
 </svg>
  Чат с исполнителем
@@ -1095,15 +1316,15 @@
             </div>
             <a href="#" class="btn-cart" target="_blank">
               <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
+    d="M5.125 17.2759L3.875 21C5.375 21 7.41667 19.3448 8.25 18.5172C8.66667 18.7241 10.75 19.1379 12 19.1379C18.25 19.1379 22 16.0345 22 11.6897C22 7.96552 18.25 3 12 3C5.75 3 2 7.96552 2 11.6897C2 14.669 4.08333 16.6552 5.125 17.2759Z"
+    stroke="#888888"
   />
 </svg>
  Чат с исполнителем
@@ -1182,15 +1403,15 @@
             </div>
             <a href="#" class="btn-cart" target="_blank">
               <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
+    d="M5.125 17.2759L3.875 21C5.375 21 7.41667 19.3448 8.25 18.5172C8.66667 18.7241 10.75 19.1379 12 19.1379C18.25 19.1379 22 16.0345 22 11.6897C22 7.96552 18.25 3 12 3C5.75 3 2 7.96552 2 11.6897C2 14.669 4.08333 16.6552 5.125 17.2759Z"
+    stroke="#888888"
   />
 </svg>
  Чат с исполнителем
@@ -1271,15 +1492,15 @@
             </div>
             <a href="#" class="btn-cart" target="_blank">
               <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
+    d="M5.125 17.2759L3.875 21C5.375 21 7.41667 19.3448 8.25 18.5172C8.66667 18.7241 10.75 19.1379 12 19.1379C18.25 19.1379 22 16.0345 22 11.6897C22 7.96552 18.25 3 12 3C5.75 3 2 7.96552 2 11.6897C2 14.669 4.08333 16.6552 5.125 17.2759Z"
+    stroke="#888888"
   />
 </svg>
  Чат с исполнителем
@@ -1358,15 +1579,15 @@
             </div>
             <a href="#" class="btn-cart" target="_blank">
               <svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
+    d="M5.125 17.2759L3.875 21C5.375 21 7.41667 19.3448 8.25 18.5172C8.66667 18.7241 10.75 19.1379 12 19.1379C18.25 19.1379 22 16.0345 22 11.6897C22 7.96552 18.25 3 12 3C5.75 3 2 7.96552 2 11.6897C2 14.669 4.08333 16.6552 5.125 17.2759Z"
+    stroke="#888888"
   />
 </svg>
  Чат с исполнителем
@@ -1577,13 +1798,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230310164105"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230327094858"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230310164105"></script>
+	<script src="./assets/js/app.min.js?ver=20230327094858"></script>
 </body>
 </html>
