@@ -5,10 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог компетенций</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230203165424" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230203165424" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230426155212" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230426155212" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230426155212" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230426155212" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -18,7 +18,7 @@
   </head>
   <body>
     <!-- Для НЕ зареганых -->
-    <header class="main-header hide">
+    <header class="main-header ">
       <div class="mh-logo"><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
     <path d="M106.261 1.63968H114.195L121.043 34.7204H114.63L113.217 26.148H106.587L104.739 34.7204H98.4346L106.261 1.63968ZM112.565 21.3123L110.174 5.92588L107.348 21.3123H112.565Z" fill="#971914"/>
@@ -104,7 +104,7 @@
     </header>
 
     <!-- Для зареганых -->
-    <header class="main-header header-for-login ">
+    <header class="main-header header-for-login hide">
       <a href="/" class="mh-logo stop-hover-link"
         ><svg width="229" height="63" viewBox="0 0 229 63" fill="none" xmlns="http://www.w3.org/2000/svg">
     <path d="M84.9565 34.8303H79.0869V1.63968H90.2825C95.2825 1.63968 98.4347 6.03579 98.4347 11.3111C98.4347 16.8063 95.1738 21.3123 90.1738 21.3123H84.9565V34.8303V34.8303ZM84.9565 16.3666H87.8912C90.826 16.3666 92.3477 14.6082 92.3477 11.421C92.3477 8.34374 90.9347 6.5853 87.8912 6.5853H84.9565V16.3666Z" fill="#971914"/>
@@ -193,15 +193,15 @@
         >
         <a href="#" class="lp-link active" title="Открыть сообщения"
           ><svg
-  width="28"
-  height="26"
-  viewBox="0 0 28 26"
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
   fill="none"
   xmlns="http://www.w3.org/2000/svg"
 >
   <path
-    d="M4.83317 20.0345L3.1665 25C5.1665 25 7.88873 22.7931 8.99984 21.6897C9.55539 21.9655 12.3332 22.5172 13.9998 22.5172C22.3332 22.5172 27.3332 18.3793 27.3332 12.5862C27.3332 7.62069 22.3332 1 13.9998 1C5.6665 1 0.666504 7.62069 0.666504 12.5862C0.666504 16.5586 3.44428 19.2069 4.83317 20.0345Z"
-    stroke="#C3C3C3"
+    d="M5.125 17.2759L3.875 21C5.375 21 7.41667 19.3448 8.25 18.5172C8.66667 18.7241 10.75 19.1379 12 19.1379C18.25 19.1379 22 16.0345 22 11.6897C22 7.96552 18.25 3 12 3C5.75 3 2 7.96552 2 11.6897C2 14.669 4.08333 16.6552 5.125 17.2759Z"
+    stroke="#888888"
   />
 </svg>
 </a
@@ -353,6 +353,40 @@
         <span class="placeholder">По рейтингу</span>
       </div>
     </form>
+    <!-- new -->
+    <section class="std--box-mini flex">
+      <div class="arc-hidden">
+        <div class="arc-right"></div>
+      </div>
+      <div class="item">
+        <h2 class="fake-h3 title">Дополнительные услуги РАНХиГС-Консалтинг</h2>
+        <p class="subtitle">Работа платформы РАНХиГС</p>
+      </div>
+      <div class="grid-2">
+        <a href="#" class="arrow-border link-color"
+          ><span>Организация мероприятий</span
+          ><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </a
+        >
+        <a href="#" class="arrow-border link-color"
+          ><span>Создание ТЗ</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </a
+        >
+        <a href="#" class="arrow-border link-color"
+          ><span>Экспертиза НИР и проектов</span
+          ><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </a
+        >
+        <a href="#" class="arrow-border link-color"
+          ><span>БИУМ</span><svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M1 13L7 7L1 1" stroke="#101010" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>    </a
+        >
+      </div>
+    </section>
     <section class="variants-uslugi grid-3">
       <article class="catalog-cart">
         <a href="/link" class="block-link"> </a>
@@ -1496,7 +1530,7 @@
 
 					<small class="mf-end">©РАНХиГС, 2022</small>
 				</div>
-				<a href="#" class="btn" title="Техническая поддержка"><svg
+				<a href="#" class="btn"><svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -1536,13 +1570,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230203165424"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230426155212"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230203165424"></script>
+	<script src="./assets/js/app.min.js?ver=20230426155212"></script>
 </body>
 </html>
