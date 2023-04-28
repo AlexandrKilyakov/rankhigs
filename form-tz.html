@@ -261,13 +261,20 @@
     <main role="main">
 
 <div class="std--box bg-inviz">
-  <h1 class="full-container text-center">Создание запроса</h1>
-  <div class="reg-content mt32">
+  <div class="full-container">
+    <div class="bread-crumbs">
+      <a href="/" class="bc-link">Главная</a>
+      <p class="slash">/</p>
+      <p class="bc-link">Подготовка Технического задания по проекту</p>
+    </div>
+    <h1 class="text-center">Подготовка Технического задания по проекту</h1>
+  </div>
+  <div class="reg-content">
     <form action="" class="reg-from reg-from-details" method="post">
       <details class="number-list cart details-cart" open>
         <summary class="numlist-title">
           <h2 class="fake-h4 rr-summary">
-            <span class="rr-num">01</span>Общая информация
+            Описание проекта, Техническое задание
           </h2>
           <div class="arrow-std">
             <span class="arrow-left"></span>
@@ -295,95 +302,7 @@
   </select>
   <span class="placeholder">Сфера консалтинга</span>
 </label>
- <label>
-  <select name="month" required>
-  
-  
-    <option value="" selected disabled></option>
-    <option value="January">Дошкольное</option>
-    <option value="January">Начальное общее (1—4 класс)</option>
-    <option value="January">Основное общее (5—9 класс)</option>
-    <option value="January">Среднее общее (10 и 11 классы)</option>
-    <option value="January">Среднее профессиональное</option>
-    <option value="January">Высшее I степени – бакалавриат</option>
-    <option value="January">
-      Высшее II степени – специалитет, магистратура
-    </option>
-    <option value="January">
-      Высшее III степени – подготовка кадров высшей квалификации
-    </option>
-  </select>
-  <span class="placeholder">Тип проекта</span>
-</label>
- <div class="additional-info ">
-  <div class="addinfo" data-info="clue">
-    <p class="add-text">
-      <a href="/">Lorem</a> ipsum dolor, sit amet consectetur adipisicing elit.
-      Facilis omnis perferendis suscipit obcaecati asperiores! Animi illum
-      magnam architecto eligendi ex eum, quos atque ipsa commodi dicta dolorem
-      quaerat quo qui?
-    </p>
-  </div>
-  <label>
-    <select name="month" required>
-       
-
-        <option value="" selected disabled></option>
-        <option value="January">Дошкольное</option>
-        <option value="January">Начальное общее (1—4 класс)</option>
-        <option value="January">Основное общее (5—9 класс)</option>
-        <option value="January">Среднее общее (10 и 11 классы)</option>
-        <option value="January">Среднее профессиональное</option>
-        <option value="January">Высшее I степени – бакалавриат</option>
-        <option value="January">
-          Высшее II степени – специалитет, магистратура
-        </option>
-        <option value="January">
-          Высшее III степени – подготовка кадров высшей квалификации
-        </option>
-
-        </select
-      > 
-
-    <span class="placeholder">Требуемое число исполнителей</span>
-  </label>
-</div>
-
-          <label>
-  <select name="month" required>
-  
-  
-    <option value="" selected disabled></option>
-    <option value="January">Дошкольное</option>
-    <option value="January">Начальное общее (1—4 класс)</option>
-    <option value="January">Основное общее (5—9 класс)</option>
-    <option value="January">Среднее общее (10 и 11 классы)</option>
-    <option value="January">Среднее профессиональное</option>
-    <option value="January">Высшее I степени – бакалавриат</option>
-    <option value="January">
-      Высшее II степени – специалитет, магистратура
-    </option>
-    <option value="January">
-      Высшее III степени – подготовка кадров высшей квалификации
-    </option>
-  </select>
-  <span class="placeholder">Видимость запроса</span>
-</label>
-
-        </section>
-      </details>
-      <details class="number-list cart details-cart hide">
-        <summary class="numlist-title">
-          <h2 class="fake-h4 rr-summary">
-            <span class="rr-num">02</span>Описание проекта
-          </h2>
-          <div class="arrow-std">
-            <span class="arrow-left"></span>
-            <span class="arrow-right"></span>
-          </div>
-        </summary>
-        <section class="details-child">
-          <label class="">
+ <label class="">
   <input
     placeholder=" "
     type="text"
@@ -393,6 +312,16 @@
     required
   />
   <span class="placeholder">Название проекта</span>
+</label>
+ <label class="">
+   
+  <textarea
+    placeholder=" "
+    name="text"
+    class=""
+  ></textarea>
+  
+  <span class="placeholder">Актуальность и практическая значимость</span>
 </label>
 
           <label class="">
@@ -406,7 +335,106 @@
    
   <span class="placeholder">Цели проекта</span>
 </label>
+
+
+          <fieldset class="reg-group hide">
+            <legend class="reg-group-name important">
+              Содержание проекта (Этапы)
+            </legend>
+
+            <label>
+  <select name="month" required>
+  
+  
+    <option value="" selected disabled></option>
+    <option value="January">Дошкольное</option>
+    <option value="January">Начальное общее (1—4 класс)</option>
+    <option value="January">Основное общее (5—9 класс)</option>
+    <option value="January">Среднее общее (10 и 11 классы)</option>
+    <option value="January">Среднее профессиональное</option>
+    <option value="January">Высшее I степени – бакалавриат</option>
+    <option value="January">
+      Высшее II степени – специалитет, магистратура
+    </option>
+    <option value="January">
+      Высшее III степени – подготовка кадров высшей квалификации
+    </option>
+  </select>
+  <span class="placeholder">Этап работ</span>
+</label>
  <label class="">
+  
+  <textarea
+    placeholder=" "
+    name="text"
+    class=""
+    required
+  ></textarea>
+   
+  <span class="placeholder">Описание этапа</span>
+</label>
+ <label class="done">
+  <div class="flex-start">
+    
+    <input type="number" value="21" min="1" max="31" placeholder="День" />
+    
+    <select name="month" class="selected">
+      <option value="January">Январь</option>
+      <option value="February">Февраль</option>
+      <option value="March">Март</option>
+      <option value="April">Апрель</option>
+      <option value="May">Май</option>
+      <option value="June">Июнь</option>
+      <option value="July">Июль</option>
+      <option value="August">Август</option>
+      <option value="September">Сентябрь</option>
+      <option value="October">Октябрь</option>
+      <option value="November">Ноябрь</option>
+      <option value="December">Декабрь</option>
+    </select>
+    <input type="number" value="21" min="1922" max="2020" placeholder="Год" />
+  </div>
+  <span class="placeholder important">
+    Начало выполнения этапа 
+  </span>
+</label>
+
+            <label class="done">
+  <div class="flex-start">
+    
+    <input type="number" value="21" min="1" max="31" placeholder="День" />
+    
+    <select name="month" class="selected">
+      <option value="January">Январь</option>
+      <option value="February">Февраль</option>
+      <option value="March">Март</option>
+      <option value="April">Апрель</option>
+      <option value="May">Май</option>
+      <option value="June">Июнь</option>
+      <option value="July">Июль</option>
+      <option value="August">Август</option>
+      <option value="September">Сентябрь</option>
+      <option value="October">Октябрь</option>
+      <option value="November">Ноябрь</option>
+      <option value="December">Декабрь</option>
+    </select>
+    <input type="number" value="21" min="1922" max="2020" placeholder="Год" />
+  </div>
+  <span class="placeholder important">
+    Конец выполнения этапа 
+  </span>
+</label>
+
+          </fieldset>
+
+          <button type="button" class="add-more" data-click="more">
+  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Добавить этап
+</button>
+
+          <label class="">
    
   <textarea
     placeholder=" "
@@ -417,178 +445,32 @@
   <span class="placeholder">Ожидаемые результаты</span>
 </label>
 
-          <div class="grid-2 reg-new-num">
-            <div class="addinfo">
-              <p class="add-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Facilis omnis perferendis suscipit obcaecati asperiores! Animi
-                illum magnam architecto eligendi ex eum, quos atque ipsa commodi
-                dicta dolorem quaerat quo qui?
-              </p>
-            </div>
-
-            <label class="done">
-  <div class="flex-start">
-    
-    <select name="month" class="selected">
-      <option value="January">Январь</option>
-      <option value="February">Февраль</option>
-      <option value="March">Март</option>
-      <option value="April">Апрель</option>
-      <option value="May">Май</option>
-      <option value="June">Июнь</option>
-      <option value="July">Июль</option>
-      <option value="August">Август</option>
-      <option value="September">Сентябрь</option>
-      <option value="October">Октябрь</option>
-      <option value="November">Ноябрь</option>
-      <option value="December">Декабрь</option>
-    </select>
-    <input type="number" value="21" min="1922" max="2020" placeholder="Год" />
-  </div>
-  <span class="placeholder important">
-    Начало выполнения работ 
-  </span>
+          <label class="">
+  
+  <textarea
+    placeholder=" "
+    name="text"
+    class=""
+    required
+  ></textarea>
+   
+  <span class="placeholder">Требования к отчетным документам</span>
+</label>
+ <label class="">
+   
+  <textarea
+    placeholder=" "
+    name="text"
+    class=""
+  ></textarea>
+  
+  <span class="placeholder">Требования к защите прав на результаты работ</span>
 </label>
 
-            <label class="done">
-  <div class="flex-start">
-    
-    <select name="month" class="selected">
-      <option value="January">Январь</option>
-      <option value="February">Февраль</option>
-      <option value="March">Март</option>
-      <option value="April">Апрель</option>
-      <option value="May">Май</option>
-      <option value="June">Июнь</option>
-      <option value="July">Июль</option>
-      <option value="August">Август</option>
-      <option value="September">Сентябрь</option>
-      <option value="October">Октябрь</option>
-      <option value="November">Ноябрь</option>
-      <option value="December">Декабрь</option>
-    </select>
-    <input type="number" value="21" min="1922" max="2020" placeholder="Год" />
-  </div>
-  <span class="placeholder important">
-    Конец выполнения работ 
-  </span>
-</label>
-
-          </div>
-          <button type="button" class="add-more" data-click="more">
-  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
-<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
-</svg> Добавить веху
-</button>
-
-          <div class="additional-info textarea-info">
-  <div class="addinfo" data-info="clue">
-    <p class="add-text">
-      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis omnis
-      perferendis suscipit obcaecati asperiores! Animi illum magnam architecto
-      eligendi ex eum, quos atque ipsa commodi dicta dolorem quaerat quo qui?
-    </p>
-  </div>
-  <label>
-    <textarea
-      placeholder=" "
-      name="text"
-      class=""
-      required
-    ></textarea>
-    <span class="placeholder">Дополнительные требования к исполнителям</span>
-  </label>
-</div>
-
-          <label>
-  <select name="month" required>
-  
-  
-    <option value="" selected disabled></option>
-    <option value="January">Дошкольное</option>
-    <option value="January">Начальное общее (1—4 класс)</option>
-    <option value="January">Основное общее (5—9 класс)</option>
-    <option value="January">Среднее общее (10 и 11 классы)</option>
-    <option value="January">Среднее профессиональное</option>
-    <option value="January">Высшее I степени – бакалавриат</option>
-    <option value="January">
-      Высшее II степени – специалитет, магистратура
-    </option>
-    <option value="January">
-      Высшее III степени – подготовка кадров высшей квалификации
-    </option>
-  </select>
-  <span class="placeholder">Формат работы</span>
-</label>
- <label>
-  <select name="month" required>
-  
-  
-    <option value="" selected disabled></option>
-    <option value="January">Дошкольное</option>
-    <option value="January">Начальное общее (1—4 класс)</option>
-    <option value="January">Основное общее (5—9 класс)</option>
-    <option value="January">Среднее общее (10 и 11 классы)</option>
-    <option value="January">Среднее профессиональное</option>
-    <option value="January">Высшее I степени – бакалавриат</option>
-    <option value="January">
-      Высшее II степени – специалитет, магистратура
-    </option>
-    <option value="January">
-      Высшее III степени – подготовка кадров высшей квалификации
-    </option>
-  </select>
-  <span class="placeholder">Порядок оплаты</span>
-</label>
-
-          <div class="reg-num zapros-cost-box">
-            <p class="important reg-child-title">Стоимость работ</p>
-            <div class="flex-date">
-              <input type="number" min="100" placeholder="от" />
-              <p class="dash">-</p>
-              <input type="number" min="100" placeholder="до" />
-            </div>
-          </div>
-          <div class="additional-info-btn">
-            <div class="addinfo">
-              <p class="add-text">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Facilis omnis perferendis suscipit obcaecati asperiores! Animi
-                illum magnam architecto eligendi ex eum, quos atque ipsa commodi
-                dicta dolorem quaerat quo qui?
-              </p>
-            </div>
-            <div class="file-box">
-              <label>
-                <input type="file" required />
-                <button type="button" title="Прикрепить ТЗ" class="btn-file">
-                  <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
-<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
-</svg> Прикрепить ТЗ
-                </button>
-              </label>
-              <a href="/" target="_blank">Заказать ТЗ</a>
-            </div>
-          </div>
-          <section class="list-files">
-            <div class="lf-item">
-              <button type="button" class="btn-close">&#10006;</button>
-              <p class="lf-name">document.doc</p>
-            </div>
-          </section>
         </section>
       </details>
       <div class="form-btns">
-        <button type="button" class="draft">
-          Сохранить как черновик и выйти
-        </button>
-        <button type="button" class="btn next-step">Следующий шаг</button>
-        <button type="submit" class="btn hide reg-finaly">
-          Опубликовать запрос
-        </button>
+        <button type="submit" class="btn">Отправить заявку</button>
       </div>
     </form>
   </div>

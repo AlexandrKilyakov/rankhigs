@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta name="robots" content="noindex, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тут собранны модалки</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230327094858" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230327094858" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230327094858" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230327094858" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230427162539" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230427162539" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230427162539" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230427162539" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -269,6 +270,23 @@
   }
 </style>
 
+<!-- Тут модалка о сохранении запроса в черновиках -->
+<div class="modal modal-edit">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <h2 class="modal-name">Сохраните ваш&nbsp;запрос в&nbsp;черновиках</h2>
+    <p class="modal-text">
+      Чтобы заказать Техническое задание, сохраните заполненные поля
+      у&nbsp;запроса, что&nbsp;бы вернуться к&nbsp;его оформлению
+      и&nbsp;публикации после оформления заявки.
+    </p>
+    <div class="modal-btns no-margin">
+      <button class="btn">Сохранить как&nbsp;черновик и&nbsp;выйти</button>
+      <button class="close-modal">Продолжить заполнение запроса</button>
+    </div>
+  </div>
+</div>
+
 <!-- Тут модалка входа -->
 <div class="modal modal--poll">
   <div class="cart modal-body">
@@ -326,7 +344,7 @@
               pattern="https://.*"
             />
             <span class="placeholder"
-              >Ссылка на материал портала (методика, запрос и т.д)</span
+              >Ссылка на материал портала (методика, запрос и&nbsp;т.д)</span
             >
           </label>
           <button type="button" class="add-more" data-click="more">
@@ -561,7 +579,7 @@
       проверка занимает 1-3 дня.
     </p>
     <div class="modal-btns">
-      <button class="btn">Сохранить и отправить на модерацию</button>
+      <button class="btn">Сохранить и&nbsp;отправить на модерацию</button>
       <button class="close-modal">Отменить изменения</button>
     </div>
   </div>
@@ -780,8 +798,8 @@
           "
         ></div>
         <p class="name">
-          Российская академия народного хозяйства и государственной службы при
-          президенте Российской Федерации (РАНХиГС)
+          Российская академия народного хозяйства и&nbsp;государственной службы
+          при президенте Российской Федерации (РАНХиГС)
         </p>
       </a>
       <a class="link-item">
@@ -891,7 +909,8 @@
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Добавить сотрудника</p>
     <p class="modal-descr">
-      Введите имя исполителя и добавьте его в список сотрудников своей компании.
+      Введите имя исполителя и&nbsp;добавьте его в список сотрудников своей
+      компании.
     </p>
 
     <form class="form-search">
@@ -970,7 +989,8 @@
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
     <p class="fake-h2 modal-name">Добавить сотрудника</p>
     <p class="modal-descr">
-      Введите имя исполителя и добавьте его в список сотрудников своей компании.
+      Введите имя исполителя и&nbsp;добавьте его в список сотрудников своей
+      компании.
     </p>
 
     <form class="form-search">
@@ -1758,7 +1778,7 @@
 
 					<small class="mf-end">©РАНХиГС, 2022</small>
 				</div>
-				<a href="#" class="btn" title="Техническая поддержка"><svg
+				<a href="#" class="btn"><svg
   width="24"
   height="24"
   viewBox="0 0 24 24"
@@ -1798,13 +1818,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230327094858"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230427162539"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230327094858"></script>
+	<script src="./assets/js/app.min.js?ver=20230427162539"></script>
 </body>
 </html>
