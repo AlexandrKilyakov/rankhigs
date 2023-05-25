@@ -6,10 +6,10 @@
     <meta name="robots" content="noindex, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Каталог методик БИУМ</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230503092704" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230503092704" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230503092704" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230503092704" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230525144737" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -494,19 +494,41 @@
         </article>
         <section class="cart std--article save-point-2">
           <h2 class="fake-h3 title">Авторы методики</h2>
-          <article class="metod-authors">
-            <!-- ссылка - человек, который есть на портале, параграф - кого нет -->
-            <a href="#" class="persone-cart" target="_blank">
-              <span class="ava"> <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></span>
-              <span class="name">Попова Ольга Владимировна</span>
-            </a>
-            <p>
-              Директор, Центр контроля, финансового анализа и стратегического
-              комплаенса;
-            </p>
-          </article>
-          <article class="metod-authors">
-            <!-- ссылка - человек, который есть на портале, параграф - кого нет -->
+          <section class="metod-authors">
+            <!-- Автор методики есть на портале -->
+            <article class="reg-group">
+              <header class="cart-employ">
+                <div class="ava">
+                  <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+                </div>
+                <a href="#" target="_blank" class="link name fake-h5"
+                  >Егор Егоров</a
+                >
+              </header>
+              <p class="fake-table-title">Об авторе методики:</p>
+              <p class="fake-value">
+                Главный руководящий сотрудник, аудитор-механик
+              </p>
+              <p class="fake-table-title">Место работы:</p>
+              <a href="#" class="link">ПАО ««ГАЗПРОМ»</a>
+            </article>
+            <!-- Автора методики нет на портале -->
+            <article class="reg-group">
+              <header class="cart-employ">
+                <div class="ava">
+                  <img src="./assets/svg/art/nowname.svg" alt="" />
+                </div>
+                <p target="_blank" class="name fake-h5">Крузенштерн Прокопий</p>
+              </header>
+              <p class="fake-table-title">Об авторе методики:</p>
+              <p class="fake-value">
+                Главный руководящий сотрудник, аудитор-механик
+              </p>
+              <p class="fake-table-title">Место работы:</p>
+              <p class="fake-value">ООО «Ромашка»</p>
+            </article>
+          </section>
+          <!-- <article class="metod-authors">
             <a href="#" class="persone-cart" target="_blank">
               <span class="ava"> <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></span>
               <span class="name">Ляш Ирина Степановна</span>
@@ -517,7 +539,6 @@
             </p>
           </article>
           <article class="metod-authors">
-            <!-- ссылка - человек, который есть на портале, параграф - кого нет -->
             <p class="persone-cart" target="_blank">
               <span class="ava"> <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture></span>
               <span class="name">Егор Егоров</span>
@@ -526,7 +547,7 @@
               Ведущий эксперт, Группа (штаб) методологического сопровождения,
               Центр контроля, финансового анализа и стратегического комплаенса;
             </p>
-          </article>
+          </article> -->
         </section>
         <section class="project-me save-point-3">
           <h2 class="fake-h3 project-title">Похожие методики</h2>
@@ -833,13 +854,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230503092704"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230525144737"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230503092704"></script>
+	<script src="./assets/js/app.min.js?ver=20230525144737"></script>
 </body>
 </html>

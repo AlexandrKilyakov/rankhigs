@@ -6,10 +6,10 @@
     <meta name="robots" content="noindex, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Размещение методики в БИУМ</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230503092704" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230503092704" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230503092704" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230503092704" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230525144737" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -298,7 +298,59 @@
   </select>
   <span class="placeholder">Категория методики</span>
 </label>
- <label>
+
+          <!-- Новый элементы' - start -->
+          <div class="cart--grey-5">
+            <p class="name">Добавьте авторов методики</p>
+            <div class="btns">
+              <button type="button" class="btn add-more">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Автор есть на портале
+              </button>
+              <button type="button" class="add-more">
+                <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Автора нет на портале
+              </button>
+            </div>
+          </div>
+          <!-- Автор методики есть на портале -->
+          <fieldset class="reg-group">
+            <button type="button" class="btn-close btn-close-group">✖</button>
+            <header class="cart-employ">
+              <div class="ava">
+                <picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.jpg" alt="" /></picture>
+              </div>
+              <a href="#" target="_blank" class="link name">Егор Егоров</a>
+            </header>
+            <p class="fake-table-title">Об авторе методики:</p>
+            <p class="fake-value">
+              Главный руководящий сотрудник, аудитор-механик
+            </p>
+            <p class="fake-table-title">Место работы:</p>
+            <a href="#" class="link">ПАО ««ГАЗПРОМ»</a>
+          </fieldset>
+          <!-- Автора методики нет на портале -->
+          <fieldset class="reg-group">
+            <button type="button" class="btn-close btn-close-group">✖</button>
+            <header class="cart-employ">
+              <div class="ava">
+                <img src="./assets/svg/art/nowname.svg" alt="" />
+              </div>
+              <p target="_blank" class="name">Крузенштерн Прокопий</p>
+            </header>
+            <p class="fake-table-title">Об авторе методики:</p>
+            <p class="fake-value">
+              Главный руководящий сотрудник, аудитор-механик
+            </p>
+            <p class="fake-table-title">Место работы:</p>
+            <p class="fake-value">ООО «Ромашка»</p>
+          </fieldset>
+          <!-- Новый элементы' - end -->
+          <label>
   <select name="month" required>
   
   
@@ -349,8 +401,7 @@
    
   <span class="placeholder">Описание методики</span>
 </label>
-
-          <label class="">
+ <label class="">
   <input
     placeholder=" "
     type="number"
@@ -361,7 +412,7 @@
   />
   <span class="placeholder">Стоимость</span>
 </label>
- <label class="">
+ <label class="label-group">
   <input
     placeholder=" "
     type="text"
@@ -561,13 +612,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230503092704"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230525144737"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230503092704"></script>
+	<script src="./assets/js/app.min.js?ver=20230525144737"></script>
 </body>
 </html>

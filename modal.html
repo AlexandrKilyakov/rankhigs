@@ -6,10 +6,10 @@
     <meta name="robots" content="noindex, follow"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Тут собранны модалки</title>
-    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230427162539" />
-    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230427162539" />
-    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230427162539" />
-    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230427162539" />
+    <link rel="stylesheet" href="./assets/fonts/golos/golos.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/css/normalize.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/libs/select2/select2.min.css?ver=20230525144737" />
+    <link rel="stylesheet" href="./assets/css/app.min.css?ver=20230525144737" />
 
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
@@ -269,6 +269,158 @@
     position: initial;
   }
 </style>
+
+<!-- Тут модалка "Добавление зарегистрированного автора" - состояние НЕ активное -->
+<div class="modal modal--std add-employee">
+  <div class="cart modal-body">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-name">Добавление зарегистрированного автора</p>
+    <form class="form-search">
+      <input
+        type="text"
+        class="search"
+        placeholder="Введите имя автора"
+        required
+      />
+      <button type="submit" class="btn-filter">
+        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M9 17C13.4183 17 17 13.4183 17 9C17 4.58172 13.4183 1 9 1C4.58172 1 1 4.58172 1 9C1 13.4183 4.58172 17 9 17Z" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M18.9999 19L14.6499 14.65" stroke="#921A1D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+      </button>
+    </form>
+
+    <div class="modal-result">
+      <!-- Модалка только открылась -->
+      <p class="void">Воспользуйтесь поиском</p>
+
+      <!-- Пользователь ввел автора, которого нет на сайте -->
+      <p class="void">Автор с таким именем ещё не зарегистрирован</p>
+
+      <!-- Этот блок появляется, когда поиск нашел авторов -->
+      <div class="mr-content create-carts-elements">
+        <label class="radio">
+          <input type="radio" name="agreement" />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.png" alt="" /></picture></span>Анна
+              Николаева</span
+            ></span
+          >
+        </label>
+        <label class="radio">
+          <input type="radio" name="agreement" />
+          <span class="checktext"
+            ><span class="employee-box"
+              ><span class="ava"><picture><source srcset="./assets/img/art.webp" type="image/webp"><img src="./assets/img/art.png" alt="" /></picture></span>Анна
+              Николаева</span
+            ></span
+          >
+        </label>
+      </div>
+    </div>
+
+    <!-- Пока не выбран автор из списка, который появляется после удачного поиска, -->
+    <!-- поля формы ниже, должны быть неактивными -->
+    <form action="" class="reg-from" method="post">
+      <label>
+        <input name="text" type="text" placeholder=" " disabled />
+        <span class="placeholder">Место работы</span>
+      </label>
+      <label>
+        <textarea
+          name="text"
+          cols="30"
+          rows="10"
+          placeholder=" "
+          disabled
+          required
+        ></textarea>
+        <span class="placeholder"
+          >Напишите здесь пару слов о проделанной работе</span
+        >
+      </label>
+    </form>
+
+    <div class="btns">
+      <!-- Кнопка ниже неактивна, пока поля выше не заполнены -->
+      <button class="btn" disabled>Добавить автора</button>
+
+      <!-- Эта кнопка появляется, если пользователь ввел автора, которого нет на сайте -->
+      <!-- Эта кнопка открывает модалку "Добавление незарегистрированного автора" -->
+      <button type="button" class="add-more">
+        <svg width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.9021 9.5L9.50003 9.5M15.098 9.5L9.50003 9.5M9.50003 9.5L9.50003 3.90207M9.50003 9.5L9.50003 15.0979" stroke="#C3C3C3"/>
+<rect x="0.5" y="0.5" width="18" height="18" rx="9" stroke="#C3C3C3"/>
+</svg> Добавить незарегистрированного
+        автора
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Тут модалка входа -->
+<div class="modal modal--std">
+  <div class="cart modal-body modal-max-medium">
+    <button type="button" class="btn-close btn-close-modal">&#10006;</button>
+    <p class="fake-h2 modal-title">
+      Добавление<br />незарегистрированного автора
+    </p>
+    <form action="" method="get">
+      <label class="">
+  <input
+    placeholder=" "
+    type="text"
+    name="name"
+    value=""
+    class=""
+    required
+  />
+  <span class="placeholder">Имя</span>
+</label>
+
+      <label class="">
+  <input
+    placeholder=" "
+    type="text"
+    name="name"
+    value=""
+    class=""
+    required
+  />
+  <span class="placeholder">Фамилия</span>
+</label>
+
+      <label class="">
+  <input
+    placeholder=" "
+    type="text"
+    name="name"
+    value=""
+    class=""
+    required
+  />
+  <span class="placeholder">Место работы</span>
+</label>
+
+      <label class="">
+  
+  <textarea
+    placeholder=" "
+    name="text"
+    class=""
+    required
+  ></textarea>
+   
+  <span class="placeholder">Укажите вклад и компетенцию автора</span>
+</label>
+
+
+      <!-- Кнопка ниже неактивна, пока поля выше не заполнены -->
+      <button class="btn mt16" disabled>Добавить автора</button>
+    </form>
+  </div>
+</div>
 
 <!-- Тут модалка о сохранении запроса в черновиках -->
 <div class="modal modal-edit">
@@ -600,7 +752,6 @@
 
 <!-- Тут модалка "Отправить запрос исполнителю" - состояние НЕ активное -->
 <!-- Такая модалка вылетает, если у заказчика нет ни одного запроса -->
-<!-- new: -->
 <div id="send-request-artist" class="modal send-request-artist">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
@@ -642,7 +793,6 @@
 </div>
 
 <!-- Тут модалка "Отправить запрос исполнителю" - состояние активное -->
-<!-- new: -->
 <div id="send-request-artist" class="modal send-request-artist">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
@@ -708,7 +858,6 @@
   </div>
 </div>
 
-<!-- new: -->
 <div id="send-request-artist" class="modal send-request-artist">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
@@ -778,7 +927,6 @@
   </div>
 </div>
 
-<!-- new: -->
 <div class="modal choose-org">
   <div class="cart modal-body">
     <button type="button" class="btn-close btn-close-modal">&#10006;</button>
@@ -1818,13 +1966,13 @@
 		</div>
     </footer>
 
-	<script src="./assets/libs/select2/select2.min.js?ver=20230427162539"></script>
+	<script src="./assets/libs/select2/select2.min.js?ver=20230525144737"></script>
 	<script>
 		$(document).ready(function() {
 			$('select.select2-std').select2();
 			$('select[multiple]').select2();
 		});
 	  </script>
-	<script src="./assets/js/app.min.js?ver=20230427162539"></script>
+	<script src="./assets/js/app.min.js?ver=20230525144737"></script>
 </body>
 </html>
