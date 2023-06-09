@@ -1,0 +1,203 @@
+.select2-catalog-sort:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  display: block;
+  height: 100%;
+  aspect-ratio: 1/1;
+  border: var(--line-grey);
+  background-color: inherit;
+  border-radius: var(--i4) 0 0 var(--i4);
+  border-right: none;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQiIGhlaWdodD0iMjQiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cmVjdCB4PSI0IiB5PSI1IiB3aWR0aD0iNiIgaGVpZ2h0PSIxIiBmaWxsPSIjQzNDM0MzIj48L3JlY3Q+PHJlY3QgeD0iNCIgeT0iOCIgd2lkdGg9IjEwIiBoZWlnaHQ9IjEiIGZpbGw9IiNDM0MzQzMiPjwvcmVjdD48cmVjdCB4PSI0IiB5PSIxMSIgd2lkdGg9IjEyIiBoZWlnaHQ9IjEiIGZpbGw9IiNDM0MzQzMiPjwvcmVjdD48cmVjdCB4PSI0IiB5PSIxNCIgd2lkdGg9IjE0IiBoZWlnaHQ9IjEiIGZpbGw9IiNDM0MzQzMiPjwvcmVjdD48cmVjdCB4PSI0IiB5PSIxNyIgd2lkdGg9IjE2IiBoZWlnaHQ9IjEiIGZpbGw9IiNDM0MzQzMiPjwvcmVjdD48L3N2Zz4=);
+  background-size: 1.5rem;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body .select2-dropdown {
+  z-index: 1;
+}
+
+.sorting-method {
+  overflow: initial !important;
+}
+
+.table {
+  display: block;
+  background-color: var(--grey-5);
+  border-collapse: collapse;
+  padding: 0 var(--i20);
+}
+
+.table .btn-cart span {
+  display: block;
+}
+
+.table th {
+  font-weight: 400;
+  font-size: var(--f12);
+  line-height: 120%;
+  color: var(--grey-50);
+  text-align: left;
+}
+
+.table th,
+.table td {
+  width: 20%;
+  min-width: -webkit-max-content;
+  min-width: -moz-max-content;
+  min-width: max-content;
+  padding: var(--i16) var(--i20);
+}
+
+.table .name {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 120%;
+}
+
+.table tr {
+  border-bottom: var(--line);
+  -webkit-transition: 0.1s all linear;
+  -o-transition: 0.1s all linear;
+  transition: 0.1s all linear;
+}
+
+.table tr:nth-child(even) {
+  background-color: var(--light);
+}
+
+.table tr:hover {
+  background-color: var(--grey-10);
+  border-color: var(--grey-25);
+}
+
+.cart-grey {
+  width: 100%;
+  padding: var(--i20);
+  background-color: var(--grey-5);
+  margin-bottom: var(--i20);
+}
+
+.cart-grey:last-child {
+  margin-bottom: 0;
+}
+
+.br {
+  border: var(--line-grey);
+  border-radius: var(--i4);
+  padding: var(--i16);
+}
+
+.lo-item {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: var(--i8) 0;
+}
+
+.list-org {
+  max-width: 32rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.link-item {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  width: 100%;
+  padding: var(--i10);
+}
+
+.link-item .name {
+  line-height: 150%;
+}
+
+.link-item,
+.lo-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: var(--light);
+  gap: var(--i16);
+  border-bottom: var(--line-grey-10);
+  cursor: pointer;
+  -webkit-transition: 0.1s border-color linear;
+  -o-transition: 0.1s border-color linear;
+  transition: 0.1s border-color linear;
+}
+
+.link-item:hover,
+.lo-item:hover {
+  border-color: var(--main);
+}
+
+.link-item .ava,
+.lo-item .ava {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 1.5rem;
+          flex: 0 0 1.5rem;
+  height: 1.5rem;
+  border-radius: 1.5rem;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.list-options {
+  display: none;
+  max-height: 16rem;
+  margin-top: var(--i4);
+  overflow-y: auto;
+}
+
+.list-options .add-lo-item {
+  position: sticky;
+  bottom: 0;
+}
+
+.list-options .add-lo-item::after {
+  content: "";
+  position: absolute;
+  top: calc(100% + 0.0625rem);
+  left: 0;
+  width: 100%;
+  height: var(--i16);
+  background-color: inherit;
+}
+
+.this-label {
+  margin-top: var(--i20);
+}
+
+.this-label label.checkbox,
+.this-label .add-more {
+  margin-top: 0;
+}
+
+.this-label .addinfo {
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+body .icon--main {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  width: 1rem;
+  height: 1rem;
+}
+
+body .icon--main path[stroke] {
+  stroke: var(--main);
+}
